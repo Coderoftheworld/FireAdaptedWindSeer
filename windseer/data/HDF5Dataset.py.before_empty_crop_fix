@@ -604,12 +604,6 @@ class HDF5Dataset(Dataset):
             input_data = torch.index_select(data, 0, self._input_indices)
             boolean_terrain = input_data[0] > 0
 
-            """Rarely, augmentation can produce a crop containing no wind/air cells.
-            Such a crop cannot support a simulated flight trajectory, so resample."""
-            if not torch.any(boolean_terrain):
-                h5_file.close()
-                new_index = self._rand.randint(0, len(self._memberslist) - 1)
-                return self.__getitem__(new_index)
             # add gaussian noise to wind velocities if requested
             if self._max_gaussian_noise_std > 0.0:
                 if self._additive_gaussian_noise:

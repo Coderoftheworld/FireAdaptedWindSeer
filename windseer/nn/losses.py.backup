@@ -32,10 +32,10 @@ class CombinedLoss(Module):
             self.step_counter = 0
 
             self.eps_scaling = parser.get_safe(
-                'eps_scaling', 1E-2, float, True
+                'auto_channel_scaling', 1E-2, float, True
                 )
             self.eps_scheduling_mode = parser.get_safe(
-                'eps_scheduling_mode', 'None', str, True
+                'auto_channel_scaling', 'None', str, True
                 )
             self.eps_scheduling_kwargs = parser.get_safe(
                 'eps_scheduling_kwargs', {}, dict, True

@@ -604,12 +604,6 @@ class HDF5Dataset(Dataset):
             input_data = torch.index_select(data, 0, self._input_indices)
             boolean_terrain = input_data[0] > 0
 
-            """Rarely, augmentation can produce a crop containing no wind/air cells.
-            Such a crop cannot support a simulated flight trajectory, so resample."""
-            if not torch.any(boolean_terrain):
-                h5_file.close()
-                new_index = self._rand.randint(0, len(self._memberslist) - 1)
-                return self.__getitem__(new_index)
             # add gaussian noise to wind velocities if requested
             if self._max_gaussian_noise_std > 0.0:
                 if self._additive_gaussian_noise:
@@ -1274,8 +1268,6 @@ class HDF5Dataset(Dataset):
         # initialize a random valid start position
         valid_start_positions = torch.nonzero(boolean_terrain, as_tuple=False)
 
-        if len(valid_start_positions) == 0:
-            raise RuntimeError("No valid wind cells available for trajectory start")
         if self._trajectory_start_weighting_mode == 0:
             position = random.choices(valid_start_positions, k=1)[0]
 
@@ -1315,8 +1307,7 @@ class HDF5Dataset(Dataset):
         while (iter < self._trajectory_max_iter) and mask.sum() < trajectory_length:
             iter += 1
             segment_length = self._rand.randint(
-                int(self._trajectory_min_segment_length),
-                int(self._trajectory_max_segment_length)
+                self._trajectory_min_segment_length, self._trajectory_max_segment_length
                 )
 
             # sample random propagation direction, divide z component by 4 to make flatter trajectories more likely
