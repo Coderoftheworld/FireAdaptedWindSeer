@@ -6,15 +6,15 @@ import windseer.data as data
 import windseer.utils as utils
 from windseer.nn.predict_model import get_prediction
 
-MODEL_DIR = "cpu_sparse_5min_output/cpu_sparse_5min"
-DATASET = "data/medium/validation_20.hdf5"
-N_REPEATS = 5
+MODEL_DIR = "cpu_sparse_medium_output_retry/cpu_sparse_medium"
+DATASET = "/media/phantom/Volume/WindSeer Data/medium500/train_500.hdf5"
+N_REPEATS = 2
 
 device = torch.device("cpu")
 
 net, params = utils.load_model(
     MODEL_DIR,
-    "latest",
+    "e25",
     None,
     device,
     True

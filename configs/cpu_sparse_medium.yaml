@@ -13,7 +13,7 @@ run:
   warm_start: false
   save_model: true
   save_metadata: true
-  save_model_every_n_epoch: 25
+  save_model_every_n_epoch: 5
   save_params_hist_every_n_epoch: 100
   optimizer_type: adam
   optimizer_kwargs:
