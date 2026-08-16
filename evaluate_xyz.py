@@ -6,15 +6,15 @@ import windseer.data as data
 import windseer.utils as utils
 from windseer.nn.predict_model import get_prediction
 
-MODEL_DIR = "cpu_sparse_medium_output_retry/cpu_sparse_medium"
-DATASET = "/media/phantom/Volume/WindSeer Data/medium500/train_500.hdf5"
-N_REPEATS = 2
+MODEL_DIR = "cpu_sparse_overfit_1000_output/cpu_sparse_overfit"
+DATASET = "/media/phantom/Volume/WindSeer Data/medium500/overfit_5.hdf5"
+N_REPEATS = 1
 
 device = torch.device("cpu")
 
 net, params = utils.load_model(
     MODEL_DIR,
-    "e25",
+    "e900",
     None,
     device,
     True
