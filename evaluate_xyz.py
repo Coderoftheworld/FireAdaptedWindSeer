@@ -7,123 +7,126 @@ import windseer.utils as utils
 from windseer.nn.predict_model import get_prediction
 
 
-MODEL_DIR = "cpu_sparse_medium_meanfill_lr3e5_output/cpu_sparse_medium"
-DATASET = "/media/phantom/Volume/WindSeer Data/medium500/train_500.hdf5"
+MODEL_DIR = "cpu_sparse_medium_meanfill_lr3e5_fasteps_output/cpu_sparse_medium"
+DATASET = "/media/phantom/Volume/WindSeer Data/medium500/validation_100.hdf5"
+
+CHECKPOINTS = ["e10", "e15", "e20", "e25", "e30"]
 N_REPEATS = 2
 
 device = torch.device("cpu")
 
-net, params = utils.load_model(
-    MODEL_DIR,
-    "e25",
-    None,
-    device,
-    True
-)
+for checkpoint in CHECKPOINTS:
+    print("\n" + "=" * 60)
+    print(f"EVALUATING {checkpoint}")
+    print("=" * 60)
 
-dataset_kwargs = params.Dataset_kwargs()
+    net, params = utils.load_model(
+        MODEL_DIR, checkpoint, None, device, True
+    )
 
-testset = data.HDF5Dataset(
-    DATASET,
-    **dataset_kwargs
-)
+    dataset_kwargs = params.Dataset_kwargs()
 
-channels = ["ux", "uy", "uz"]
+    testset = data.HDF5Dataset(
+        DATASET,
+        **dataset_kwargs
+    )
 
-stats = {
-    ch: {
-        "abs": 0.0,
-        "sq": 0.0,
-        "err": 0.0,
-        "abs_true": 0.0,
-        "n": 0,
-        "sample_mae": []
+    channels = ["ux", "uy", "uz"]
+
+    stats = {
+        ch: {
+            "abs": 0.0,
+            "sq": 0.0,
+            "err": 0.0,
+            "abs_true": 0.0,
+            "n": 0,
+            "sample_mae": []
+        }
+        for ch in channels
     }
-    for ch in channels
-}
 
-with torch.no_grad():
+    with torch.no_grad():
 
-    for repeat in range(N_REPEATS):
+        for repeat in range(N_REPEATS):
 
-        seed = 12345 + repeat
-        random.seed(seed)
-        np.random.seed(seed)
-        torch.manual_seed(seed)
+            seed = 12345 + repeat
+            random.seed(seed)
+            np.random.seed(seed)
+            torch.manual_seed(seed)
 
-        for i in range(len(testset)):
+            for i in range(len(testset)):
 
-            sample = testset[i]
+                sample = testset[i]
 
-            input_tensor = sample[0]
-            label_tensor = sample[1]
+                input_tensor = sample[0]
+                label_tensor = sample[1]
 
-            scale = 1.0
-            if params.data["autoscale"]:
-                scale = sample[3].item()
+                scale = 1.0
+                if params.data["autoscale"]:
+                    scale = sample[3].item()
 
-            prediction, inputs, labels = get_prediction(
-                input_tensor,
-                label_tensor,
-                scale,
-                device,
-                net,
-                params,
-                False,
-                False
-            )
-
-            outputs = prediction["pred"]
-
-            terrain = inputs[0, 0]
-            air_mask = terrain > 0
-
-            for ch in channels:
-
-                index = params.data["label_channels"].index(ch)
-
-                pred = outputs[0, index]
-                true = labels[0, index]
-
-                error = pred[air_mask] - true[air_mask]
-
-                s = stats[ch]
-
-                s["abs"] += error.abs().sum().item()
-                s["sq"] += (error ** 2).sum().item()
-                s["err"] += error.sum().item()
-                s["abs_true"] += true[air_mask].abs().sum().item()
-                s["n"] += error.numel()
-
-                s["sample_mae"].append(
-                    error.abs().mean().item()
+                prediction, inputs, labels = get_prediction(
+                    input_tensor,
+                    label_tensor,
+                    scale,
+                    device,
+                    net,
+                    params,
+                    False,
+                    False
                 )
 
-print()
-print("========================================")
-print("3-D wind validation results")
-print("========================================")
-print(f"Validation CFD flows: {len(testset)}")
-print(f"Repeats per flow:     {N_REPEATS}")
-print(f"Total predictions:    {len(testset) * N_REPEATS}")
-print()
+                outputs = prediction["pred"]
 
-for ch in channels:
+                terrain = inputs[0, 0]
+                air_mask = terrain > 0
 
-    s = stats[ch]
+                for ch in channels:
 
-    mae = s["abs"] / s["n"]
-    rmse = (s["sq"] / s["n"]) ** 0.5
-    bias = s["err"] / s["n"]
-    mean_abs_true = s["abs_true"] / s["n"]
+                    index = params.data["label_channels"].index(ch)
 
-    print(ch.upper())
-    print(f"  MAE:              {mae:.4f} m/s")
-    print(f"  RMSE:             {rmse:.4f} m/s")
-    print(f"  Bias:             {bias:+.4f} m/s")
-    print(f"  Mean |true|:      {mean_abs_true:.4f} m/s")
-    print(f"  Mean sample MAE:  {np.mean(s['sample_mae']):.4f} m/s")
-    print(f"  Std sample MAE:   {np.std(s['sample_mae']):.4f} m/s")
+                    pred = outputs[0, index]
+                    true = labels[0, index]
+
+                    error = pred[air_mask] - true[air_mask]
+
+                    s = stats[ch]
+
+                    s["abs"] += error.abs().sum().item()
+                    s["sq"] += (error ** 2).sum().item()
+                    s["err"] += error.sum().item()
+                    s["abs_true"] += true[air_mask].abs().sum().item()
+                    s["n"] += error.numel()
+
+                    s["sample_mae"].append(
+                        error.abs().mean().item()
+                    )
+
+    print()
+    print("========================================")
+    print("3-D wind validation results")
+    print("========================================")
+    print(f"Validation CFD flows: {len(testset)}")
+    print(f"Repeats per flow:     {N_REPEATS}")
+    print(f"Total predictions:    {len(testset) * N_REPEATS}")
     print()
 
-print("========================================")
+    for ch in channels:
+
+        s = stats[ch]
+
+        mae = s["abs"] / s["n"]
+        rmse = (s["sq"] / s["n"]) ** 0.5
+        bias = s["err"] / s["n"]
+        mean_abs_true = s["abs_true"] / s["n"]
+
+        print(ch.upper())
+        print(f"  MAE:              {mae:.4f} m/s")
+        print(f"  RMSE:             {rmse:.4f} m/s")
+        print(f"  Bias:             {bias:+.4f} m/s")
+        print(f"  Mean |true|:      {mean_abs_true:.4f} m/s")
+        print(f"  Mean sample MAE:  {np.mean(s['sample_mae']):.4f} m/s")
+        print(f"  Std sample MAE:   {np.std(s['sample_mae']):.4f} m/s")
+        print()
+
+    print("========================================")
