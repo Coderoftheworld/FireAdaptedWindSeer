@@ -209,7 +209,41 @@ def train_model(configs, output_dir, use_writer, copy_datasets):
         gamma=configs.run['learning_rate_decay']
         )
 
-    if start_epoch > 0:
+    # A rolling recovery checkpoint is used to resume interrupted training
+    # without resetting Adam, the learning-rate scheduler, or epsilon scaling.
+    recovery_path = os.path.join(model_dir, 'recovery.pt')
+    resumed_from_recovery = False
+
+    if configs.run['warm_start'] and os.path.isfile(recovery_path):
+        print('INFO: Loading recovery checkpoint:', recovery_path)
+
+        recovery = torch.load(
+            recovery_path,
+            map_location=lambda storage, loc: storage
+            )
+
+        try:
+            net.module.load_state_dict(recovery['model_state_dict'])
+        except AttributeError:
+            net.load_state_dict(recovery['model_state_dict'])
+
+        loss_fn.load_state_dict(recovery['loss_state_dict'])
+        optimizer.load_state_dict(recovery['optimizer_state_dict'])
+        scheduler_lr.load_state_dict(recovery['scheduler_state_dict'])
+
+        loss_fn.eps_scaling = recovery['eps_scaling']
+        loss_fn.step_counter = recovery['loss_step_counter']
+
+        start_epoch = recovery['epoch']
+        resumed_from_recovery = True
+
+        print(
+            'INFO: Resuming training from completed epoch {}'.format(
+                start_epoch
+                )
+            )
+
+    if start_epoch > 0 and not resumed_from_recovery:
         for i in range(start_epoch):
             scheduler_lr.step()
 
@@ -500,7 +534,29 @@ def train_model(configs, output_dir, use_writer, copy_datasets):
 
         # adjust the eps in the loss if set
         loss_fn.step()
+        
+        # Save a rolling crash-recovery checkpoint after the epoch and
+        # schedulers have completed. Write to a temporary file first so
+        # an interruption during saving does not corrupt recovery.pt.
+        try:
+            recovery_model_state = net.module.state_dict()
+        except AttributeError:
+            recovery_model_state = net.state_dict()
 
+        recovery = {
+            'epoch': epoch + 1,
+            'model_state_dict': recovery_model_state,
+            'loss_state_dict': loss_fn.state_dict(),
+            'optimizer_state_dict': optimizer.state_dict(),
+            'scheduler_state_dict': scheduler_lr.state_dict(),
+            'eps_scaling': loss_fn.eps_scaling,
+            'loss_step_counter': loss_fn.step_counter,
+        }
+
+        recovery_tmp_path = recovery_path + '.tmp'
+
+        torch.save(recovery, recovery_tmp_path)
+        os.replace(recovery_tmp_path, recovery_path)
     print("INFO: Finished training in %s seconds" % (time.time() - start_time))
 
     if use_writer:
