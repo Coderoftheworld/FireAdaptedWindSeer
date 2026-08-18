@@ -7,11 +7,11 @@ import windseer.utils as utils
 from windseer.nn.predict_model import get_prediction
 
 
-MODEL_DIR = "cpu_sparse_medium_meanfill_lr3e5_fasteps_output/cpu_sparse_medium"
-DATASET = "/media/phantom/Volume/WindSeer Data/medium500/validation_100.hdf5"
+MODEL_DIR = "cpu_sparse_full_eth_output/cpu_sparse_full_eth"
+DATASET = "/media/phantom/Volume/WindSeer Data/download (2)/658323/validation_resampled_32.hdf5"
 
-CHECKPOINTS = ["e10", "e15", "e20", "e25", "e30"]
-N_REPEATS = 2
+CHECKPOINTS = ["e20", "e50", "e80"]
+N_REPEATS = 1
 
 device = torch.device("cpu")
 
