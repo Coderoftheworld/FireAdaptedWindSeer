@@ -1,0 +1,163 @@
+{
+  "wind": "u6",
+  "slope": "ramp10",
+  "all_scouts": [
+    {
+      "requested_time_s": 260.0,
+      "time_s": 260.002,
+      "time_index": 10,
+      "front_index": 302,
+      "front_x_m": 302.0,
+      "peak_excess_K": 790.5885009765625,
+      "front_strength": 57.36450334028768,
+      "scout_seconds": 5.331941978000032
+    },
+    {
+      "requested_time_s": 275.0,
+      "time_s": 275.002,
+      "time_index": 25,
+      "front_index": 315,
+      "front_x_m": 315.0,
+      "peak_excess_K": 769.9859619140625,
+      "front_strength": 37.62960399280895,
+      "scout_seconds": 5.257410820999894
+    },
+    {
+      "requested_time_s": 290.0,
+      "time_s": 290.002,
+      "time_index": 40,
+      "front_index": 324,
+      "front_x_m": 324.0,
+      "peak_excess_K": 759.606689453125,
+      "front_strength": 44.10074546120387,
+      "scout_seconds": 5.444099417999951
+    },
+    {
+      "requested_time_s": 305.0,
+      "time_s": 305.002,
+      "time_index": 55,
+      "front_index": 335,
+      "front_x_m": 335.0,
+      "peak_excess_K": 741.281494140625,
+      "front_strength": 43.68185008655894,
+      "scout_seconds": 5.631472953999946
+    },
+    {
+      "requested_time_s": 320.0,
+      "time_s": 320.002,
+      "time_index": 70,
+      "front_index": 349,
+      "front_x_m": 349.0,
+      "peak_excess_K": 757.5692138671875,
+      "front_strength": 45.74017611416903,
+      "scout_seconds": 5.332275386000219
+    },
+    {
+      "requested_time_s": 335.0,
+      "time_s": 335.002,
+      "time_index": 85,
+      "front_index": 366,
+      "front_x_m": 366.0,
+      "peak_excess_K": 774.646240234375,
+      "front_strength": 25.053882945667624,
+      "scout_seconds": 5.272194674000048
+    },
+    {
+      "requested_time_s": 350.0,
+      "time_s": 350.002,
+      "time_index": 100,
+      "front_index": 417,
+      "front_x_m": 417.0,
+      "peak_excess_K": 783.99365234375,
+      "front_strength": 21.025337912819595,
+      "scout_seconds": 5.4381301840001015
+    },
+    {
+      "requested_time_s": 375.0,
+      "time_s": 375.002,
+      "time_index": 125,
+      "front_index": 485,
+      "front_x_m": 485.0,
+      "peak_excess_K": 784.3511962890625,
+      "front_strength": 25.24953113902697,
+      "scout_seconds": 5.3911520730000575
+    },
+    {
+      "requested_time_s": 400.0,
+      "time_s": 400.002,
+      "time_index": 150,
+      "front_index": 573,
+      "front_x_m": 573.0,
+      "peak_excess_K": 784.18505859375,
+      "front_strength": 25.11004638671875,
+      "scout_seconds": 5.693096974999889
+    }
+  ],
+  "selected_stages": [
+    {
+      "requested_time_s": 290.0,
+      "time_s": 290.002,
+      "time_index": 40,
+      "front_index": 324,
+      "front_x_m": 324.0,
+      "peak_excess_K": 759.606689453125,
+      "front_strength": 44.10074546120387,
+      "scout_seconds": 5.444099417999951,
+      "stage_number": 1,
+      "stage_fraction": 0.1,
+      "progression_front_x_m": 324.0
+    },
+    {
+      "requested_time_s": 335.0,
+      "time_s": 335.002,
+      "time_index": 85,
+      "front_index": 366,
+      "front_x_m": 366.0,
+      "peak_excess_K": 774.646240234375,
+      "front_strength": 25.053882945667624,
+      "scout_seconds": 5.272194674000048,
+      "stage_number": 2,
+      "stage_fraction": 0.3,
+      "progression_front_x_m": 366.0
+    },
+    {
+      "requested_time_s": 350.0,
+      "time_s": 350.002,
+      "time_index": 100,
+      "front_index": 417,
+      "front_x_m": 417.0,
+      "peak_excess_K": 783.99365234375,
+      "front_strength": 21.025337912819595,
+      "scout_seconds": 5.4381301840001015,
+      "stage_number": 3,
+      "stage_fraction": 0.5,
+      "progression_front_x_m": 417.0
+    },
+    {
+      "requested_time_s": 375.0,
+      "time_s": 375.002,
+      "time_index": 125,
+      "front_index": 485,
+      "front_x_m": 485.0,
+      "peak_excess_K": 784.3511962890625,
+      "front_strength": 25.24953113902697,
+      "scout_seconds": 5.3911520730000575,
+      "stage_number": 4,
+      "stage_fraction": 0.7,
+      "progression_front_x_m": 485.0
+    },
+    {
+      "requested_time_s": 400.0,
+      "time_s": 400.002,
+      "time_index": 150,
+      "front_index": 573,
+      "front_x_m": 573.0,
+      "peak_excess_K": 784.18505859375,
+      "front_strength": 25.11004638671875,
+      "scout_seconds": 5.693096974999889,
+      "stage_number": 5,
+      "stage_fraction": 0.9,
+      "progression_front_x_m": 573.0
+    }
+  ]
+}

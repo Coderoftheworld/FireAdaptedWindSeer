@@ -152,23 +152,43 @@ def slope_degrees(slope_name):
 
 def time_in_seconds(t):
     """
-    Convert FireBench's stored integer millisecond times
-    into physical seconds.
+    Convert FireBench's time coordinate into seconds.
+
+    Different public Zarr cases expose the same time
+    coordinate using different units, including milliseconds
+    and nanoseconds.
     """
+    values = t.values
+
+    # If xarray has already decoded the coordinate into a
+    # NumPy timedelta, convert it directly to seconds.
+    if np.issubdtype(values.dtype, np.timedelta64):
+        return (
+            values
+            / np.timedelta64(1, "s")
+        ).astype(np.float64)
+
     units = t.attrs.get(
         "units",
         ""
-    )
+    ).lower()
 
-    if units != "milliseconds":
+    divisors = {
+        "seconds": 1.0,
+        "milliseconds": 1_000.0,
+        "microseconds": 1_000_000.0,
+        "nanoseconds": 1_000_000_000.0,
+    }
+
+    if units not in divisors:
         raise RuntimeError(
             "Unexpected time units: "
             f"{units!r}"
         )
 
     return (
-        t.values.astype(np.float64)
-        / 1000.0
+        values.astype(np.float64)
+        / divisors[units]
     )
 
 
