@@ -1,0 +1,99 @@
+GPy could not get imported, GPR baseline not available
+Using YAML config: configs/firebench_B_3to60.yaml
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: firebench 6m dataset/firebench_train.hdf5 contains 420 samples
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+-----------------------------------------------------------------------------
+INFO: Start training on device cpu
+ 
+Train Settings:
+	Warm start:		 True
+	Learning rate step size: 750
+	Learning rate decay:	 0.25
+	Batchsize:		 1
+	Epochs:			 20
+	Minibatch epoch loss:	 True
+ 
+Loss Settings:
+	Loss weighting fn:	 0
+	Loss component(s):	 ['L2Loss']
+	L2Loss kwargs : {'exclude_terrain': True, 'loss_factor_init': -0.5, 'p': 2}
+ 
+Model Settings:
+	 Model prefix:		 firebench_B_3to60
+	 Model type:		 ModelEDNN3D
+	 Model args:
+		 {'n_x': 32, 'n_y': 32, 'n_z': 32, 'n_downsample_layers': 4, 'n_first_conv_channels': 8, 'channel_multiplier': 2, 'filter_kernel_size': 3, 'interpolation_mode': 'nearest', 'align_corners': False, 'skipping': True, 'use_terrain_mask': True, 'pooling_method': 'striding', 'use_fc_layers': False, 'fc_scaling': 8, 'use_mapping_layer': False, 'potential_flow': False, 'activation_type': 'LeakyReLU', 'activation_args': {'negative_slope': 0.1}, 'verbose': True, 'submodel_type': 'ModelEDNN3D', 'vae': False, 'use_uz_in': False, 'use_sparse_mask': True, 'use_sparse_convolution': False, 'predict_uncertainty': False, 'uncertainty_train_mode': 'alternating', 'logvar_scaling': 10, 'n_stacked': 3, 'pass_full_output': False, 'submodel_terrain_mask': False, 'use_turbulence': False, 'use_pressure': False, 'use_epsilon': False, 'use_nut': False, 'n_epochs': 20, 'grid_size': [6.0, 6.0, 6.0]}
+ 
+Optimizer Settings:
+	 Optimizer type:	 adam
+	 Optimizer args:
+		 {'lr': 1e-05}
+ 
+Dataset Settings:
+	Input channels:	 ['terrain', 'ux', 'uy']
+	Label channels:	 ['ux', 'uy', 'uz']
+	Ux scaling:		 1.0
+	Uy scaling:		 1.0
+	Uz scaling:		 1.0
+	Turbulence scaling:	 1.0
+	Pressure scaling:	 1.0
+	Epsilon scaling:	 1.0
+	Nut scaling:		 1.0
+	Horizontal stride:	 1
+	Vertical stride:	 1
+	Augmentation mode:	 1
+	Augmentation params:	 {'subsampling': True, 'rotating': True}
+-----------------------------------------------------------------------------
+Setup time:  0.8472633361816406 s
+[1] Training time: 18.8 s
+[1] train loss: 1.638531, validation loss: 1.531165, epoch_time: 20.43 s
+[2] Training time: 18.1 s
+[2] train loss: 1.590975, validation loss: 1.550388, epoch_time: 19.87 s
+[3] Training time: 18.1 s
+[3] train loss: 1.569117, validation loss: 1.562668, epoch_time: 19.70 s
+[4] Training time: 17.4 s
+[4] train loss: 1.557061, validation loss: 1.583402, epoch_time: 19.10 s
+[5] Training time: 17.5 s
+[5] train loss: 1.565194, validation loss: 1.587196, epoch_time: 19.16 s
+[6] Training time: 17.6 s
+[6] train loss: 1.579076, validation loss: 1.618498, epoch_time: 19.23 s
+[7] Training time: 17.4 s
+[7] train loss: 1.601888, validation loss: 1.613649, epoch_time: 19.12 s
+[8] Training time: 17.4 s
+[8] train loss: 1.599020, validation loss: 1.619665, epoch_time: 19.08 s
+[9] Training time: 17.4 s
+[9] train loss: 1.609832, validation loss: 1.626596, epoch_time: 19.03 s
+[10] Training time: 17.4 s
+[10] train loss: 1.630371, validation loss: 1.642490, epoch_time: 19.10 s
+[11] Training time: 17.4 s
+[11] train loss: 1.643130, validation loss: 1.668489, epoch_time: 19.09 s
+[12] Training time: 17.5 s
+[12] train loss: 1.652045, validation loss: 1.696074, epoch_time: 19.15 s
+[13] Training time: 17.4 s
+[13] train loss: 1.685327, validation loss: 1.696749, epoch_time: 19.10 s
+[14] Training time: 17.6 s
+[14] train loss: 1.676761, validation loss: 1.715254, epoch_time: 19.26 s
+[15] Training time: 17.6 s
+[15] train loss: 1.697885, validation loss: 1.716158, epoch_time: 19.30 s
+[16] Training time: 17.4 s
+[16] train loss: 1.708382, validation loss: 1.726403, epoch_time: 19.08 s
+[17] Training time: 17.6 s
+[17] train loss: 1.722305, validation loss: 1.763271, epoch_time: 19.26 s
+[18] Training time: 17.5 s
+[18] train loss: 1.742032, validation loss: 1.757182, epoch_time: 19.20 s
+[19] Training time: 17.4 s
+[19] train loss: 1.750115, validation loss: 1.777670, epoch_time: 19.07 s
+[20] Training time: 17.9 s
+[20] train loss: 1.767567, validation loss: 1.786078, epoch_time: 19.64 s
+INFO: Finished training in 386.991192817688 seconds
+-------------------------------------------------
+HDF5 Dataset sparse mask statistics
+	minimum number of cells: 1
+	maximum number of cells: 77
+	average number of cells: 37.4491666666669
+	number of mask created:  8400
+-------------------------------------------------

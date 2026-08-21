@@ -1,0 +1,42 @@
+SOURCE: gs://firebench/v2024.04/u6/ramp15/fire.zarr
+OUTPUT: /media/phantom/Volume/FireBench Data/native/u6_ramp15_t350_native.h5
+TIME: 350.0025 s
+
+Native extraction:
+x: 320.0 -> 543.0 m (224 cells)
+y: 0.0 -> 251.0 m (252 cells)
+z: 0.0 -> 191.5 m (384 cells)
+
+Downloading u...
+  shape: (224, 252, 384)
+  min:   -2.836331605911255
+  max:   25.991188049316406
+  mean:  3.706408739089966
+
+Downloading v...
+  shape: (224, 252, 384)
+  min:   -12.96773624420166
+  max:   13.321908950805664
+  mean:  -0.0035282273311167955
+
+Downloading w...
+  shape: (224, 252, 384)
+  min:   -7.931535720825195
+  max:   20.91597557067871
+  mean:  0.7370939254760742
+  maximum at: x=522.0 m, y=66.0 m, z=168.0 m
+
+Downloading T_s...
+  shape: (224, 252, 384)
+  min:   284.08111572265625
+  max:   1378.1058349609375
+  mean:  293.2243347167969
+  maximum at: x=421.0 m, y=212.0 m, z=87.5 m
+
+Downloading rho_f...
+  shape: (224, 252, 384)
+  min:   0.0
+  max:   1.5
+  mean:  0.014518302865326405
+
+Finished.

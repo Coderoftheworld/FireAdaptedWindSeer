@@ -1,0 +1,43 @@
+GPy could not get imported, GPR baseline not available
+
+============================================================
+EVALUATING e80
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/cpu_sparse_full_eth_output/cpu_sparse_full_eth/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.3550 m/s
+  RMSE:             3.4705 m/s
+  Bias:             -0.2257 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.4220 m/s
+  Std sample MAE:   1.3867 m/s
+
+UY
+  MAE:              1.3071 m/s
+  RMSE:             2.0508 m/s
+  Bias:             -0.4719 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.3374 m/s
+  Std sample MAE:   0.7885 m/s
+
+UZ
+  MAE:              2.3196 m/s
+  RMSE:             3.5654 m/s
+  Bias:             -1.4764 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  2.4365 m/s
+  Std sample MAE:   1.4594 m/s
+
+========================================

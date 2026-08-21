@@ -1,0 +1,841 @@
+GPy could not get imported, GPR baseline not available
+
+============================================================
+EVALUATING e1
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2736 m/s
+  RMSE:             3.3031 m/s
+  Bias:             -0.1489 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.3321 m/s
+  Std sample MAE:   1.2963 m/s
+
+UY
+  MAE:              1.0945 m/s
+  RMSE:             1.9147 m/s
+  Bias:             -0.0652 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.1186 m/s
+  Std sample MAE:   0.7009 m/s
+
+UZ
+  MAE:              1.8243 m/s
+  RMSE:             2.9608 m/s
+  Bias:             -0.2450 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8803 m/s
+  Std sample MAE:   1.0991 m/s
+
+========================================
+
+============================================================
+EVALUATING e2
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2579 m/s
+  RMSE:             3.2664 m/s
+  Bias:             -0.1140 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.3133 m/s
+  Std sample MAE:   1.2727 m/s
+
+UY
+  MAE:              1.0767 m/s
+  RMSE:             1.8934 m/s
+  Bias:             +0.1259 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.1025 m/s
+  Std sample MAE:   0.6666 m/s
+
+UZ
+  MAE:              1.8575 m/s
+  RMSE:             2.9824 m/s
+  Bias:             -0.1741 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.9171 m/s
+  Std sample MAE:   1.1257 m/s
+
+========================================
+
+============================================================
+EVALUATING e3
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2471 m/s
+  RMSE:             3.2251 m/s
+  Bias:             -0.1897 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2999 m/s
+  Std sample MAE:   1.2304 m/s
+
+UY
+  MAE:              1.0495 m/s
+  RMSE:             1.8823 m/s
+  Bias:             +0.0408 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0740 m/s
+  Std sample MAE:   0.6674 m/s
+
+UZ
+  MAE:              1.8384 m/s
+  RMSE:             2.9378 m/s
+  Bias:             +0.0703 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8919 m/s
+  Std sample MAE:   1.1290 m/s
+
+========================================
+
+============================================================
+EVALUATING e4
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2339 m/s
+  RMSE:             3.2051 m/s
+  Bias:             -0.0436 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2862 m/s
+  Std sample MAE:   1.2364 m/s
+
+UY
+  MAE:              1.0396 m/s
+  RMSE:             1.8780 m/s
+  Bias:             +0.0054 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0637 m/s
+  Std sample MAE:   0.6676 m/s
+
+UZ
+  MAE:              1.8298 m/s
+  RMSE:             2.9267 m/s
+  Bias:             +0.1004 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8799 m/s
+  Std sample MAE:   1.1162 m/s
+
+========================================
+
+============================================================
+EVALUATING e5
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2315 m/s
+  RMSE:             3.1959 m/s
+  Bias:             -0.0717 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2834 m/s
+  Std sample MAE:   1.2334 m/s
+
+UY
+  MAE:              1.0420 m/s
+  RMSE:             1.8748 m/s
+  Bias:             +0.0653 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0666 m/s
+  Std sample MAE:   0.6633 m/s
+
+UZ
+  MAE:              1.8162 m/s
+  RMSE:             2.9119 m/s
+  Bias:             +0.0639 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8669 m/s
+  Std sample MAE:   1.1088 m/s
+
+========================================
+
+============================================================
+EVALUATING e6
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2649 m/s
+  RMSE:             3.1915 m/s
+  Bias:             -0.4145 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.3141 m/s
+  Std sample MAE:   1.1622 m/s
+
+UY
+  MAE:              1.0370 m/s
+  RMSE:             1.8734 m/s
+  Bias:             +0.0420 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0612 m/s
+  Std sample MAE:   0.6653 m/s
+
+UZ
+  MAE:              1.8306 m/s
+  RMSE:             2.9301 m/s
+  Bias:             -0.1497 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8865 m/s
+  Std sample MAE:   1.0773 m/s
+
+========================================
+
+============================================================
+EVALUATING e7
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2238 m/s
+  RMSE:             3.1886 m/s
+  Bias:             +0.0735 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2759 m/s
+  Std sample MAE:   1.2474 m/s
+
+UY
+  MAE:              1.0317 m/s
+  RMSE:             1.8710 m/s
+  Bias:             -0.0126 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0553 m/s
+  Std sample MAE:   0.6650 m/s
+
+UZ
+  MAE:              1.8174 m/s
+  RMSE:             2.9005 m/s
+  Bias:             +0.1397 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8662 m/s
+  Std sample MAE:   1.1027 m/s
+
+========================================
+
+============================================================
+EVALUATING e8
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2303 m/s
+  RMSE:             3.1953 m/s
+  Bias:             -0.1530 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2820 m/s
+  Std sample MAE:   1.2225 m/s
+
+UY
+  MAE:              1.0318 m/s
+  RMSE:             1.8700 m/s
+  Bias:             +0.0234 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0554 m/s
+  Std sample MAE:   0.6638 m/s
+
+UZ
+  MAE:              1.7956 m/s
+  RMSE:             2.8883 m/s
+  Bias:             +0.0604 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8453 m/s
+  Std sample MAE:   1.0948 m/s
+
+========================================
+
+============================================================
+EVALUATING e9
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2304 m/s
+  RMSE:             3.1834 m/s
+  Bias:             -0.2269 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2814 m/s
+  Std sample MAE:   1.1994 m/s
+
+UY
+  MAE:              1.0308 m/s
+  RMSE:             1.8694 m/s
+  Bias:             +0.0213 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0545 m/s
+  Std sample MAE:   0.6645 m/s
+
+UZ
+  MAE:              1.7965 m/s
+  RMSE:             2.9118 m/s
+  Bias:             -0.3077 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8507 m/s
+  Std sample MAE:   1.0524 m/s
+
+========================================
+
+============================================================
+EVALUATING e10
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2356 m/s
+  RMSE:             3.2064 m/s
+  Bias:             -0.1678 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2878 m/s
+  Std sample MAE:   1.2157 m/s
+
+UY
+  MAE:              1.0292 m/s
+  RMSE:             1.8684 m/s
+  Bias:             +0.0105 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0527 m/s
+  Std sample MAE:   0.6645 m/s
+
+UZ
+  MAE:              1.7884 m/s
+  RMSE:             2.9050 m/s
+  Bias:             -0.0800 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8395 m/s
+  Std sample MAE:   1.1026 m/s
+
+========================================
+
+============================================================
+EVALUATING e11
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2338 m/s
+  RMSE:             3.2241 m/s
+  Bias:             -0.2239 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2893 m/s
+  Std sample MAE:   1.2425 m/s
+
+UY
+  MAE:              1.0294 m/s
+  RMSE:             1.8678 m/s
+  Bias:             +0.0032 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0528 m/s
+  Std sample MAE:   0.6636 m/s
+
+UZ
+  MAE:              1.8101 m/s
+  RMSE:             2.9241 m/s
+  Bias:             -0.2130 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8651 m/s
+  Std sample MAE:   1.0873 m/s
+
+========================================
+
+============================================================
+EVALUATING e12
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2168 m/s
+  RMSE:             3.1947 m/s
+  Bias:             +0.0243 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2693 m/s
+  Std sample MAE:   1.2519 m/s
+
+UY
+  MAE:              1.0288 m/s
+  RMSE:             1.8676 m/s
+  Bias:             +0.0047 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0522 m/s
+  Std sample MAE:   0.6638 m/s
+
+UZ
+  MAE:              1.7958 m/s
+  RMSE:             2.8890 m/s
+  Bias:             -0.0838 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8489 m/s
+  Std sample MAE:   1.0763 m/s
+
+========================================
+
+============================================================
+EVALUATING e13
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2289 m/s
+  RMSE:             3.1813 m/s
+  Bias:             -0.4332 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2824 m/s
+  Std sample MAE:   1.1922 m/s
+
+UY
+  MAE:              1.0292 m/s
+  RMSE:             1.8682 m/s
+  Bias:             -0.0249 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0526 m/s
+  Std sample MAE:   0.6646 m/s
+
+UZ
+  MAE:              1.8855 m/s
+  RMSE:             2.9870 m/s
+  Bias:             -0.6341 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.9483 m/s
+  Std sample MAE:   1.0443 m/s
+
+========================================
+
+============================================================
+EVALUATING e14
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2411 m/s
+  RMSE:             3.1688 m/s
+  Bias:             -0.3723 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2904 m/s
+  Std sample MAE:   1.1573 m/s
+
+UY
+  MAE:              1.0276 m/s
+  RMSE:             1.8672 m/s
+  Bias:             -0.0090 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0510 m/s
+  Std sample MAE:   0.6644 m/s
+
+UZ
+  MAE:              1.8593 m/s
+  RMSE:             2.9619 m/s
+  Bias:             -0.5198 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.9208 m/s
+  Std sample MAE:   1.0520 m/s
+
+========================================
+
+============================================================
+EVALUATING e15
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2295 m/s
+  RMSE:             3.1585 m/s
+  Bias:             -0.4080 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2815 m/s
+  Std sample MAE:   1.1671 m/s
+
+UY
+  MAE:              1.0284 m/s
+  RMSE:             1.8678 m/s
+  Bias:             +0.0012 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0520 m/s
+  Std sample MAE:   0.6647 m/s
+
+UZ
+  MAE:              1.8012 m/s
+  RMSE:             2.8966 m/s
+  Bias:             -0.1398 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8557 m/s
+  Std sample MAE:   1.0660 m/s
+
+========================================
+
+============================================================
+EVALUATING e16
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.1925 m/s
+  RMSE:             3.1374 m/s
+  Bias:             +0.0747 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2419 m/s
+  Std sample MAE:   1.2129 m/s
+
+UY
+  MAE:              1.0275 m/s
+  RMSE:             1.8671 m/s
+  Bias:             -0.0080 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0510 m/s
+  Std sample MAE:   0.6645 m/s
+
+UZ
+  MAE:              1.7859 m/s
+  RMSE:             2.8898 m/s
+  Bias:             -0.1647 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8386 m/s
+  Std sample MAE:   1.0698 m/s
+
+========================================
+
+============================================================
+EVALUATING e17
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2533 m/s
+  RMSE:             3.1545 m/s
+  Bias:             -0.5471 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.3030 m/s
+  Std sample MAE:   1.1347 m/s
+
+UY
+  MAE:              1.0277 m/s
+  RMSE:             1.8673 m/s
+  Bias:             -0.0026 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0512 m/s
+  Std sample MAE:   0.6651 m/s
+
+UZ
+  MAE:              1.9000 m/s
+  RMSE:             3.0139 m/s
+  Bias:             -0.6561 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.9691 m/s
+  Std sample MAE:   1.0736 m/s
+
+========================================
+
+============================================================
+EVALUATING e18
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.1961 m/s
+  RMSE:             3.1276 m/s
+  Bias:             -0.2265 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2475 m/s
+  Std sample MAE:   1.1759 m/s
+
+UY
+  MAE:              1.0281 m/s
+  RMSE:             1.8676 m/s
+  Bias:             +0.0129 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0517 m/s
+  Std sample MAE:   0.6650 m/s
+
+UZ
+  MAE:              1.7955 m/s
+  RMSE:             2.8949 m/s
+  Bias:             -0.2650 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8511 m/s
+  Std sample MAE:   1.0449 m/s
+
+========================================
+
+============================================================
+EVALUATING e19
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.1875 m/s
+  RMSE:             3.1338 m/s
+  Bias:             -0.1335 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.2389 m/s
+  Std sample MAE:   1.1960 m/s
+
+UY
+  MAE:              1.0275 m/s
+  RMSE:             1.8673 m/s
+  Bias:             +0.0034 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0511 m/s
+  Std sample MAE:   0.6647 m/s
+
+UZ
+  MAE:              1.8202 m/s
+  RMSE:             2.9457 m/s
+  Bias:             -0.4747 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.8774 m/s
+  Std sample MAE:   1.0510 m/s
+
+========================================
+
+============================================================
+EVALUATING e20
+============================================================
+Using YAML config: /home/phantom/Documents/WindSeer/WindSeer/firebench_B_3to60_output/firebench_B_3to60/params.yaml
+HDF5Dataset: augmentation not present in kwargs, using default value: False
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /home/phantom/Documents/WindSeer/WindSeer/firebench 6m dataset/firebench_val.hdf5 contains 80 samples
+
+========================================
+3-D wind validation results
+========================================
+Validation CFD flows: 80
+Repeats per flow:     1
+Total predictions:    80
+
+UX
+  MAE:              2.2898 m/s
+  RMSE:             3.1805 m/s
+  Bias:             -0.7154 m/s
+  Mean |true|:      14.6233 m/s
+  Mean sample MAE:  2.3432 m/s
+  Std sample MAE:   1.1415 m/s
+
+UY
+  MAE:              1.0271 m/s
+  RMSE:             1.8669 m/s
+  Bias:             +0.0115 m/s
+  Mean |true|:      1.0260 m/s
+  Mean sample MAE:  1.0507 m/s
+  Std sample MAE:   0.6648 m/s
+
+UZ
+  MAE:              1.8413 m/s
+  RMSE:             2.9407 m/s
+  Bias:             -0.3732 m/s
+  Mean |true|:      3.9167 m/s
+  Mean sample MAE:  1.9032 m/s
+  Std sample MAE:   1.0581 m/s
+
+========================================

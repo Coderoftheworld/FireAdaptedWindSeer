@@ -1,7 +1,6 @@
 YS*/
 *~
 *.pyc
-*.log
 *.stl
 *.eMesh
 *.swp
@@ -9,14 +8,12 @@ YS*/
 lsf.o*
 *__pycache__*
 *.tp
-*.npy
-*.npz
 *.tif
-*.hdf5
 *.nc
-*.txt
-*.csv
 *.tar
 *.tiff
-*.sh
 *.egg-info*
+venv/
+.venv/
+.env
+.env.*

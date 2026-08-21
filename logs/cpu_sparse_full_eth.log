@@ -1,0 +1,630 @@
+/home/phantom/Documents/WindSeer/venv/lib/python3.12/site-packages/pyproj/crs/crs.py:143: FutureWarning: '+init=<authority>:<code>' syntax is deprecated. '<authority>:<code>' is the preferred initialization method. When making the change, be mindful of axis order changes: https://pyproj4.github.io/pyproj/stable/gotchas.html#axis-order-changes-in-proj-6
+  in_crs_string = _prepare_from_proj_string(in_crs_string)
+/home/phantom/Documents/WindSeer/venv/lib/python3.12/site-packages/pyproj/crs/crs.py:143: FutureWarning: '+init=<authority>:<code>' syntax is deprecated. '<authority>:<code>' is the preferred initialization method. When making the change, be mindful of axis order changes: https://pyproj4.github.io/pyproj/stable/gotchas.html#axis-order-changes-in-proj-6
+  in_crs_string = _prepare_from_proj_string(in_crs_string)
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+/home/phantom/Documents/WindSeer/venv/lib/python3.12/site-packages/apptools/persistence/state_pickler.py:684: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  result = pickle.loads(junk, encoding="bytes")
+GPy could not get imported, GPR baseline not available
+Using YAML config: configs/cpu_sparse_full_eth.yaml
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /media/phantom/Volume/WindSeer Data/download (2)/658323/train.hdf5 contains 5373 samples
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /media/phantom/Volume/WindSeer Data/download (2)/658323/validation_resampled_32.hdf5 contains 6708 samples
+-----------------------------------------------------------------------------
+INFO: Start training on device cpu
+ 
+Train Settings:
+	Warm start:		 False
+	Learning rate step size: 750
+	Learning rate decay:	 0.25
+	Batchsize:		 1
+	Epochs:			 80
+	Minibatch epoch loss:	 True
+ 
+Loss Settings:
+	Loss weighting fn:	 0
+	Loss component(s):	 ['L2Loss']
+	L2Loss kwargs : {'exclude_terrain': True, 'loss_factor_init': -0.5, 'p': 2}
+ 
+Model Settings:
+	 Model prefix:		 cpu_sparse_full_eth
+	 Model type:		 ModelEDNN3D
+	 Model args:
+		 {'n_x': 32, 'n_y': 32, 'n_z': 32, 'n_downsample_layers': 4, 'n_first_conv_channels': 8, 'channel_multiplier': 2, 'filter_kernel_size': 3, 'interpolation_mode': 'nearest', 'align_corners': False, 'skipping': True, 'use_terrain_mask': True, 'pooling_method': 'striding', 'use_fc_layers': False, 'fc_scaling': 8, 'use_mapping_layer': False, 'potential_flow': False, 'activation_type': 'LeakyReLU', 'activation_args': {'negative_slope': 0.1}, 'verbose': True, 'submodel_type': 'ModelEDNN3D', 'vae': False, 'use_uz_in': False, 'use_sparse_mask': True, 'use_sparse_convolution': False, 'predict_uncertainty': False, 'uncertainty_train_mode': 'alternating', 'logvar_scaling': 10, 'n_stacked': 3, 'pass_full_output': False, 'submodel_terrain_mask': False, 'use_turbulence': False, 'use_pressure': False, 'use_epsilon': False, 'use_nut': False, 'n_epochs': 80, 'grid_size': [16.64444351196289, 16.64444351196289, 11.578947067260742]}
+ 
+Optimizer Settings:
+	 Optimizer type:	 adam
+	 Optimizer args:
+		 {'lr': 3e-05}
+ 
+Dataset Settings:
+	Input channels:	 ['terrain', 'ux', 'uy']
+	Label channels:	 ['ux', 'uy', 'uz']
+	Ux scaling:		 1.0
+	Uy scaling:		 1.0
+	Uz scaling:		 1.0
+	Turbulence scaling:	 1.0
+	Pressure scaling:	 1.0
+	Epsilon scaling:	 1.0
+	Nut scaling:		 1.0
+	Horizontal stride:	 1
+	Vertical stride:	 1
+	Augmentation mode:	 1
+	Augmentation params:	 {'subsampling': True, 'rotating': True}
+-----------------------------------------------------------------------------
+Setup time:  10.431579351425171 s
+[1,  1000] averaged loss: 1.58612
+[1,  2000] averaged loss: 0.75232
+[1,  3000] averaged loss: 0.40260
+[1,  4000] averaged loss: 0.35867
+[1,  5000] averaged loss: 0.55849
+[1] Training time: 866.9 s
+[1] train loss: 0.704532, validation loss: 0.000000, epoch_time: 866.90 s
+[2,  1000] averaged loss: 0.40865
+[2,  2000] averaged loss: 0.43206
+[2,  3000] averaged loss: 0.42187
+[2,  4000] averaged loss: 0.40532
+[2,  5000] averaged loss: 0.40380
+[2] Training time: 783.8 s
+[2] train loss: 0.417149, validation loss: 0.000000, epoch_time: 783.75 s
+[3,  1000] averaged loss: 0.40346
+[3,  2000] averaged loss: 0.45300
+[3,  3000] averaged loss: 0.37153
+[3,  4000] averaged loss: 0.52998
+[3,  5000] averaged loss: 0.41617
+[3] Training time: 748.1 s
+[3] train loss: 0.435071, validation loss: 0.000000, epoch_time: 748.14 s
+[4,  1000] averaged loss: 0.32425
+[4,  2000] averaged loss: 0.52098
+[4,  3000] averaged loss: 0.47151
+[4,  4000] averaged loss: 0.73614
+[4,  5000] averaged loss: 0.60061
+[4] Training time: 731.8 s
+[4] train loss: 0.518834, validation loss: 0.000000, epoch_time: 731.80 s
+[5,  1000] averaged loss: 0.58325
+[5,  2000] averaged loss: 0.78261
+[5,  3000] averaged loss: 0.46260
+[5,  4000] averaged loss: 0.47522
+[5,  5000] averaged loss: 0.64783
+[5] Training time: 728.3 s
+[5] train loss: 0.582867, validation loss: 0.000000, epoch_time: 728.26 s
+[6,  1000] averaged loss: 0.63200
+[6,  2000] averaged loss: 0.37290
+[6,  3000] averaged loss: 0.45493
+[6,  4000] averaged loss: 0.39453
+[6,  5000] averaged loss: 0.55730
+[6] Training time: 729.4 s
+[6] train loss: 0.469848, validation loss: 0.000000, epoch_time: 729.38 s
+[7,  1000] averaged loss: 0.77723
+[7,  2000] averaged loss: 0.64234
+[7,  3000] averaged loss: 0.40591
+[7,  4000] averaged loss: 0.35720
+[7,  5000] averaged loss: 0.49913
+[7] Training time: 727.3 s
+[7] train loss: 0.544934, validation loss: 0.000000, epoch_time: 727.31 s
+[8,  1000] averaged loss: 0.54896
+[8,  2000] averaged loss: 0.29540
+[8,  3000] averaged loss: 0.41264
+[8,  4000] averaged loss: 0.56622
+[8,  5000] averaged loss: 0.61444
+[8] Training time: 727.0 s
+[8] train loss: 0.483015, validation loss: 0.000000, epoch_time: 726.99 s
+[9,  1000] averaged loss: 0.59099
+[9,  2000] averaged loss: 0.30400
+[9,  3000] averaged loss: 0.45412
+[9,  4000] averaged loss: 0.43234
+[9,  5000] averaged loss: 0.44986
+[9] Training time: 727.2 s
+[9] train loss: 0.463526, validation loss: 0.000000, epoch_time: 727.24 s
+[10,  1000] averaged loss: 0.43766
+[10,  2000] averaged loss: 0.43214
+[10,  3000] averaged loss: 0.43951
+[10,  4000] averaged loss: 0.42961
+[10,  5000] averaged loss: 0.64602
+[10] Training time: 727.2 s
+[10] train loss: 0.468238, validation loss: 0.239722, epoch_time: 1156.74 s
+[11,  1000] averaged loss: 0.42078
+[11,  2000] averaged loss: 0.62226
+[11,  3000] averaged loss: 0.36022
+[11,  4000] averaged loss: 0.45832
+[11,  5000] averaged loss: 0.41268
+[11] Training time: 728.1 s
+[11] train loss: 0.458619, validation loss: 0.000000, epoch_time: 728.08 s
+[12,  1000] averaged loss: 0.44902
+[12,  2000] averaged loss: 0.36280
+[12,  3000] averaged loss: 0.54847
+[12,  4000] averaged loss: 0.45474
+[12,  5000] averaged loss: 0.56556
+[12] Training time: 725.2 s
+[12] train loss: 0.461609, validation loss: 0.000000, epoch_time: 725.22 s
+[13,  1000] averaged loss: 0.35142
+[13,  2000] averaged loss: 0.42848
+[13,  3000] averaged loss: 0.60443
+[13,  4000] averaged loss: 0.31969
+[13,  5000] averaged loss: 0.40722
+[13] Training time: 726.6 s
+[13] train loss: 0.408578, validation loss: 0.000000, epoch_time: 726.65 s
+[14,  1000] averaged loss: 0.48828
+[14,  2000] averaged loss: 0.48960
+[14,  3000] averaged loss: 0.27520
+[14,  4000] averaged loss: 0.75304
+[14,  5000] averaged loss: 0.36159
+[14] Training time: 725.6 s
+[14] train loss: 0.456826, validation loss: 0.000000, epoch_time: 725.59 s
+[15,  1000] averaged loss: 0.25089
+[15,  2000] averaged loss: 0.28805
+[15,  3000] averaged loss: 0.33424
+[15,  4000] averaged loss: 0.57678
+[15,  5000] averaged loss: 0.40413
+[15] Training time: 725.4 s
+[15] train loss: 0.369235, validation loss: 0.000000, epoch_time: 725.39 s
+[16,  1000] averaged loss: 0.47257
+[16,  2000] averaged loss: 0.38565
+[16,  3000] averaged loss: 0.57708
+[16,  4000] averaged loss: 0.56604
+[16,  5000] averaged loss: 0.38539
+[16] Training time: 727.2 s
+[16] train loss: 0.461391, validation loss: 0.000000, epoch_time: 727.15 s
+[17,  1000] averaged loss: 0.65105
+[17,  2000] averaged loss: 0.50016
+[17,  3000] averaged loss: 0.50575
+[17,  4000] averaged loss: 0.31782
+[17,  5000] averaged loss: 0.37236
+[17] Training time: 725.4 s
+[17] train loss: 0.465138, validation loss: 0.000000, epoch_time: 725.44 s
+[18,  1000] averaged loss: 0.40373
+[18,  2000] averaged loss: 0.41098
+[18,  3000] averaged loss: 0.35823
+[18,  4000] averaged loss: 0.33814
+[18,  5000] averaged loss: 0.56680
+[18] Training time: 725.0 s
+[18] train loss: 0.409968, validation loss: 0.000000, epoch_time: 725.04 s
+[19,  1000] averaged loss: 0.61241
+[19,  2000] averaged loss: 0.52772
+[19,  3000] averaged loss: 0.47469
+[19,  4000] averaged loss: 0.27055
+[19,  5000] averaged loss: 0.52331
+[19] Training time: 726.6 s
+[19] train loss: 0.465082, validation loss: 0.000000, epoch_time: 726.61 s
+[20,  1000] averaged loss: 0.36331
+[20,  2000] averaged loss: 0.45752
+[20,  3000] averaged loss: 0.45140
+[20,  4000] averaged loss: 0.41219
+[20,  5000] averaged loss: 0.53114
+[20] Training time: 725.4 s
+[20] train loss: 0.431904, validation loss: 0.226987, epoch_time: 1157.62 s
+[21,  1000] averaged loss: 0.55080
+[21,  2000] averaged loss: 0.35183
+[21,  3000] averaged loss: 0.48169
+[21,  4000] averaged loss: 0.46963
+[21,  5000] averaged loss: 0.33889
+[21] Training time: 727.1 s
+[21] train loss: 0.443393, validation loss: 0.000000, epoch_time: 727.14 s
+[22,  1000] averaged loss: 0.49056
+[22,  2000] averaged loss: 0.35534
+[22,  3000] averaged loss: 0.43352
+[22,  4000] averaged loss: 0.38365
+[22,  5000] averaged loss: 0.49706
+[22] Training time: 723.0 s
+[22] train loss: 0.448781, validation loss: 0.000000, epoch_time: 723.02 s
+[23,  1000] averaged loss: 0.50847
+[23,  2000] averaged loss: 0.60978
+[23,  3000] averaged loss: 0.36744
+[23,  4000] averaged loss: 0.41628
+[23,  5000] averaged loss: 0.35217
+[23] Training time: 792.3 s
+[23] train loss: 0.442688, validation loss: 0.000000, epoch_time: 792.25 s
+[24,  1000] averaged loss: 0.36044
+[24,  2000] averaged loss: 0.62794
+[24,  3000] averaged loss: 0.28565
+[24,  4000] averaged loss: 0.76122
+[24,  5000] averaged loss: 0.30204
+[24] Training time: 735.2 s
+[24] train loss: 0.450901, validation loss: 0.000000, epoch_time: 735.23 s
+[25,  1000] averaged loss: 0.30757
+[25,  2000] averaged loss: 0.51036
+[25,  3000] averaged loss: 0.37453
+[25,  4000] averaged loss: 0.47193
+[25,  5000] averaged loss: 0.38068
+[25] Training time: 732.4 s
+[25] train loss: 0.412169, validation loss: 0.000000, epoch_time: 732.38 s
+[26,  1000] averaged loss: 0.45798
+[26,  2000] averaged loss: 0.26291
+[26,  3000] averaged loss: 0.35586
+[26,  4000] averaged loss: 0.65219
+[26,  5000] averaged loss: 0.44707
+[26] Training time: 726.2 s
+[26] train loss: 0.422849, validation loss: 0.000000, epoch_time: 726.24 s
+[27,  1000] averaged loss: 0.26731
+[27,  2000] averaged loss: 0.40104
+[27,  3000] averaged loss: 0.51570
+[27,  4000] averaged loss: 0.46016
+[27,  5000] averaged loss: 0.43269
+[27] Training time: 727.2 s
+[27] train loss: 0.404783, validation loss: 0.000000, epoch_time: 727.17 s
+[28,  1000] averaged loss: 0.41296
+[28,  2000] averaged loss: 0.50580
+[28,  3000] averaged loss: 0.28277
+[28,  4000] averaged loss: 0.44876
+[28,  5000] averaged loss: 0.56199
+[28] Training time: 729.1 s
+[28] train loss: 0.434448, validation loss: 0.000000, epoch_time: 729.06 s
+[29,  1000] averaged loss: 0.37329
+[29,  2000] averaged loss: 0.28431
+[29,  3000] averaged loss: 0.32783
+[29,  4000] averaged loss: 0.52425
+[29,  5000] averaged loss: 0.28187
+[29] Training time: 728.2 s
+[29] train loss: 0.390491, validation loss: 0.000000, epoch_time: 728.19 s
+[30,  1000] averaged loss: 1.11133
+[30,  2000] averaged loss: 0.59996
+[30,  3000] averaged loss: 0.35202
+[30,  4000] averaged loss: 0.41342
+[30,  5000] averaged loss: 0.34847
+[30] Training time: 725.1 s
+[30] train loss: 0.553867, validation loss: 0.228022, epoch_time: 1153.18 s
+[31,  1000] averaged loss: 0.40348
+[31,  2000] averaged loss: 0.21675
+[31,  3000] averaged loss: 0.24008
+[31,  4000] averaged loss: 0.37308
+[31,  5000] averaged loss: 0.41766
+[31] Training time: 724.2 s
+[31] train loss: 0.335801, validation loss: 0.000000, epoch_time: 724.21 s
+[32,  1000] averaged loss: 0.32897
+[32,  2000] averaged loss: 0.61584
+[32,  3000] averaged loss: 0.42428
+[32,  4000] averaged loss: 0.29161
+[32,  5000] averaged loss: 0.36802
+[32] Training time: 724.4 s
+[32] train loss: 0.393573, validation loss: 0.000000, epoch_time: 724.41 s
+[33,  1000] averaged loss: 0.55477
+[33,  2000] averaged loss: 0.41403
+[33,  3000] averaged loss: 0.32859
+[33,  4000] averaged loss: 0.33976
+[33,  5000] averaged loss: 0.38030
+[33] Training time: 722.6 s
+[33] train loss: 0.392234, validation loss: 0.000000, epoch_time: 722.60 s
+[34,  1000] averaged loss: 0.30731
+[34,  2000] averaged loss: 0.47672
+[34,  3000] averaged loss: 0.41149
+[34,  4000] averaged loss: 0.44178
+[34,  5000] averaged loss: 0.45555
+[34] Training time: 722.7 s
+[34] train loss: 0.412753, validation loss: 0.000000, epoch_time: 722.66 s
+[35,  1000] averaged loss: 0.42237
+[35,  2000] averaged loss: 0.33677
+[35,  3000] averaged loss: 0.23470
+[35,  4000] averaged loss: 0.29358
+[35,  5000] averaged loss: 0.41531
+[35] Training time: 722.6 s
+[35] train loss: 0.339919, validation loss: 0.000000, epoch_time: 722.64 s
+[36,  1000] averaged loss: 0.29615
+[36,  2000] averaged loss: 0.43582
+[36,  3000] averaged loss: 0.35337
+[36,  4000] averaged loss: 0.40640
+[36,  5000] averaged loss: 0.54564
+[36] Training time: 721.7 s
+[36] train loss: 0.467428, validation loss: 0.000000, epoch_time: 721.67 s
+[37,  1000] averaged loss: 0.33525
+[37,  2000] averaged loss: 0.24892
+[37,  3000] averaged loss: 0.49943
+[37,  4000] averaged loss: 0.25506
+[37,  5000] averaged loss: 0.61384
+[37] Training time: 722.9 s
+[37] train loss: 0.407454, validation loss: 0.000000, epoch_time: 722.92 s
+[38,  1000] averaged loss: 0.37958
+[38,  2000] averaged loss: 0.22929
+[38,  3000] averaged loss: 0.37408
+[38,  4000] averaged loss: 0.61284
+[38,  5000] averaged loss: 0.41307
+[38] Training time: 721.8 s
+[38] train loss: 0.402518, validation loss: 0.000000, epoch_time: 721.80 s
+[39,  1000] averaged loss: 0.36983
+[39,  2000] averaged loss: 0.32298
+[39,  3000] averaged loss: 0.40641
+[39,  4000] averaged loss: 0.29227
+[39,  5000] averaged loss: 0.36219
+[39] Training time: 739.6 s
+[39] train loss: 0.338174, validation loss: 0.000000, epoch_time: 739.59 s
+[40,  1000] averaged loss: 0.25795
+[40,  2000] averaged loss: 0.35669
+[40,  3000] averaged loss: 0.40652
+[40,  4000] averaged loss: 0.47937
+[40,  5000] averaged loss: 0.51285
+[40] Training time: 725.2 s
+[40] train loss: 0.421613, validation loss: 0.307909, epoch_time: 1154.64 s
+[41,  1000] averaged loss: 0.74078
+[41,  2000] averaged loss: 0.32712
+[41,  3000] averaged loss: 0.24309
+[41,  4000] averaged loss: 0.38824
+[41,  5000] averaged loss: 0.23055
+[41] Training time: 726.7 s
+[41] train loss: 0.387930, validation loss: 0.000000, epoch_time: 726.73 s
+[42,  1000] averaged loss: 0.51038
+[42,  2000] averaged loss: 0.47434
+[42,  3000] averaged loss: 0.52777
+[42,  4000] averaged loss: 0.43853
+[42,  5000] averaged loss: 0.25759
+[42] Training time: 723.1 s
+[42] train loss: 0.480984, validation loss: 0.000000, epoch_time: 723.06 s
+[43,  1000] averaged loss: 0.38125
+[43,  2000] averaged loss: 0.35891
+[43,  3000] averaged loss: 0.56604
+[43,  4000] averaged loss: 0.40415
+[43,  5000] averaged loss: 0.32571
+[43] Training time: 721.4 s
+[43] train loss: 0.407467, validation loss: 0.000000, epoch_time: 721.45 s
+[44,  1000] averaged loss: 0.35272
+[44,  2000] averaged loss: 0.40123
+[44,  3000] averaged loss: 0.48510
+[44,  4000] averaged loss: 0.48795
+[44,  5000] averaged loss: 0.73529
+[44] Training time: 723.1 s
+[44] train loss: 0.479799, validation loss: 0.000000, epoch_time: 723.12 s
+[45,  1000] averaged loss: 0.28379
+[45,  2000] averaged loss: 0.32904
+[45,  3000] averaged loss: 0.58914
+[45,  4000] averaged loss: 0.32711
+[45,  5000] averaged loss: 0.40192
+[45] Training time: 720.8 s
+[45] train loss: 0.388007, validation loss: 0.000000, epoch_time: 720.79 s
+[46,  1000] averaged loss: 0.27913
+[46,  2000] averaged loss: 0.53493
+[46,  3000] averaged loss: 0.44993
+[46,  4000] averaged loss: 0.49253
+[46,  5000] averaged loss: 0.34773
+[46] Training time: 720.0 s
+[46] train loss: 0.419416, validation loss: 0.000000, epoch_time: 720.01 s
+[47,  1000] averaged loss: 0.28977
+[47,  2000] averaged loss: 0.60825
+[47,  3000] averaged loss: 0.25742
+[47,  4000] averaged loss: 0.23233
+[47,  5000] averaged loss: 0.49541
+[47] Training time: 720.4 s
+[47] train loss: 0.373493, validation loss: 0.000000, epoch_time: 720.43 s
+[48,  1000] averaged loss: 0.47655
+[48,  2000] averaged loss: 0.64873
+[48,  3000] averaged loss: 0.39739
+[48,  4000] averaged loss: 0.45679
+[48,  5000] averaged loss: 0.46684
+[48] Training time: 721.2 s
+[48] train loss: 0.475032, validation loss: 0.000000, epoch_time: 721.17 s
+[49,  1000] averaged loss: 0.42091
+[49,  2000] averaged loss: 0.32555
+[49,  3000] averaged loss: 0.56046
+[49,  4000] averaged loss: 0.30951
+[49,  5000] averaged loss: 0.35051
+[49] Training time: 720.9 s
+[49] train loss: 0.397562, validation loss: 0.000000, epoch_time: 720.89 s
+[50,  1000] averaged loss: 0.62118
+[50,  2000] averaged loss: 0.28770
+[50,  3000] averaged loss: 0.44056
+[50,  4000] averaged loss: 0.53115
+[50,  5000] averaged loss: 0.58846
+[50] Training time: 720.6 s
+[50] train loss: 0.487393, validation loss: 0.208244, epoch_time: 1157.60 s
+[51,  1000] averaged loss: 0.20388
+[51,  2000] averaged loss: 0.39293
+[51,  3000] averaged loss: 0.43386
+[51,  4000] averaged loss: 0.37820
+[51,  5000] averaged loss: 0.47146
+[51] Training time: 721.6 s
+[51] train loss: 0.372743, validation loss: 0.000000, epoch_time: 721.62 s
+[52,  1000] averaged loss: 0.52661
+[52,  2000] averaged loss: 0.43841
+[52,  3000] averaged loss: 0.39399
+[52,  4000] averaged loss: 0.53295
+[52,  5000] averaged loss: 0.67947
+[52] Training time: 721.8 s
+[52] train loss: 0.514595, validation loss: 0.000000, epoch_time: 721.84 s
+[53,  1000] averaged loss: 0.37706
+[53,  2000] averaged loss: 0.38169
+[53,  3000] averaged loss: 0.47244
+[53,  4000] averaged loss: 0.50084
+[53,  5000] averaged loss: 0.59393
+[53] Training time: 721.0 s
+[53] train loss: 0.468298, validation loss: 0.000000, epoch_time: 721.01 s
+[54,  1000] averaged loss: 0.37477
+[54,  2000] averaged loss: 0.43607
+[54,  3000] averaged loss: 0.82982
+[54,  4000] averaged loss: 0.39219
+[54,  5000] averaged loss: 0.41519
+[54] Training time: 720.4 s
+[54] train loss: 0.482785, validation loss: 0.000000, epoch_time: 720.45 s
+[55,  1000] averaged loss: 0.43860
+[55,  2000] averaged loss: 0.30762
+[55,  3000] averaged loss: 0.38263
+[55,  4000] averaged loss: 0.49416
+[55,  5000] averaged loss: 0.36016
+[55] Training time: 719.6 s
+[55] train loss: 0.404933, validation loss: 0.000000, epoch_time: 719.57 s
+[56,  1000] averaged loss: 0.38112
+[56,  2000] averaged loss: 0.63248
+[56,  3000] averaged loss: 0.40179
+[56,  4000] averaged loss: 0.33924
+[56,  5000] averaged loss: 0.49886
+[56] Training time: 719.1 s
+[56] train loss: 0.431241, validation loss: 0.000000, epoch_time: 719.06 s
+[57,  1000] averaged loss: 0.46565
+[57,  2000] averaged loss: 0.36713
+[57,  3000] averaged loss: 0.40743
+[57,  4000] averaged loss: 0.42358
+[57,  5000] averaged loss: 0.80461
+[57] Training time: 718.7 s
+[57] train loss: 0.488730, validation loss: 0.000000, epoch_time: 718.73 s
+[58,  1000] averaged loss: 0.27349
+[58,  2000] averaged loss: 0.55236
+[58,  3000] averaged loss: 0.32163
+[58,  4000] averaged loss: 0.39183
+[58,  5000] averaged loss: 0.98195
+[58] Training time: 718.6 s
+[58] train loss: 0.485400, validation loss: 0.000000, epoch_time: 718.59 s
+[59,  1000] averaged loss: 0.45776
+[59,  2000] averaged loss: 0.31126
+[59,  3000] averaged loss: 0.41098
+[59,  4000] averaged loss: 0.32112
+[59,  5000] averaged loss: 0.76030
+[59] Training time: 719.2 s
+[59] train loss: 0.468608, validation loss: 0.000000, epoch_time: 719.22 s
+[60,  1000] averaged loss: 0.41604
+[60,  2000] averaged loss: 0.48795
+[60,  3000] averaged loss: 0.51222
+[60,  4000] averaged loss: 0.37000
+[60,  5000] averaged loss: 0.33681
+[60] Training time: 718.5 s
+[60] train loss: 0.419962, validation loss: 0.224879, epoch_time: 1148.53 s
+[61,  1000] averaged loss: 0.31449
+[61,  2000] averaged loss: 0.50483
+[61,  3000] averaged loss: 0.38416
+[61,  4000] averaged loss: 0.43090
+[61,  5000] averaged loss: 0.28064
+[61] Training time: 723.5 s
+[61] train loss: 0.408573, validation loss: 0.000000, epoch_time: 723.51 s
+[62,  1000] averaged loss: 0.60358
+[62,  2000] averaged loss: 0.27101
+[62,  3000] averaged loss: 0.41486
+[62,  4000] averaged loss: 0.50000
+[62,  5000] averaged loss: 0.40191
+[62] Training time: 719.5 s
+[62] train loss: 0.465568, validation loss: 0.000000, epoch_time: 719.49 s
+[63,  1000] averaged loss: 0.30687
+[63,  2000] averaged loss: 0.39614
+[63,  3000] averaged loss: 0.52596
+[63,  4000] averaged loss: 0.44349
+[63,  5000] averaged loss: 0.43430
+[63] Training time: 723.6 s
+[63] train loss: 0.440176, validation loss: 0.000000, epoch_time: 723.56 s
+[64,  1000] averaged loss: 0.32727
+[64,  2000] averaged loss: 0.33293
+[64,  3000] averaged loss: 0.63510
+[64,  4000] averaged loss: 0.68465
+[64,  5000] averaged loss: 0.55735
+[64] Training time: 719.5 s
+[64] train loss: 0.506473, validation loss: 0.000000, epoch_time: 719.48 s
+[65,  1000] averaged loss: 0.48643
+[65,  2000] averaged loss: 0.65737
+[65,  3000] averaged loss: 0.52050
+[65,  4000] averaged loss: 0.45643
+[65,  5000] averaged loss: 0.48691
+[65] Training time: 720.5 s
+[65] train loss: 0.504435, validation loss: 0.000000, epoch_time: 720.53 s
+[66,  1000] averaged loss: 0.54124
+[66,  2000] averaged loss: 0.62534
+[66,  3000] averaged loss: 0.36475
+[66,  4000] averaged loss: 0.37098
+[66,  5000] averaged loss: 0.55635
+[66] Training time: 721.2 s
+[66] train loss: 0.507561, validation loss: 0.000000, epoch_time: 721.20 s
+[67,  1000] averaged loss: 0.40784
+[67,  2000] averaged loss: 0.36355
+[67,  3000] averaged loss: 0.54990
+[67,  4000] averaged loss: 0.31225
+[67,  5000] averaged loss: 0.33486
+[67] Training time: 719.4 s
+[67] train loss: 0.390346, validation loss: 0.000000, epoch_time: 719.38 s
+[68,  1000] averaged loss: 0.34880
+[68,  2000] averaged loss: 0.42696
+[68,  3000] averaged loss: 0.42097
+[68,  4000] averaged loss: 0.54416
+[68,  5000] averaged loss: 0.37568
+[68] Training time: 723.9 s
+[68] train loss: 0.410118, validation loss: 0.000000, epoch_time: 723.86 s
+[69,  1000] averaged loss: 0.33714
+[69,  2000] averaged loss: 0.65288
+[69,  3000] averaged loss: 0.34913
+[69,  4000] averaged loss: 0.64593
+[69,  5000] averaged loss: 0.37540
+[69] Training time: 720.4 s
+[69] train loss: 0.479361, validation loss: 0.000000, epoch_time: 720.37 s
+[70,  1000] averaged loss: 0.32593
+[70,  2000] averaged loss: 0.30582
+[70,  3000] averaged loss: 0.54628
+[70,  4000] averaged loss: 0.34510
+[70,  5000] averaged loss: 0.32394
+[70] Training time: 720.4 s
+[70] train loss: 0.378308, validation loss: 0.256757, epoch_time: 1157.81 s
+[71,  1000] averaged loss: 0.25224
+[71,  2000] averaged loss: 0.45769
+[71,  3000] averaged loss: 0.40286
+[71,  4000] averaged loss: 0.72806
+[71,  5000] averaged loss: 0.31873
+[71] Training time: 722.2 s
+[71] train loss: 0.418760, validation loss: 0.000000, epoch_time: 722.20 s
+[72,  1000] averaged loss: 0.28464
+[72,  2000] averaged loss: 0.31396
+[72,  3000] averaged loss: 2.61279
+[72,  4000] averaged loss: 0.35271
+[72,  5000] averaged loss: 0.19106
+[72] Training time: 722.5 s
+[72] train loss: 0.725991, validation loss: 0.000000, epoch_time: 722.52 s
+[73,  1000] averaged loss: 0.36786
+[73,  2000] averaged loss: 0.34668
+[73,  3000] averaged loss: 0.58826
+[73,  4000] averaged loss: 0.27603
+[73,  5000] averaged loss: 0.55516
+[73] Training time: 722.2 s
+[73] train loss: 0.423993, validation loss: 0.000000, epoch_time: 722.23 s
+[74,  1000] averaged loss: 0.52409
+[74,  2000] averaged loss: 0.42621
+[74,  3000] averaged loss: 0.74890
+[74,  4000] averaged loss: 0.47977
+[74,  5000] averaged loss: 0.27183
+[74] Training time: 718.8 s
+[74] train loss: 0.489157, validation loss: 0.000000, epoch_time: 718.80 s
+[75,  1000] averaged loss: 0.48457
+[75,  2000] averaged loss: 0.37405
+[75,  3000] averaged loss: 0.42121
+[75,  4000] averaged loss: 0.60027
+[75,  5000] averaged loss: 0.26869
+[75] Training time: 719.3 s
+[75] train loss: 0.415265, validation loss: 0.000000, epoch_time: 719.27 s
+[76,  1000] averaged loss: 0.47207
+[76,  2000] averaged loss: 0.36441
+[76,  3000] averaged loss: 0.24469
+[76,  4000] averaged loss: 0.50290
+[76,  5000] averaged loss: 0.39679
+[76] Training time: 719.1 s
+[76] train loss: 0.388172, validation loss: 0.000000, epoch_time: 719.14 s
+[77,  1000] averaged loss: 0.22252
+[77,  2000] averaged loss: 0.31410
+[77,  3000] averaged loss: 0.47500
+[77,  4000] averaged loss: 0.40262
+[77,  5000] averaged loss: 0.30778
+[77] Training time: 719.9 s
+[77] train loss: 0.357331, validation loss: 0.000000, epoch_time: 719.93 s
+[78,  1000] averaged loss: 0.65525
+[78,  2000] averaged loss: 0.49935
+[78,  3000] averaged loss: 0.44351
+[78,  4000] averaged loss: 0.33594
+[78,  5000] averaged loss: 0.35395
+[78] Training time: 719.1 s
+[78] train loss: 0.455007, validation loss: 0.000000, epoch_time: 719.10 s
+[79,  1000] averaged loss: 0.34705
+[79,  2000] averaged loss: 0.69192
+[79,  3000] averaged loss: 0.57587
+[79,  4000] averaged loss: 0.27064
+[79,  5000] averaged loss: 0.27023
+[79] Training time: 722.7 s
+[79] train loss: 0.470127, validation loss: 0.000000, epoch_time: 722.66 s
+[80,  1000] averaged loss: 0.42937
+[80,  2000] averaged loss: 0.38278
+[80,  3000] averaged loss: 0.46971
+[80,  4000] averaged loss: 0.40411
+[80,  5000] averaged loss: 0.37128
+[80] Training time: 719.1 s
+[80] train loss: 0.401095, validation loss: 0.261133, epoch_time: 1153.64 s
+INFO: Finished training in 61647.232372283936 seconds
+-------------------------------------------------
+HDF5 Dataset sparse mask statistics
+	minimum number of cells: 1
+	maximum number of cells: 79
+	average number of cells: 37.276575004653886
+	number of mask created:  429840
+-------------------------------------------------
+
+real	1027m46.012s
+user	2880m30.761s
+sys	200m48.628s

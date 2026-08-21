@@ -1,0 +1,2070 @@
+/home/phantom/Documents/WindSeer/venv/lib/python3.12/site-packages/pyproj/crs/crs.py:143: FutureWarning: '+init=<authority>:<code>' syntax is deprecated. '<authority>:<code>' is the preferred initialization method. When making the change, be mindful of axis order changes: https://pyproj4.github.io/pyproj/stable/gotchas.html#axis-order-changes-in-proj-6
+  in_crs_string = _prepare_from_proj_string(in_crs_string)
+/home/phantom/Documents/WindSeer/venv/lib/python3.12/site-packages/pyproj/crs/crs.py:143: FutureWarning: '+init=<authority>:<code>' syntax is deprecated. '<authority>:<code>' is the preferred initialization method. When making the change, be mindful of axis order changes: https://pyproj4.github.io/pyproj/stable/gotchas.html#axis-order-changes-in-proj-6
+  in_crs_string = _prepare_from_proj_string(in_crs_string)
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+/home/phantom/Documents/WindSeer/venv/lib/python3.12/site-packages/apptools/persistence/state_pickler.py:684: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  result = pickle.loads(junk, encoding="bytes")
+GPy could not get imported, GPR baseline not available
+Using YAML config: configs/cpu_sparse_meanfill_papertraj_5.yaml
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /media/phantom/Volume/WindSeer Data/medium500/overfit_5.hdf5 contains 5 samples
+HDF5Dataset: return_grid_size not present in kwargs, using default value: False
+HDF5Dataset: use_system_random not present in kwargs, using default value: False
+HDF5Dataset: /media/phantom/Volume/WindSeer Data/medium500/overfit_5.hdf5 contains 5 samples
+-----------------------------------------------------------------------------
+INFO: Start training on device cpu
+ 
+Train Settings:
+	Warm start:		 False
+	Learning rate step size: 750
+	Learning rate decay:	 0.25
+	Batchsize:		 1
+	Epochs:			 1000
+	Minibatch epoch loss:	 True
+ 
+Loss Settings:
+	Loss weighting fn:	 0
+	Loss component(s):	 ['L2Loss']
+	L2Loss kwargs : {'exclude_terrain': True, 'loss_factor_init': -0.5, 'p': 2}
+ 
+Model Settings:
+	 Model prefix:		 cpu_sparse_overfit
+	 Model type:		 ModelEDNN3D
+	 Model args:
+		 {'n_x': 32, 'n_y': 32, 'n_z': 32, 'n_downsample_layers': 4, 'n_first_conv_channels': 8, 'channel_multiplier': 2, 'filter_kernel_size': 3, 'interpolation_mode': 'nearest', 'align_corners': False, 'skipping': True, 'use_terrain_mask': True, 'pooling_method': 'striding', 'use_fc_layers': False, 'fc_scaling': 8, 'use_mapping_layer': False, 'potential_flow': False, 'activation_type': 'LeakyReLU', 'activation_args': {'negative_slope': 0.1}, 'verbose': True, 'submodel_type': 'ModelEDNN3D', 'vae': False, 'use_uz_in': False, 'use_sparse_mask': True, 'use_sparse_convolution': False, 'predict_uncertainty': False, 'uncertainty_train_mode': 'alternating', 'logvar_scaling': 10, 'n_stacked': 3, 'pass_full_output': False, 'submodel_terrain_mask': False, 'use_turbulence': False, 'use_pressure': False, 'use_epsilon': False, 'use_nut': False, 'n_epochs': 1000, 'grid_size': [16.64444351196289, 16.64444351196289, 11.578947067260742]}
+ 
+Optimizer Settings:
+	 Optimizer type:	 adam
+	 Optimizer args:
+		 {'lr': 0.0001}
+ 
+Dataset Settings:
+	Input channels:	 ['terrain', 'ux', 'uy']
+	Label channels:	 ['ux', 'uy', 'uz']
+	Ux scaling:		 1.0
+	Uy scaling:		 1.0
+	Uz scaling:		 1.0
+	Turbulence scaling:	 1.0
+	Pressure scaling:	 1.0
+	Epsilon scaling:	 1.0
+	Nut scaling:		 1.0
+	Horizontal stride:	 1
+	Vertical stride:	 1
+	Augmentation mode:	 1
+	Augmentation params:	 {'subsampling': True, 'rotating': True}
+-----------------------------------------------------------------------------
+Setup time:  1.1126625537872314 s
+[1] Training time: 0.4 s
+[1] train loss: 0.514991, validation loss: 0.482442, epoch_time: 0.61 s
+[2] Training time: 0.3 s
+[2] train loss: 0.474911, validation loss: 0.450764, epoch_time: 0.52 s
+[3] Training time: 0.4 s
+[3] train loss: 0.450583, validation loss: 0.423360, epoch_time: 0.63 s
+[4] Training time: 0.3 s
+[4] train loss: 0.424496, validation loss: 0.412679, epoch_time: 0.57 s
+[5] Training time: 0.3 s
+[5] train loss: 0.410729, validation loss: 0.405588, epoch_time: 0.52 s
+[6] Training time: 0.3 s
+[6] train loss: 0.400950, validation loss: 0.391493, epoch_time: 0.54 s
+[7] Training time: 0.4 s
+[7] train loss: 0.388601, validation loss: 0.364583, epoch_time: 0.61 s
+[8] Training time: 0.3 s
+[8] train loss: 0.365298, validation loss: 0.322243, epoch_time: 0.54 s
+[9] Training time: 0.3 s
+[9] train loss: 0.295067, validation loss: 0.197619, epoch_time: 0.54 s
+[10] Training time: 0.4 s
+[10] train loss: 0.243022, validation loss: 0.147190, epoch_time: 0.61 s
+[11] Training time: 0.3 s
+[11] train loss: 0.214627, validation loss: 0.320302, epoch_time: 0.52 s
+[12] Training time: 0.3 s
+[12] train loss: 1.067371, validation loss: 0.196072, epoch_time: 0.55 s
+[13] Training time: 0.4 s
+[13] train loss: 0.173141, validation loss: 0.295561, epoch_time: 0.57 s
+[14] Training time: 0.3 s
+[14] train loss: 0.473863, validation loss: 0.327080, epoch_time: 0.54 s
+[15] Training time: 0.3 s
+[15] train loss: 0.480027, validation loss: 0.394751, epoch_time: 0.59 s
+[16] Training time: 0.3 s
+[16] train loss: 0.369423, validation loss: 0.382924, epoch_time: 0.50 s
+[17] Training time: 0.4 s
+[17] train loss: 0.389639, validation loss: 0.372937, epoch_time: 0.53 s
+[18] Training time: 0.3 s
+[18] train loss: 0.355825, validation loss: 0.354668, epoch_time: 0.53 s
+[19] Training time: 0.3 s
+[19] train loss: 0.345443, validation loss: 0.333314, epoch_time: 0.56 s
+[20] Training time: 0.4 s
+[20] train loss: 0.332605, validation loss: 0.310110, epoch_time: 0.61 s
+[21] Training time: 0.3 s
+[21] train loss: 0.312279, validation loss: 0.296595, epoch_time: 0.56 s
+[22] Training time: 0.3 s
+[22] train loss: 0.290282, validation loss: 0.269594, epoch_time: 0.57 s
+[23] Training time: 0.3 s
+[23] train loss: 0.257107, validation loss: 0.243172, epoch_time: 0.59 s
+[24] Training time: 0.3 s
+[24] train loss: 0.222736, validation loss: 0.192674, epoch_time: 0.60 s
+[25] Training time: 0.4 s
+[25] train loss: 0.177627, validation loss: 0.138819, epoch_time: 0.58 s
+[26] Training time: 0.4 s
+[26] train loss: 0.164502, validation loss: 0.134107, epoch_time: 0.61 s
+[27] Training time: 0.4 s
+[27] train loss: 0.148188, validation loss: 0.143752, epoch_time: 0.62 s
+[28] Training time: 0.3 s
+[28] train loss: 0.151423, validation loss: 0.125447, epoch_time: 0.62 s
+[29] Training time: 0.3 s
+[29] train loss: 0.135477, validation loss: 0.126115, epoch_time: 0.56 s
+[30] Training time: 0.3 s
+[30] train loss: 0.137218, validation loss: 0.122444, epoch_time: 0.55 s
+[31] Training time: 0.3 s
+[31] train loss: 0.125543, validation loss: 0.129575, epoch_time: 0.55 s
+[32] Training time: 0.3 s
+[32] train loss: 0.145847, validation loss: 0.133779, epoch_time: 0.55 s
+[33] Training time: 0.3 s
+[33] train loss: 0.134441, validation loss: 0.163850, epoch_time: 0.57 s
+[34] Training time: 0.3 s
+[34] train loss: 0.170843, validation loss: 0.147300, epoch_time: 0.51 s
+[35] Training time: 0.3 s
+[35] train loss: 0.187074, validation loss: 0.173798, epoch_time: 0.52 s
+[36] Training time: 0.3 s
+[36] train loss: 0.157922, validation loss: 0.138303, epoch_time: 0.59 s
+[37] Training time: 0.4 s
+[37] train loss: 0.162584, validation loss: 0.158198, epoch_time: 0.58 s
+[38] Training time: 0.4 s
+[38] train loss: 0.173893, validation loss: 0.136038, epoch_time: 0.60 s
+[39] Training time: 0.3 s
+[39] train loss: 0.142748, validation loss: 0.129463, epoch_time: 0.53 s
+[40] Training time: 0.3 s
+[40] train loss: 0.141104, validation loss: 0.131435, epoch_time: 0.57 s
+[41] Training time: 0.3 s
+[41] train loss: 0.131596, validation loss: 0.131425, epoch_time: 0.53 s
+[42] Training time: 0.4 s
+[42] train loss: 0.136143, validation loss: 0.125476, epoch_time: 0.64 s
+[43] Training time: 0.3 s
+[43] train loss: 0.132900, validation loss: 0.125586, epoch_time: 0.54 s
+[44] Training time: 0.4 s
+[44] train loss: 0.126205, validation loss: 0.124281, epoch_time: 0.59 s
+[45] Training time: 0.3 s
+[45] train loss: 0.130235, validation loss: 0.123079, epoch_time: 0.60 s
+[46] Training time: 0.3 s
+[46] train loss: 0.136683, validation loss: 0.130922, epoch_time: 0.48 s
+[47] Training time: 0.3 s
+[47] train loss: 0.138056, validation loss: 0.133161, epoch_time: 0.56 s
+[48] Training time: 0.3 s
+[48] train loss: 0.131830, validation loss: 0.142820, epoch_time: 0.53 s
+[49] Training time: 0.3 s
+[49] train loss: 0.160623, validation loss: 0.141916, epoch_time: 0.54 s
+[50] Training time: 0.3 s
+[50] train loss: 0.127825, validation loss: 0.131493, epoch_time: 0.54 s
+[51] Training time: 0.3 s
+[51] train loss: 0.130264, validation loss: 0.135891, epoch_time: 0.51 s
+[52] Training time: 0.3 s
+[52] train loss: 0.149115, validation loss: 0.127850, epoch_time: 0.53 s
+[53] Training time: 0.3 s
+[53] train loss: 0.135464, validation loss: 0.133621, epoch_time: 0.56 s
+[54] Training time: 0.3 s
+[54] train loss: 0.154219, validation loss: 0.145365, epoch_time: 0.57 s
+[55] Training time: 0.4 s
+[55] train loss: 0.154999, validation loss: 0.126215, epoch_time: 0.60 s
+[56] Training time: 0.3 s
+[56] train loss: 0.134977, validation loss: 0.127210, epoch_time: 0.62 s
+[57] Training time: 0.4 s
+[57] train loss: 0.137273, validation loss: 0.130069, epoch_time: 0.61 s
+[58] Training time: 0.3 s
+[58] train loss: 0.147419, validation loss: 0.137889, epoch_time: 0.60 s
+[59] Training time: 0.3 s
+[59] train loss: 0.139703, validation loss: 0.129646, epoch_time: 0.57 s
+[60] Training time: 0.3 s
+[60] train loss: 0.134428, validation loss: 0.135632, epoch_time: 0.56 s
+[61] Training time: 0.3 s
+[61] train loss: 0.141532, validation loss: 0.129697, epoch_time: 0.55 s
+[62] Training time: 0.3 s
+[62] train loss: 0.138566, validation loss: 0.135353, epoch_time: 0.52 s
+[63] Training time: 0.3 s
+[63] train loss: 0.144445, validation loss: 0.133139, epoch_time: 0.53 s
+[64] Training time: 0.3 s
+[64] train loss: 0.143781, validation loss: 0.135364, epoch_time: 0.56 s
+[65] Training time: 0.3 s
+[65] train loss: 0.156566, validation loss: 0.131910, epoch_time: 0.49 s
+[66] Training time: 0.3 s
+[66] train loss: 0.142951, validation loss: 0.141429, epoch_time: 0.49 s
+[67] Training time: 0.4 s
+[67] train loss: 0.141662, validation loss: 0.129970, epoch_time: 0.57 s
+[68] Training time: 0.3 s
+[68] train loss: 0.139035, validation loss: 0.145186, epoch_time: 0.60 s
+[69] Training time: 0.3 s
+[69] train loss: 0.150828, validation loss: 0.130714, epoch_time: 0.58 s
+[70] Training time: 0.4 s
+[70] train loss: 0.151415, validation loss: 0.132085, epoch_time: 0.58 s
+[71] Training time: 0.3 s
+[71] train loss: 0.141071, validation loss: 0.137638, epoch_time: 0.60 s
+[72] Training time: 0.4 s
+[72] train loss: 0.140344, validation loss: 0.133359, epoch_time: 0.60 s
+[73] Training time: 0.4 s
+[73] train loss: 0.152600, validation loss: 0.143475, epoch_time: 0.56 s
+[74] Training time: 0.3 s
+[74] train loss: 0.145539, validation loss: 0.141076, epoch_time: 0.59 s
+[75] Training time: 0.3 s
+[75] train loss: 0.146134, validation loss: 0.144344, epoch_time: 0.56 s
+[76] Training time: 0.3 s
+[76] train loss: 0.157332, validation loss: 0.144746, epoch_time: 0.58 s
+[77] Training time: 0.3 s
+[77] train loss: 0.151561, validation loss: 0.140634, epoch_time: 0.55 s
+[78] Training time: 0.4 s
+[78] train loss: 0.149795, validation loss: 0.135788, epoch_time: 0.64 s
+[79] Training time: 0.4 s
+[79] train loss: 0.144548, validation loss: 0.137101, epoch_time: 0.62 s
+[80] Training time: 0.3 s
+[80] train loss: 0.164657, validation loss: 0.140739, epoch_time: 0.61 s
+[81] Training time: 0.4 s
+[81] train loss: 0.138542, validation loss: 0.138520, epoch_time: 0.59 s
+[82] Training time: 0.3 s
+[82] train loss: 0.150568, validation loss: 0.144861, epoch_time: 0.61 s
+[83] Training time: 0.3 s
+[83] train loss: 0.153225, validation loss: 0.140506, epoch_time: 0.57 s
+[84] Training time: 0.4 s
+[84] train loss: 0.147782, validation loss: 0.142806, epoch_time: 0.65 s
+[85] Training time: 0.3 s
+[85] train loss: 0.140172, validation loss: 0.148685, epoch_time: 0.52 s
+[86] Training time: 0.4 s
+[86] train loss: 0.140748, validation loss: 0.141955, epoch_time: 0.59 s
+[87] Training time: 0.3 s
+[87] train loss: 0.147849, validation loss: 0.143123, epoch_time: 0.50 s
+[88] Training time: 0.4 s
+[88] train loss: 0.154413, validation loss: 0.143830, epoch_time: 0.60 s
+[89] Training time: 0.3 s
+[89] train loss: 0.145795, validation loss: 0.140761, epoch_time: 0.59 s
+[90] Training time: 0.4 s
+[90] train loss: 0.144105, validation loss: 0.140592, epoch_time: 0.58 s
+[91] Training time: 0.3 s
+[91] train loss: 0.146153, validation loss: 0.143829, epoch_time: 0.60 s
+[92] Training time: 0.3 s
+[92] train loss: 0.156154, validation loss: 0.149969, epoch_time: 0.53 s
+[93] Training time: 0.3 s
+[93] train loss: 0.157546, validation loss: 0.146313, epoch_time: 0.58 s
+[94] Training time: 0.3 s
+[94] train loss: 0.154778, validation loss: 0.142020, epoch_time: 0.53 s
+[95] Training time: 0.3 s
+[95] train loss: 0.156518, validation loss: 0.146891, epoch_time: 0.51 s
+[96] Training time: 0.3 s
+[96] train loss: 0.146351, validation loss: 0.149523, epoch_time: 0.58 s
+[97] Training time: 0.3 s
+[97] train loss: 0.213017, validation loss: 0.170230, epoch_time: 0.50 s
+[98] Training time: 0.3 s
+[98] train loss: 0.146852, validation loss: 0.147771, epoch_time: 0.60 s
+[99] Training time: 0.3 s
+[99] train loss: 0.180442, validation loss: 0.149488, epoch_time: 0.57 s
+[100] Training time: 0.3 s
+[100] train loss: 0.144525, validation loss: 0.140960, epoch_time: 0.73 s
+[101] Training time: 0.4 s
+[101] train loss: 0.148628, validation loss: 0.145159, epoch_time: 0.60 s
+[102] Training time: 0.3 s
+[102] train loss: 0.161558, validation loss: 0.140533, epoch_time: 0.58 s
+[103] Training time: 0.3 s
+[103] train loss: 0.152229, validation loss: 0.142619, epoch_time: 0.52 s
+[104] Training time: 0.3 s
+[104] train loss: 0.153287, validation loss: 0.144749, epoch_time: 0.58 s
+[105] Training time: 0.4 s
+[105] train loss: 0.146972, validation loss: 0.146515, epoch_time: 0.63 s
+[106] Training time: 0.3 s
+[106] train loss: 0.146452, validation loss: 0.144808, epoch_time: 0.51 s
+[107] Training time: 0.3 s
+[107] train loss: 0.152855, validation loss: 0.150804, epoch_time: 0.53 s
+[108] Training time: 0.4 s
+[108] train loss: 0.151901, validation loss: 0.146910, epoch_time: 0.61 s
+[109] Training time: 0.3 s
+[109] train loss: 0.157807, validation loss: 0.161549, epoch_time: 0.54 s
+[110] Training time: 0.3 s
+[110] train loss: 0.151210, validation loss: 0.153211, epoch_time: 0.55 s
+[111] Training time: 0.4 s
+[111] train loss: 0.151367, validation loss: 0.147274, epoch_time: 0.63 s
+[112] Training time: 0.3 s
+[112] train loss: 0.161550, validation loss: 0.152841, epoch_time: 0.56 s
+[113] Training time: 0.4 s
+[113] train loss: 0.153759, validation loss: 0.155954, epoch_time: 0.61 s
+[114] Training time: 0.3 s
+[114] train loss: 0.164784, validation loss: 0.144167, epoch_time: 0.58 s
+[115] Training time: 0.3 s
+[115] train loss: 0.159210, validation loss: 0.144343, epoch_time: 0.59 s
+[116] Training time: 0.3 s
+[116] train loss: 0.167759, validation loss: 0.144590, epoch_time: 0.53 s
+[117] Training time: 0.3 s
+[117] train loss: 0.145304, validation loss: 0.151432, epoch_time: 0.53 s
+[118] Training time: 0.4 s
+[118] train loss: 0.159346, validation loss: 0.155813, epoch_time: 0.63 s
+[119] Training time: 0.4 s
+[119] train loss: 0.156690, validation loss: 0.148875, epoch_time: 0.59 s
+[120] Training time: 0.3 s
+[120] train loss: 0.147739, validation loss: 0.147393, epoch_time: 0.58 s
+[121] Training time: 0.3 s
+[121] train loss: 0.171405, validation loss: 0.147416, epoch_time: 0.56 s
+[122] Training time: 0.3 s
+[122] train loss: 0.150715, validation loss: 0.147804, epoch_time: 0.56 s
+[123] Training time: 0.3 s
+[123] train loss: 0.161695, validation loss: 0.153938, epoch_time: 0.52 s
+[124] Training time: 0.3 s
+[124] train loss: 0.162402, validation loss: 0.144905, epoch_time: 0.58 s
+[125] Training time: 0.3 s
+[125] train loss: 0.150497, validation loss: 0.150435, epoch_time: 0.54 s
+[126] Training time: 0.3 s
+[126] train loss: 0.153086, validation loss: 0.154964, epoch_time: 0.54 s
+[127] Training time: 0.3 s
+[127] train loss: 0.154319, validation loss: 0.152649, epoch_time: 0.56 s
+[128] Training time: 0.3 s
+[128] train loss: 0.152389, validation loss: 0.156095, epoch_time: 0.52 s
+[129] Training time: 0.4 s
+[129] train loss: 0.152812, validation loss: 0.153299, epoch_time: 0.59 s
+[130] Training time: 0.3 s
+[130] train loss: 0.154147, validation loss: 0.155741, epoch_time: 0.50 s
+[131] Training time: 0.3 s
+[131] train loss: 0.176511, validation loss: 0.156064, epoch_time: 0.58 s
+[132] Training time: 0.3 s
+[132] train loss: 0.152671, validation loss: 0.156364, epoch_time: 0.57 s
+[133] Training time: 0.3 s
+[133] train loss: 0.161828, validation loss: 0.160702, epoch_time: 0.49 s
+[134] Training time: 0.4 s
+[134] train loss: 0.159501, validation loss: 0.152760, epoch_time: 0.56 s
+[135] Training time: 0.3 s
+[135] train loss: 0.160447, validation loss: 0.153829, epoch_time: 0.52 s
+[136] Training time: 0.3 s
+[136] train loss: 0.170745, validation loss: 0.157409, epoch_time: 0.56 s
+[137] Training time: 0.4 s
+[137] train loss: 0.179183, validation loss: 0.172473, epoch_time: 0.61 s
+[138] Training time: 0.3 s
+[138] train loss: 0.167109, validation loss: 0.162353, epoch_time: 0.56 s
+[139] Training time: 0.4 s
+[139] train loss: 0.157936, validation loss: 0.165548, epoch_time: 0.60 s
+[140] Training time: 0.3 s
+[140] train loss: 0.199450, validation loss: 0.185761, epoch_time: 0.55 s
+[141] Training time: 0.3 s
+[141] train loss: 0.164224, validation loss: 0.195569, epoch_time: 0.57 s
+[142] Training time: 0.3 s
+[142] train loss: 0.213826, validation loss: 0.173394, epoch_time: 0.56 s
+[143] Training time: 0.4 s
+[143] train loss: 0.162761, validation loss: 0.163251, epoch_time: 0.60 s
+[144] Training time: 0.3 s
+[144] train loss: 0.190083, validation loss: 0.176455, epoch_time: 0.56 s
+[145] Training time: 0.4 s
+[145] train loss: 0.168995, validation loss: 0.165209, epoch_time: 0.55 s
+[146] Training time: 0.3 s
+[146] train loss: 0.167125, validation loss: 0.163233, epoch_time: 0.57 s
+[147] Training time: 0.3 s
+[147] train loss: 0.158541, validation loss: 0.168660, epoch_time: 0.52 s
+[148] Training time: 0.3 s
+[148] train loss: 0.171279, validation loss: 0.163097, epoch_time: 0.48 s
+[149] Training time: 0.3 s
+[149] train loss: 0.175969, validation loss: 0.168105, epoch_time: 0.57 s
+[150] Training time: 0.4 s
+[150] train loss: 0.170050, validation loss: 0.162889, epoch_time: 0.54 s
+[151] Training time: 0.3 s
+[151] train loss: 0.161943, validation loss: 0.168174, epoch_time: 0.53 s
+[152] Training time: 0.3 s
+[152] train loss: 0.186350, validation loss: 0.171964, epoch_time: 0.58 s
+[153] Training time: 0.3 s
+[153] train loss: 0.167740, validation loss: 0.164426, epoch_time: 0.57 s
+[154] Training time: 0.3 s
+[154] train loss: 0.168216, validation loss: 0.172430, epoch_time: 0.52 s
+[155] Training time: 0.4 s
+[155] train loss: 0.184045, validation loss: 0.167713, epoch_time: 0.57 s
+[156] Training time: 0.3 s
+[156] train loss: 0.177493, validation loss: 0.168102, epoch_time: 0.50 s
+[157] Training time: 0.3 s
+[157] train loss: 0.183554, validation loss: 0.167766, epoch_time: 0.53 s
+[158] Training time: 0.3 s
+[158] train loss: 0.169544, validation loss: 0.169143, epoch_time: 0.54 s
+[159] Training time: 0.3 s
+[159] train loss: 0.170120, validation loss: 0.166480, epoch_time: 0.54 s
+[160] Training time: 0.3 s
+[160] train loss: 0.172678, validation loss: 0.169248, epoch_time: 0.59 s
+[161] Training time: 0.3 s
+[161] train loss: 0.169528, validation loss: 0.175324, epoch_time: 0.53 s
+[162] Training time: 0.3 s
+[162] train loss: 0.199882, validation loss: 0.174098, epoch_time: 0.54 s
+[163] Training time: 0.3 s
+[163] train loss: 0.173845, validation loss: 0.173699, epoch_time: 0.51 s
+[164] Training time: 0.4 s
+[164] train loss: 0.194035, validation loss: 0.182816, epoch_time: 0.65 s
+[165] Training time: 0.3 s
+[165] train loss: 0.172061, validation loss: 0.173840, epoch_time: 0.54 s
+[166] Training time: 0.3 s
+[166] train loss: 0.187079, validation loss: 0.171444, epoch_time: 0.47 s
+[167] Training time: 0.4 s
+[167] train loss: 0.182433, validation loss: 0.172781, epoch_time: 0.59 s
+[168] Training time: 0.3 s
+[168] train loss: 0.186343, validation loss: 0.172424, epoch_time: 0.57 s
+[169] Training time: 0.4 s
+[169] train loss: 0.178180, validation loss: 0.179930, epoch_time: 0.58 s
+[170] Training time: 0.3 s
+[170] train loss: 0.183421, validation loss: 0.181082, epoch_time: 0.59 s
+[171] Training time: 0.3 s
+[171] train loss: 0.191918, validation loss: 0.173411, epoch_time: 0.55 s
+[172] Training time: 0.3 s
+[172] train loss: 0.179227, validation loss: 0.167855, epoch_time: 0.54 s
+[173] Training time: 0.4 s
+[173] train loss: 0.183448, validation loss: 0.183296, epoch_time: 0.56 s
+[174] Training time: 0.4 s
+[174] train loss: 0.186923, validation loss: 0.181163, epoch_time: 0.59 s
+[175] Training time: 0.3 s
+[175] train loss: 0.183751, validation loss: 0.169399, epoch_time: 0.56 s
+[176] Training time: 0.4 s
+[176] train loss: 0.177991, validation loss: 0.175860, epoch_time: 0.63 s
+[177] Training time: 0.3 s
+[177] train loss: 0.186417, validation loss: 0.173646, epoch_time: 0.56 s
+[178] Training time: 0.3 s
+[178] train loss: 0.185908, validation loss: 0.189547, epoch_time: 0.56 s
+[179] Training time: 0.3 s
+[179] train loss: 0.187764, validation loss: 0.179518, epoch_time: 0.52 s
+[180] Training time: 0.3 s
+[180] train loss: 0.182175, validation loss: 0.178163, epoch_time: 0.55 s
+[181] Training time: 0.3 s
+[181] train loss: 0.207299, validation loss: 0.194457, epoch_time: 0.56 s
+[182] Training time: 0.3 s
+[182] train loss: 0.208696, validation loss: 0.196934, epoch_time: 0.56 s
+[183] Training time: 0.3 s
+[183] train loss: 0.225511, validation loss: 0.188583, epoch_time: 0.50 s
+[184] Training time: 0.3 s
+[184] train loss: 0.172378, validation loss: 0.201996, epoch_time: 0.54 s
+[185] Training time: 0.3 s
+[185] train loss: 0.216544, validation loss: 0.176347, epoch_time: 0.52 s
+[186] Training time: 0.3 s
+[186] train loss: 0.180444, validation loss: 0.182549, epoch_time: 0.56 s
+[187] Training time: 0.3 s
+[187] train loss: 0.186267, validation loss: 0.189872, epoch_time: 0.58 s
+[188] Training time: 0.3 s
+[188] train loss: 0.195893, validation loss: 0.188482, epoch_time: 0.56 s
+[189] Training time: 0.3 s
+[189] train loss: 0.181422, validation loss: 0.186021, epoch_time: 0.56 s
+[190] Training time: 0.3 s
+[190] train loss: 0.184823, validation loss: 0.191698, epoch_time: 0.52 s
+[191] Training time: 0.3 s
+[191] train loss: 0.211751, validation loss: 0.180318, epoch_time: 0.51 s
+[192] Training time: 0.3 s
+[192] train loss: 0.190141, validation loss: 0.186843, epoch_time: 0.56 s
+[193] Training time: 0.3 s
+[193] train loss: 0.193867, validation loss: 0.176604, epoch_time: 0.58 s
+[194] Training time: 0.3 s
+[194] train loss: 0.198539, validation loss: 0.186065, epoch_time: 0.58 s
+[195] Training time: 0.3 s
+[195] train loss: 0.182624, validation loss: 0.179271, epoch_time: 0.54 s
+[196] Training time: 0.3 s
+[196] train loss: 0.181300, validation loss: 0.184498, epoch_time: 0.57 s
+[197] Training time: 0.4 s
+[197] train loss: 0.196424, validation loss: 0.192703, epoch_time: 0.60 s
+[198] Training time: 0.3 s
+[198] train loss: 0.193305, validation loss: 0.182782, epoch_time: 0.56 s
+[199] Training time: 0.3 s
+[199] train loss: 0.188101, validation loss: 0.186248, epoch_time: 0.56 s
+[200] Training time: 0.3 s
+[200] train loss: 0.191826, validation loss: 0.180597, epoch_time: 0.67 s
+[201] Training time: 0.4 s
+[201] train loss: 0.197111, validation loss: 0.188101, epoch_time: 0.59 s
+[202] Training time: 0.3 s
+[202] train loss: 0.188247, validation loss: 0.187435, epoch_time: 0.60 s
+[203] Training time: 0.3 s
+[203] train loss: 0.190608, validation loss: 0.187680, epoch_time: 0.61 s
+[204] Training time: 0.3 s
+[204] train loss: 0.194600, validation loss: 0.185529, epoch_time: 0.56 s
+[205] Training time: 0.3 s
+[205] train loss: 0.192049, validation loss: 0.193702, epoch_time: 0.52 s
+[206] Training time: 0.3 s
+[206] train loss: 0.209301, validation loss: 0.196786, epoch_time: 0.56 s
+[207] Training time: 0.3 s
+[207] train loss: 0.177086, validation loss: 0.188224, epoch_time: 0.55 s
+[208] Training time: 0.3 s
+[208] train loss: 0.204232, validation loss: 0.193028, epoch_time: 0.54 s
+[209] Training time: 0.3 s
+[209] train loss: 0.179680, validation loss: 0.184745, epoch_time: 0.52 s
+[210] Training time: 0.4 s
+[210] train loss: 0.196857, validation loss: 0.193351, epoch_time: 0.55 s
+[211] Training time: 0.4 s
+[211] train loss: 0.187712, validation loss: 0.208329, epoch_time: 0.60 s
+[212] Training time: 0.3 s
+[212] train loss: 0.194074, validation loss: 0.189150, epoch_time: 0.58 s
+[213] Training time: 0.3 s
+[213] train loss: 0.197682, validation loss: 0.185763, epoch_time: 0.53 s
+[214] Training time: 0.3 s
+[214] train loss: 0.185559, validation loss: 0.187060, epoch_time: 0.54 s
+[215] Training time: 0.3 s
+[215] train loss: 0.195847, validation loss: 0.186838, epoch_time: 0.58 s
+[216] Training time: 0.3 s
+[216] train loss: 0.196010, validation loss: 0.185616, epoch_time: 0.52 s
+[217] Training time: 0.3 s
+[217] train loss: 0.188413, validation loss: 0.189873, epoch_time: 0.55 s
+[218] Training time: 0.3 s
+[218] train loss: 0.194423, validation loss: 0.184567, epoch_time: 0.52 s
+[219] Training time: 0.3 s
+[219] train loss: 0.190615, validation loss: 0.189590, epoch_time: 0.52 s
+[220] Training time: 0.3 s
+[220] train loss: 0.203427, validation loss: 0.189593, epoch_time: 0.57 s
+[221] Training time: 0.3 s
+[221] train loss: 0.198582, validation loss: 0.183740, epoch_time: 0.56 s
+[222] Training time: 0.3 s
+[222] train loss: 0.182210, validation loss: 0.190323, epoch_time: 0.54 s
+[223] Training time: 0.3 s
+[223] train loss: 0.185545, validation loss: 0.190734, epoch_time: 0.56 s
+[224] Training time: 0.3 s
+[224] train loss: 0.197018, validation loss: 0.183312, epoch_time: 0.61 s
+[225] Training time: 0.3 s
+[225] train loss: 0.196443, validation loss: 0.200587, epoch_time: 0.58 s
+[226] Training time: 0.3 s
+[226] train loss: 0.202233, validation loss: 0.192339, epoch_time: 0.53 s
+[227] Training time: 0.3 s
+[227] train loss: 0.195704, validation loss: 0.193936, epoch_time: 0.57 s
+[228] Training time: 0.3 s
+[228] train loss: 0.189582, validation loss: 0.193042, epoch_time: 0.52 s
+[229] Training time: 0.3 s
+[229] train loss: 0.201518, validation loss: 0.195907, epoch_time: 0.58 s
+[230] Training time: 0.4 s
+[230] train loss: 0.193460, validation loss: 0.190207, epoch_time: 0.59 s
+[231] Training time: 0.3 s
+[231] train loss: 0.186528, validation loss: 0.187996, epoch_time: 0.55 s
+[232] Training time: 0.3 s
+[232] train loss: 0.213888, validation loss: 0.198484, epoch_time: 0.56 s
+[233] Training time: 0.3 s
+[233] train loss: 0.206601, validation loss: 0.198473, epoch_time: 0.56 s
+[234] Training time: 0.3 s
+[234] train loss: 0.193946, validation loss: 0.188391, epoch_time: 0.49 s
+[235] Training time: 0.4 s
+[235] train loss: 0.207699, validation loss: 0.210981, epoch_time: 0.56 s
+[236] Training time: 0.3 s
+[236] train loss: 0.213667, validation loss: 0.197320, epoch_time: 0.62 s
+[237] Training time: 0.3 s
+[237] train loss: 0.200989, validation loss: 0.202412, epoch_time: 0.55 s
+[238] Training time: 0.3 s
+[238] train loss: 0.211303, validation loss: 0.189395, epoch_time: 0.58 s
+[239] Training time: 0.3 s
+[239] train loss: 0.216609, validation loss: 0.197437, epoch_time: 0.59 s
+[240] Training time: 0.3 s
+[240] train loss: 0.200255, validation loss: 0.185423, epoch_time: 0.60 s
+[241] Training time: 0.3 s
+[241] train loss: 0.207815, validation loss: 0.196427, epoch_time: 0.56 s
+[242] Training time: 0.3 s
+[242] train loss: 0.207930, validation loss: 0.190949, epoch_time: 0.54 s
+[243] Training time: 0.3 s
+[243] train loss: 0.226029, validation loss: 0.235534, epoch_time: 0.54 s
+[244] Training time: 0.3 s
+[244] train loss: 0.209534, validation loss: 0.198193, epoch_time: 0.51 s
+[245] Training time: 0.3 s
+[245] train loss: 0.198803, validation loss: 0.203475, epoch_time: 0.54 s
+[246] Training time: 0.4 s
+[246] train loss: 0.220702, validation loss: 0.189043, epoch_time: 0.55 s
+[247] Training time: 0.3 s
+[247] train loss: 0.216134, validation loss: 0.228172, epoch_time: 0.55 s
+[248] Training time: 0.3 s
+[248] train loss: 0.220003, validation loss: 0.199970, epoch_time: 0.55 s
+[249] Training time: 0.3 s
+[249] train loss: 0.197496, validation loss: 0.207359, epoch_time: 0.54 s
+[250] Training time: 0.3 s
+[250] train loss: 0.205747, validation loss: 0.203091, epoch_time: 0.49 s
+[251] Training time: 0.3 s
+[251] train loss: 0.233611, validation loss: 0.223775, epoch_time: 0.52 s
+[252] Training time: 0.3 s
+[252] train loss: 0.223430, validation loss: 0.197824, epoch_time: 0.51 s
+[253] Training time: 0.3 s
+[253] train loss: 0.215102, validation loss: 0.188143, epoch_time: 0.53 s
+[254] Training time: 0.3 s
+[254] train loss: 0.200067, validation loss: 0.200109, epoch_time: 0.51 s
+[255] Training time: 0.3 s
+[255] train loss: 0.191453, validation loss: 0.210319, epoch_time: 0.53 s
+[256] Training time: 0.4 s
+[256] train loss: 0.198848, validation loss: 0.197640, epoch_time: 0.59 s
+[257] Training time: 0.3 s
+[257] train loss: 0.200656, validation loss: 0.194855, epoch_time: 0.61 s
+[258] Training time: 0.3 s
+[258] train loss: 0.194438, validation loss: 0.190062, epoch_time: 0.54 s
+[259] Training time: 0.3 s
+[259] train loss: 0.189591, validation loss: 0.225755, epoch_time: 0.53 s
+[260] Training time: 0.4 s
+[260] train loss: 0.217987, validation loss: 0.195346, epoch_time: 0.57 s
+[261] Training time: 0.3 s
+[261] train loss: 0.195001, validation loss: 0.211721, epoch_time: 0.58 s
+[262] Training time: 0.3 s
+[262] train loss: 0.210492, validation loss: 0.191753, epoch_time: 0.57 s
+[263] Training time: 0.4 s
+[263] train loss: 0.183888, validation loss: 0.207555, epoch_time: 0.56 s
+[264] Training time: 0.4 s
+[264] train loss: 0.236422, validation loss: 0.205819, epoch_time: 0.59 s
+[265] Training time: 0.3 s
+[265] train loss: 0.209379, validation loss: 0.233008, epoch_time: 0.54 s
+[266] Training time: 0.4 s
+[266] train loss: 0.236704, validation loss: 0.212333, epoch_time: 0.59 s
+[267] Training time: 0.4 s
+[267] train loss: 0.209974, validation loss: 0.266683, epoch_time: 0.60 s
+[268] Training time: 0.3 s
+[268] train loss: 0.294453, validation loss: 0.218856, epoch_time: 0.56 s
+[269] Training time: 0.3 s
+[269] train loss: 0.215975, validation loss: 0.228953, epoch_time: 0.59 s
+[270] Training time: 0.3 s
+[270] train loss: 0.226853, validation loss: 0.206224, epoch_time: 0.54 s
+[271] Training time: 0.4 s
+[271] train loss: 0.199851, validation loss: 0.201968, epoch_time: 0.60 s
+[272] Training time: 0.3 s
+[272] train loss: 0.213985, validation loss: 0.216985, epoch_time: 0.49 s
+[273] Training time: 0.4 s
+[273] train loss: 0.227954, validation loss: 0.205022, epoch_time: 0.60 s
+[274] Training time: 0.3 s
+[274] train loss: 0.231301, validation loss: 0.230307, epoch_time: 0.51 s
+[275] Training time: 0.3 s
+[275] train loss: 0.232533, validation loss: 0.191177, epoch_time: 0.55 s
+[276] Training time: 0.3 s
+[276] train loss: 0.188843, validation loss: 0.206324, epoch_time: 0.49 s
+[277] Training time: 0.3 s
+[277] train loss: 0.200957, validation loss: 0.220357, epoch_time: 0.55 s
+[278] Training time: 0.3 s
+[278] train loss: 0.209111, validation loss: 0.215320, epoch_time: 0.58 s
+[279] Training time: 0.3 s
+[279] train loss: 0.217626, validation loss: 0.228812, epoch_time: 0.57 s
+[280] Training time: 0.4 s
+[280] train loss: 0.210934, validation loss: 0.195435, epoch_time: 0.64 s
+[281] Training time: 0.3 s
+[281] train loss: 0.221658, validation loss: 0.202933, epoch_time: 0.52 s
+[282] Training time: 0.3 s
+[282] train loss: 0.222049, validation loss: 0.215544, epoch_time: 0.57 s
+[283] Training time: 0.3 s
+[283] train loss: 0.230241, validation loss: 0.217981, epoch_time: 0.56 s
+[284] Training time: 0.3 s
+[284] train loss: 0.195976, validation loss: 0.209606, epoch_time: 0.59 s
+[285] Training time: 0.3 s
+[285] train loss: 0.212107, validation loss: 0.198870, epoch_time: 0.57 s
+[286] Training time: 0.3 s
+[286] train loss: 0.203962, validation loss: 0.192420, epoch_time: 0.60 s
+[287] Training time: 0.3 s
+[287] train loss: 0.255969, validation loss: 0.200281, epoch_time: 0.58 s
+[288] Training time: 0.3 s
+[288] train loss: 0.225315, validation loss: 0.265604, epoch_time: 0.56 s
+[289] Training time: 0.3 s
+[289] train loss: 0.227848, validation loss: 0.222249, epoch_time: 0.55 s
+[290] Training time: 0.4 s
+[290] train loss: 0.198413, validation loss: 0.220290, epoch_time: 0.65 s
+[291] Training time: 0.4 s
+[291] train loss: 0.251429, validation loss: 0.208090, epoch_time: 0.53 s
+[292] Training time: 0.3 s
+[292] train loss: 0.232276, validation loss: 0.235395, epoch_time: 0.51 s
+[293] Training time: 0.3 s
+[293] train loss: 0.217833, validation loss: 0.202729, epoch_time: 0.64 s
+[294] Training time: 0.3 s
+[294] train loss: 0.195224, validation loss: 0.197336, epoch_time: 0.62 s
+[295] Training time: 0.4 s
+[295] train loss: 0.226658, validation loss: 0.197272, epoch_time: 0.59 s
+[296] Training time: 0.3 s
+[296] train loss: 0.193141, validation loss: 0.221099, epoch_time: 0.53 s
+[297] Training time: 0.3 s
+[297] train loss: 0.223383, validation loss: 0.223237, epoch_time: 0.60 s
+[298] Training time: 0.4 s
+[298] train loss: 0.213837, validation loss: 0.336478, epoch_time: 0.57 s
+[299] Training time: 0.3 s
+[299] train loss: 0.220383, validation loss: 0.209349, epoch_time: 0.56 s
+[300] Training time: 0.4 s
+[300] train loss: 0.235310, validation loss: 0.209775, epoch_time: 0.82 s
+[301] Training time: 0.5 s
+[301] train loss: 0.207996, validation loss: 0.204354, epoch_time: 0.79 s
+[302] Training time: 0.4 s
+[302] train loss: 0.221644, validation loss: 0.212236, epoch_time: 0.63 s
+[303] Training time: 0.4 s
+[303] train loss: 0.238689, validation loss: 0.221141, epoch_time: 0.60 s
+[304] Training time: 0.3 s
+[304] train loss: 0.214502, validation loss: 0.238515, epoch_time: 0.55 s
+[305] Training time: 0.4 s
+[305] train loss: 0.216788, validation loss: 0.208288, epoch_time: 0.66 s
+[306] Training time: 0.4 s
+[306] train loss: 0.243366, validation loss: 0.223459, epoch_time: 0.65 s
+[307] Training time: 0.4 s
+[307] train loss: 0.235925, validation loss: 0.290683, epoch_time: 0.58 s
+[308] Training time: 0.3 s
+[308] train loss: 0.261646, validation loss: 0.225379, epoch_time: 0.56 s
+[309] Training time: 0.3 s
+[309] train loss: 0.205107, validation loss: 0.245388, epoch_time: 0.60 s
+[310] Training time: 0.4 s
+[310] train loss: 0.279547, validation loss: 0.226141, epoch_time: 0.57 s
+[311] Training time: 0.3 s
+[311] train loss: 0.218409, validation loss: 0.224150, epoch_time: 0.55 s
+[312] Training time: 0.4 s
+[312] train loss: 0.239675, validation loss: 0.227875, epoch_time: 0.58 s
+[313] Training time: 0.3 s
+[313] train loss: 0.242184, validation loss: 0.225357, epoch_time: 0.61 s
+[314] Training time: 0.3 s
+[314] train loss: 0.244627, validation loss: 0.204535, epoch_time: 0.54 s
+[315] Training time: 0.3 s
+[315] train loss: 0.221819, validation loss: 0.225060, epoch_time: 0.56 s
+[316] Training time: 0.3 s
+[316] train loss: 0.214565, validation loss: 0.239254, epoch_time: 0.56 s
+[317] Training time: 0.4 s
+[317] train loss: 0.233522, validation loss: 0.207523, epoch_time: 0.61 s
+[318] Training time: 0.3 s
+[318] train loss: 0.230678, validation loss: 0.225462, epoch_time: 0.57 s
+[319] Training time: 0.4 s
+[319] train loss: 0.215706, validation loss: 0.212302, epoch_time: 0.58 s
+[320] Training time: 0.3 s
+[320] train loss: 0.265381, validation loss: 0.240286, epoch_time: 0.61 s
+[321] Training time: 0.3 s
+[321] train loss: 0.247585, validation loss: 0.226262, epoch_time: 0.52 s
+[322] Training time: 0.4 s
+[322] train loss: 0.241452, validation loss: 0.238779, epoch_time: 0.58 s
+[323] Training time: 0.4 s
+[323] train loss: 0.220474, validation loss: 0.228198, epoch_time: 0.61 s
+[324] Training time: 0.4 s
+[324] train loss: 0.226905, validation loss: 0.241321, epoch_time: 0.55 s
+[325] Training time: 0.4 s
+[325] train loss: 0.227822, validation loss: 0.221584, epoch_time: 0.57 s
+[326] Training time: 0.3 s
+[326] train loss: 0.259058, validation loss: 0.211628, epoch_time: 0.56 s
+[327] Training time: 0.4 s
+[327] train loss: 0.260421, validation loss: 0.282200, epoch_time: 0.63 s
+[328] Training time: 0.4 s
+[328] train loss: 0.250132, validation loss: 0.222648, epoch_time: 0.60 s
+[329] Training time: 0.4 s
+[329] train loss: 0.228441, validation loss: 0.227251, epoch_time: 0.57 s
+[330] Training time: 0.3 s
+[330] train loss: 0.248617, validation loss: 0.218416, epoch_time: 0.57 s
+[331] Training time: 0.3 s
+[331] train loss: 0.216934, validation loss: 0.218997, epoch_time: 0.53 s
+[332] Training time: 0.3 s
+[332] train loss: 0.231221, validation loss: 0.235362, epoch_time: 0.51 s
+[333] Training time: 0.3 s
+[333] train loss: 0.223941, validation loss: 0.228268, epoch_time: 0.54 s
+[334] Training time: 0.3 s
+[334] train loss: 0.211531, validation loss: 0.241843, epoch_time: 0.54 s
+[335] Training time: 0.3 s
+[335] train loss: 0.234885, validation loss: 0.214602, epoch_time: 0.55 s
+[336] Training time: 0.3 s
+[336] train loss: 0.243080, validation loss: 0.211025, epoch_time: 0.59 s
+[337] Training time: 0.3 s
+[337] train loss: 0.213826, validation loss: 0.216848, epoch_time: 0.59 s
+[338] Training time: 0.3 s
+[338] train loss: 0.280582, validation loss: 0.257207, epoch_time: 0.54 s
+[339] Training time: 0.3 s
+[339] train loss: 0.248466, validation loss: 0.222593, epoch_time: 0.56 s
+[340] Training time: 0.4 s
+[340] train loss: 0.224396, validation loss: 0.234006, epoch_time: 0.60 s
+[341] Training time: 0.3 s
+[341] train loss: 0.222222, validation loss: 0.221388, epoch_time: 0.54 s
+[342] Training time: 0.4 s
+[342] train loss: 0.237657, validation loss: 0.224042, epoch_time: 0.64 s
+[343] Training time: 0.3 s
+[343] train loss: 0.254658, validation loss: 0.288433, epoch_time: 0.52 s
+[344] Training time: 0.4 s
+[344] train loss: 0.235669, validation loss: 0.213350, epoch_time: 0.60 s
+[345] Training time: 0.3 s
+[345] train loss: 0.270223, validation loss: 0.218812, epoch_time: 0.59 s
+[346] Training time: 0.3 s
+[346] train loss: 0.225858, validation loss: 0.253074, epoch_time: 0.58 s
+[347] Training time: 0.4 s
+[347] train loss: 0.215038, validation loss: 0.225790, epoch_time: 0.60 s
+[348] Training time: 0.4 s
+[348] train loss: 0.220384, validation loss: 0.221940, epoch_time: 0.56 s
+[349] Training time: 0.3 s
+[349] train loss: 0.223241, validation loss: 0.277823, epoch_time: 0.53 s
+[350] Training time: 0.3 s
+[350] train loss: 0.218576, validation loss: 0.249313, epoch_time: 0.54 s
+[351] Training time: 0.3 s
+[351] train loss: 0.243157, validation loss: 0.222861, epoch_time: 0.59 s
+[352] Training time: 0.4 s
+[352] train loss: 0.268429, validation loss: 0.234608, epoch_time: 0.58 s
+[353] Training time: 0.4 s
+[353] train loss: 0.253059, validation loss: 0.245726, epoch_time: 0.59 s
+[354] Training time: 0.4 s
+[354] train loss: 0.226267, validation loss: 0.234133, epoch_time: 0.61 s
+[355] Training time: 0.3 s
+[355] train loss: 0.245676, validation loss: 0.239221, epoch_time: 0.56 s
+[356] Training time: 0.4 s
+[356] train loss: 0.257957, validation loss: 0.251990, epoch_time: 0.62 s
+[357] Training time: 0.4 s
+[357] train loss: 0.247972, validation loss: 0.254482, epoch_time: 0.57 s
+[358] Training time: 0.3 s
+[358] train loss: 0.248485, validation loss: 0.225754, epoch_time: 0.57 s
+[359] Training time: 0.3 s
+[359] train loss: 0.224676, validation loss: 0.226517, epoch_time: 0.61 s
+[360] Training time: 0.3 s
+[360] train loss: 0.221098, validation loss: 0.234676, epoch_time: 0.55 s
+[361] Training time: 0.3 s
+[361] train loss: 0.232565, validation loss: 0.229567, epoch_time: 0.55 s
+[362] Training time: 0.3 s
+[362] train loss: 0.221405, validation loss: 0.218962, epoch_time: 0.58 s
+[363] Training time: 0.3 s
+[363] train loss: 0.237757, validation loss: 0.239808, epoch_time: 0.55 s
+[364] Training time: 0.3 s
+[364] train loss: 0.244232, validation loss: 0.302671, epoch_time: 0.58 s
+[365] Training time: 0.4 s
+[365] train loss: 0.300615, validation loss: 0.234480, epoch_time: 0.63 s
+[366] Training time: 0.4 s
+[366] train loss: 0.338729, validation loss: 0.289149, epoch_time: 0.61 s
+[367] Training time: 0.4 s
+[367] train loss: 0.258356, validation loss: 0.264086, epoch_time: 0.62 s
+[368] Training time: 0.4 s
+[368] train loss: 0.286899, validation loss: 0.259452, epoch_time: 0.60 s
+[369] Training time: 0.4 s
+[369] train loss: 0.264563, validation loss: 0.253385, epoch_time: 0.60 s
+[370] Training time: 0.4 s
+[370] train loss: 0.248039, validation loss: 0.230525, epoch_time: 0.65 s
+[371] Training time: 0.4 s
+[371] train loss: 0.239469, validation loss: 0.230124, epoch_time: 0.62 s
+[372] Training time: 0.4 s
+[372] train loss: 0.230739, validation loss: 0.240215, epoch_time: 0.63 s
+[373] Training time: 0.4 s
+[373] train loss: 0.239514, validation loss: 0.234176, epoch_time: 0.60 s
+[374] Training time: 0.3 s
+[374] train loss: 0.248032, validation loss: 0.231627, epoch_time: 0.54 s
+[375] Training time: 0.3 s
+[375] train loss: 0.223892, validation loss: 0.224579, epoch_time: 0.58 s
+[376] Training time: 0.3 s
+[376] train loss: 0.250804, validation loss: 0.243022, epoch_time: 0.56 s
+[377] Training time: 0.3 s
+[377] train loss: 0.237290, validation loss: 0.249130, epoch_time: 0.53 s
+[378] Training time: 0.4 s
+[378] train loss: 0.239210, validation loss: 0.233436, epoch_time: 0.59 s
+[379] Training time: 0.4 s
+[379] train loss: 0.242820, validation loss: 0.238875, epoch_time: 0.55 s
+[380] Training time: 0.3 s
+[380] train loss: 0.229684, validation loss: 0.228479, epoch_time: 0.58 s
+[381] Training time: 0.3 s
+[381] train loss: 0.253445, validation loss: 0.228039, epoch_time: 0.55 s
+[382] Training time: 0.3 s
+[382] train loss: 0.233171, validation loss: 0.271320, epoch_time: 0.53 s
+[383] Training time: 0.3 s
+[383] train loss: 0.258666, validation loss: 0.252303, epoch_time: 0.57 s
+[384] Training time: 0.4 s
+[384] train loss: 0.254777, validation loss: 0.268876, epoch_time: 0.60 s
+[385] Training time: 0.3 s
+[385] train loss: 0.279441, validation loss: 0.241408, epoch_time: 0.51 s
+[386] Training time: 0.3 s
+[386] train loss: 0.281349, validation loss: 0.264430, epoch_time: 0.58 s
+[387] Training time: 0.3 s
+[387] train loss: 0.239913, validation loss: 0.249763, epoch_time: 0.53 s
+[388] Training time: 0.3 s
+[388] train loss: 0.256547, validation loss: 0.243420, epoch_time: 0.60 s
+[389] Training time: 0.4 s
+[389] train loss: 0.235914, validation loss: 0.238430, epoch_time: 0.59 s
+[390] Training time: 0.3 s
+[390] train loss: 0.236681, validation loss: 0.250187, epoch_time: 0.58 s
+[391] Training time: 0.3 s
+[391] train loss: 0.260379, validation loss: 0.236209, epoch_time: 0.54 s
+[392] Training time: 0.3 s
+[392] train loss: 0.294777, validation loss: 0.236226, epoch_time: 0.54 s
+[393] Training time: 0.4 s
+[393] train loss: 0.251225, validation loss: 0.262086, epoch_time: 0.64 s
+[394] Training time: 0.3 s
+[394] train loss: 0.241170, validation loss: 0.243455, epoch_time: 0.55 s
+[395] Training time: 0.3 s
+[395] train loss: 0.245918, validation loss: 0.243567, epoch_time: 0.56 s
+[396] Training time: 0.3 s
+[396] train loss: 0.238269, validation loss: 0.247069, epoch_time: 0.54 s
+[397] Training time: 0.3 s
+[397] train loss: 0.237902, validation loss: 0.241461, epoch_time: 0.55 s
+[398] Training time: 0.4 s
+[398] train loss: 0.246445, validation loss: 0.239168, epoch_time: 0.63 s
+[399] Training time: 0.3 s
+[399] train loss: 0.239746, validation loss: 0.244450, epoch_time: 0.51 s
+[400] Training time: 0.4 s
+[400] train loss: 0.246714, validation loss: 0.237499, epoch_time: 0.70 s
+[401] Training time: 0.4 s
+[401] train loss: 0.241160, validation loss: 0.236201, epoch_time: 0.60 s
+[402] Training time: 0.3 s
+[402] train loss: 0.235302, validation loss: 0.237797, epoch_time: 0.56 s
+[403] Training time: 0.4 s
+[403] train loss: 0.242100, validation loss: 0.234017, epoch_time: 0.58 s
+[404] Training time: 0.3 s
+[404] train loss: 0.244975, validation loss: 0.239163, epoch_time: 0.59 s
+[405] Training time: 0.3 s
+[405] train loss: 0.245653, validation loss: 0.241158, epoch_time: 0.53 s
+[406] Training time: 0.3 s
+[406] train loss: 0.252246, validation loss: 0.247900, epoch_time: 0.49 s
+[407] Training time: 0.4 s
+[407] train loss: 0.233724, validation loss: 0.241055, epoch_time: 0.65 s
+[408] Training time: 0.3 s
+[408] train loss: 0.235659, validation loss: 0.235355, epoch_time: 0.61 s
+[409] Training time: 0.3 s
+[409] train loss: 0.238192, validation loss: 0.234998, epoch_time: 0.56 s
+[410] Training time: 0.3 s
+[410] train loss: 0.236100, validation loss: 0.246273, epoch_time: 0.54 s
+[411] Training time: 0.3 s
+[411] train loss: 0.243572, validation loss: 0.245865, epoch_time: 0.60 s
+[412] Training time: 0.4 s
+[412] train loss: 0.247094, validation loss: 0.243269, epoch_time: 0.58 s
+[413] Training time: 0.3 s
+[413] train loss: 0.247131, validation loss: 0.241024, epoch_time: 0.58 s
+[414] Training time: 0.3 s
+[414] train loss: 0.243567, validation loss: 0.239596, epoch_time: 0.55 s
+[415] Training time: 0.3 s
+[415] train loss: 0.245655, validation loss: 0.272641, epoch_time: 0.52 s
+[416] Training time: 0.4 s
+[416] train loss: 0.263864, validation loss: 0.459708, epoch_time: 0.60 s
+[417] Training time: 0.3 s
+[417] train loss: 0.468429, validation loss: 0.382598, epoch_time: 0.59 s
+[418] Training time: 0.4 s
+[418] train loss: 0.324312, validation loss: 0.340014, epoch_time: 0.57 s
+[419] Training time: 0.4 s
+[419] train loss: 0.328522, validation loss: 0.337638, epoch_time: 0.61 s
+[420] Training time: 0.3 s
+[420] train loss: 0.315511, validation loss: 0.284043, epoch_time: 0.56 s
+[421] Training time: 0.4 s
+[421] train loss: 0.313398, validation loss: 0.284424, epoch_time: 0.60 s
+[422] Training time: 0.4 s
+[422] train loss: 0.287519, validation loss: 0.298482, epoch_time: 0.61 s
+[423] Training time: 0.3 s
+[423] train loss: 0.294797, validation loss: 0.282122, epoch_time: 0.55 s
+[424] Training time: 0.3 s
+[424] train loss: 0.302812, validation loss: 0.282859, epoch_time: 0.53 s
+[425] Training time: 0.3 s
+[425] train loss: 0.303271, validation loss: 0.277748, epoch_time: 0.57 s
+[426] Training time: 0.4 s
+[426] train loss: 0.308658, validation loss: 0.350253, epoch_time: 0.56 s
+[427] Training time: 0.3 s
+[427] train loss: 0.430428, validation loss: 0.506309, epoch_time: 0.56 s
+[428] Training time: 0.3 s
+[428] train loss: 0.657394, validation loss: 0.355523, epoch_time: 0.51 s
+[429] Training time: 0.4 s
+[429] train loss: 0.369502, validation loss: 0.340804, epoch_time: 0.60 s
+[430] Training time: 0.4 s
+[430] train loss: 0.381968, validation loss: 0.301879, epoch_time: 0.58 s
+[431] Training time: 0.3 s
+[431] train loss: 0.327713, validation loss: 0.306445, epoch_time: 0.57 s
+[432] Training time: 0.4 s
+[432] train loss: 0.296723, validation loss: 0.299960, epoch_time: 0.59 s
+[433] Training time: 0.4 s
+[433] train loss: 0.310496, validation loss: 0.293996, epoch_time: 0.62 s
+[434] Training time: 0.3 s
+[434] train loss: 0.284320, validation loss: 0.286410, epoch_time: 0.57 s
+[435] Training time: 0.3 s
+[435] train loss: 0.295278, validation loss: 0.275012, epoch_time: 0.48 s
+[436] Training time: 0.4 s
+[436] train loss: 0.259322, validation loss: 0.263104, epoch_time: 0.60 s
+[437] Training time: 0.4 s
+[437] train loss: 0.262426, validation loss: 0.288304, epoch_time: 0.63 s
+[438] Training time: 0.3 s
+[438] train loss: 0.259931, validation loss: 0.256023, epoch_time: 0.60 s
+[439] Training time: 0.4 s
+[439] train loss: 0.267551, validation loss: 0.310369, epoch_time: 0.56 s
+[440] Training time: 0.3 s
+[440] train loss: 0.334892, validation loss: 0.277945, epoch_time: 0.51 s
+[441] Training time: 0.3 s
+[441] train loss: 0.278169, validation loss: 0.271769, epoch_time: 0.53 s
+[442] Training time: 0.3 s
+[442] train loss: 0.294480, validation loss: 0.284140, epoch_time: 0.58 s
+[443] Training time: 0.3 s
+[443] train loss: 0.270224, validation loss: 0.312094, epoch_time: 0.52 s
+[444] Training time: 0.4 s
+[444] train loss: 0.279077, validation loss: 0.272743, epoch_time: 0.61 s
+[445] Training time: 0.3 s
+[445] train loss: 0.270705, validation loss: 0.277106, epoch_time: 0.52 s
+[446] Training time: 0.3 s
+[446] train loss: 0.274943, validation loss: 0.266445, epoch_time: 0.55 s
+[447] Training time: 0.4 s
+[447] train loss: 0.272936, validation loss: 0.267386, epoch_time: 0.66 s
+[448] Training time: 0.3 s
+[448] train loss: 0.271566, validation loss: 0.276512, epoch_time: 0.53 s
+[449] Training time: 0.3 s
+[449] train loss: 0.284720, validation loss: 0.307592, epoch_time: 0.54 s
+[450] Training time: 0.4 s
+[450] train loss: 0.274873, validation loss: 0.266719, epoch_time: 0.60 s
+[451] Training time: 0.3 s
+[451] train loss: 0.261193, validation loss: 0.261335, epoch_time: 0.55 s
+[452] Training time: 0.3 s
+[452] train loss: 0.277974, validation loss: 0.270189, epoch_time: 0.56 s
+[453] Training time: 0.3 s
+[453] train loss: 0.291405, validation loss: 0.319305, epoch_time: 0.55 s
+[454] Training time: 0.3 s
+[454] train loss: 0.266396, validation loss: 0.296961, epoch_time: 0.55 s
+[455] Training time: 0.3 s
+[455] train loss: 0.261716, validation loss: 0.312253, epoch_time: 0.57 s
+[456] Training time: 0.4 s
+[456] train loss: 0.308023, validation loss: 0.291355, epoch_time: 0.57 s
+[457] Training time: 0.3 s
+[457] train loss: 0.311757, validation loss: 0.288171, epoch_time: 0.60 s
+[458] Training time: 0.3 s
+[458] train loss: 0.302959, validation loss: 0.276560, epoch_time: 0.53 s
+[459] Training time: 0.3 s
+[459] train loss: 0.319111, validation loss: 0.298094, epoch_time: 0.50 s
+[460] Training time: 0.4 s
+[460] train loss: 0.347353, validation loss: 0.338720, epoch_time: 0.56 s
+[461] Training time: 0.3 s
+[461] train loss: 0.352217, validation loss: 0.322035, epoch_time: 0.54 s
+[462] Training time: 0.3 s
+[462] train loss: 0.374110, validation loss: 0.341768, epoch_time: 0.55 s
+[463] Training time: 0.3 s
+[463] train loss: 0.378311, validation loss: 0.340965, epoch_time: 0.54 s
+[464] Training time: 0.3 s
+[464] train loss: 0.345039, validation loss: 0.319734, epoch_time: 0.52 s
+[465] Training time: 0.3 s
+[465] train loss: 0.324836, validation loss: 0.295181, epoch_time: 0.53 s
+[466] Training time: 0.3 s
+[466] train loss: 0.337136, validation loss: 0.346484, epoch_time: 0.60 s
+[467] Training time: 0.3 s
+[467] train loss: 0.363605, validation loss: 0.291220, epoch_time: 0.55 s
+[468] Training time: 0.4 s
+[468] train loss: 0.319800, validation loss: 0.308086, epoch_time: 0.62 s
+[469] Training time: 0.3 s
+[469] train loss: 0.347397, validation loss: 0.289987, epoch_time: 0.57 s
+[470] Training time: 0.4 s
+[470] train loss: 0.280132, validation loss: 0.289969, epoch_time: 0.66 s
+[471] Training time: 0.4 s
+[471] train loss: 0.299697, validation loss: 0.279113, epoch_time: 0.60 s
+[472] Training time: 0.3 s
+[472] train loss: 0.317437, validation loss: 0.311815, epoch_time: 0.57 s
+[473] Training time: 0.3 s
+[473] train loss: 0.267918, validation loss: 0.293282, epoch_time: 0.56 s
+[474] Training time: 0.4 s
+[474] train loss: 0.276673, validation loss: 0.319676, epoch_time: 0.62 s
+[475] Training time: 0.3 s
+[475] train loss: 0.309775, validation loss: 0.313781, epoch_time: 0.56 s
+[476] Training time: 0.3 s
+[476] train loss: 0.315713, validation loss: 0.378654, epoch_time: 0.55 s
+[477] Training time: 0.3 s
+[477] train loss: 0.396882, validation loss: 0.314955, epoch_time: 0.58 s
+[478] Training time: 0.3 s
+[478] train loss: 0.340268, validation loss: 0.335911, epoch_time: 0.61 s
+[479] Training time: 0.3 s
+[479] train loss: 0.358267, validation loss: 0.341824, epoch_time: 0.59 s
+[480] Training time: 0.4 s
+[480] train loss: 0.344507, validation loss: 0.325614, epoch_time: 0.64 s
+[481] Training time: 0.3 s
+[481] train loss: 0.333956, validation loss: 0.306086, epoch_time: 0.46 s
+[482] Training time: 0.4 s
+[482] train loss: 0.341058, validation loss: 0.320149, epoch_time: 0.59 s
+[483] Training time: 0.3 s
+[483] train loss: 0.346350, validation loss: 0.302179, epoch_time: 0.57 s
+[484] Training time: 0.3 s
+[484] train loss: 0.336067, validation loss: 0.328468, epoch_time: 0.55 s
+[485] Training time: 0.3 s
+[485] train loss: 0.303781, validation loss: 0.309971, epoch_time: 0.64 s
+[486] Training time: 0.3 s
+[486] train loss: 0.318038, validation loss: 0.294757, epoch_time: 0.58 s
+[487] Training time: 0.3 s
+[487] train loss: 0.314532, validation loss: 0.294969, epoch_time: 0.58 s
+[488] Training time: 0.4 s
+[488] train loss: 0.293543, validation loss: 0.300934, epoch_time: 0.62 s
+[489] Training time: 0.3 s
+[489] train loss: 0.301818, validation loss: 0.286377, epoch_time: 0.55 s
+[490] Training time: 0.3 s
+[490] train loss: 0.299743, validation loss: 0.281611, epoch_time: 0.53 s
+[491] Training time: 0.3 s
+[491] train loss: 0.311376, validation loss: 0.316616, epoch_time: 0.55 s
+[492] Training time: 0.3 s
+[492] train loss: 0.320853, validation loss: 0.285878, epoch_time: 0.51 s
+[493] Training time: 0.3 s
+[493] train loss: 0.283550, validation loss: 0.288057, epoch_time: 0.57 s
+[494] Training time: 0.3 s
+[494] train loss: 0.306455, validation loss: 0.275931, epoch_time: 0.58 s
+[495] Training time: 0.3 s
+[495] train loss: 0.284664, validation loss: 0.294531, epoch_time: 0.54 s
+[496] Training time: 0.3 s
+[496] train loss: 0.294897, validation loss: 0.278877, epoch_time: 0.52 s
+[497] Training time: 0.3 s
+[497] train loss: 0.310716, validation loss: 0.292821, epoch_time: 0.52 s
+[498] Training time: 0.3 s
+[498] train loss: 0.299358, validation loss: 0.282096, epoch_time: 0.55 s
+[499] Training time: 0.3 s
+[499] train loss: 0.320208, validation loss: 0.324420, epoch_time: 0.54 s
+[500] Training time: 0.4 s
+[500] train loss: 0.307334, validation loss: 0.356586, epoch_time: 0.73 s
+[501] Training time: 0.4 s
+[501] train loss: 0.385681, validation loss: 0.322966, epoch_time: 0.60 s
+[502] Training time: 0.3 s
+[502] train loss: 0.330046, validation loss: 0.356017, epoch_time: 0.62 s
+[503] Training time: 0.3 s
+[503] train loss: 0.377249, validation loss: 0.330447, epoch_time: 0.54 s
+[504] Training time: 0.3 s
+[504] train loss: 0.335612, validation loss: 0.333224, epoch_time: 0.53 s
+[505] Training time: 0.3 s
+[505] train loss: 0.326272, validation loss: 0.319754, epoch_time: 0.48 s
+[506] Training time: 0.3 s
+[506] train loss: 0.361825, validation loss: 0.305178, epoch_time: 0.55 s
+[507] Training time: 0.4 s
+[507] train loss: 0.333077, validation loss: 0.308643, epoch_time: 0.61 s
+[508] Training time: 0.3 s
+[508] train loss: 0.297950, validation loss: 0.294578, epoch_time: 0.53 s
+[509] Training time: 0.3 s
+[509] train loss: 0.303244, validation loss: 0.347757, epoch_time: 0.54 s
+[510] Training time: 0.3 s
+[510] train loss: 0.291839, validation loss: 0.292781, epoch_time: 0.53 s
+[511] Training time: 0.4 s
+[511] train loss: 0.293966, validation loss: 0.288110, epoch_time: 0.62 s
+[512] Training time: 0.3 s
+[512] train loss: 0.300990, validation loss: 0.294903, epoch_time: 0.55 s
+[513] Training time: 0.3 s
+[513] train loss: 0.317616, validation loss: 0.302803, epoch_time: 0.55 s
+[514] Training time: 0.3 s
+[514] train loss: 0.298271, validation loss: 0.301708, epoch_time: 0.57 s
+[515] Training time: 0.3 s
+[515] train loss: 0.284272, validation loss: 0.287251, epoch_time: 0.52 s
+[516] Training time: 0.4 s
+[516] train loss: 0.291278, validation loss: 0.294331, epoch_time: 0.60 s
+[517] Training time: 0.3 s
+[517] train loss: 0.350989, validation loss: 0.326137, epoch_time: 0.49 s
+[518] Training time: 0.3 s
+[518] train loss: 0.354667, validation loss: 0.333443, epoch_time: 0.59 s
+[519] Training time: 0.3 s
+[519] train loss: 0.348567, validation loss: 0.309977, epoch_time: 0.51 s
+[520] Training time: 0.3 s
+[520] train loss: 0.369780, validation loss: 0.324377, epoch_time: 0.55 s
+[521] Training time: 0.3 s
+[521] train loss: 0.341932, validation loss: 0.335420, epoch_time: 0.57 s
+[522] Training time: 0.3 s
+[522] train loss: 0.329898, validation loss: 0.306822, epoch_time: 0.61 s
+[523] Training time: 0.3 s
+[523] train loss: 0.338465, validation loss: 0.353270, epoch_time: 0.63 s
+[524] Training time: 0.3 s
+[524] train loss: 0.302919, validation loss: 0.337267, epoch_time: 0.53 s
+[525] Training time: 0.3 s
+[525] train loss: 0.332465, validation loss: 0.324210, epoch_time: 0.52 s
+[526] Training time: 0.3 s
+[526] train loss: 0.326073, validation loss: 0.313218, epoch_time: 0.52 s
+[527] Training time: 0.3 s
+[527] train loss: 0.339048, validation loss: 0.315760, epoch_time: 0.52 s
+[528] Training time: 0.3 s
+[528] train loss: 0.300978, validation loss: 0.364588, epoch_time: 0.61 s
+[529] Training time: 0.4 s
+[529] train loss: 0.299565, validation loss: 0.346406, epoch_time: 0.58 s
+[530] Training time: 0.3 s
+[530] train loss: 0.324385, validation loss: 0.309432, epoch_time: 0.55 s
+[531] Training time: 0.3 s
+[531] train loss: 0.344165, validation loss: 0.407745, epoch_time: 0.52 s
+[532] Training time: 0.3 s
+[532] train loss: 0.366674, validation loss: 0.328854, epoch_time: 0.56 s
+[533] Training time: 0.3 s
+[533] train loss: 0.338921, validation loss: 0.306951, epoch_time: 0.52 s
+[534] Training time: 0.3 s
+[534] train loss: 0.321467, validation loss: 0.309249, epoch_time: 0.62 s
+[535] Training time: 0.3 s
+[535] train loss: 0.322204, validation loss: 0.312261, epoch_time: 0.56 s
+[536] Training time: 0.3 s
+[536] train loss: 0.309281, validation loss: 0.348944, epoch_time: 0.54 s
+[537] Training time: 0.3 s
+[537] train loss: 0.310430, validation loss: 0.299130, epoch_time: 0.60 s
+[538] Training time: 0.3 s
+[538] train loss: 0.304907, validation loss: 0.311927, epoch_time: 0.53 s
+[539] Training time: 0.3 s
+[539] train loss: 0.313769, validation loss: 0.321275, epoch_time: 0.59 s
+[540] Training time: 0.3 s
+[540] train loss: 0.312979, validation loss: 0.311915, epoch_time: 0.52 s
+[541] Training time: 0.3 s
+[541] train loss: 0.315998, validation loss: 0.309957, epoch_time: 0.53 s
+[542] Training time: 0.3 s
+[542] train loss: 0.323582, validation loss: 0.323456, epoch_time: 0.52 s
+[543] Training time: 0.3 s
+[543] train loss: 0.321746, validation loss: 0.300904, epoch_time: 0.55 s
+[544] Training time: 0.3 s
+[544] train loss: 0.306377, validation loss: 0.332238, epoch_time: 0.57 s
+[545] Training time: 0.3 s
+[545] train loss: 0.321598, validation loss: 0.304306, epoch_time: 0.59 s
+[546] Training time: 0.3 s
+[546] train loss: 0.304908, validation loss: 0.316887, epoch_time: 0.52 s
+[547] Training time: 0.3 s
+[547] train loss: 0.313260, validation loss: 0.306332, epoch_time: 0.53 s
+[548] Training time: 0.3 s
+[548] train loss: 0.320706, validation loss: 0.318413, epoch_time: 0.53 s
+[549] Training time: 0.3 s
+[549] train loss: 0.317466, validation loss: 0.332383, epoch_time: 0.53 s
+[550] Training time: 0.3 s
+[550] train loss: 0.308685, validation loss: 0.307962, epoch_time: 0.49 s
+[551] Training time: 0.3 s
+[551] train loss: 0.305045, validation loss: 0.311544, epoch_time: 0.54 s
+[552] Training time: 0.3 s
+[552] train loss: 0.315555, validation loss: 0.308381, epoch_time: 0.54 s
+[553] Training time: 0.4 s
+[553] train loss: 0.309896, validation loss: 0.356348, epoch_time: 0.58 s
+[554] Training time: 0.3 s
+[554] train loss: 0.333757, validation loss: 0.336667, epoch_time: 0.59 s
+[555] Training time: 0.3 s
+[555] train loss: 0.320603, validation loss: 0.312577, epoch_time: 0.52 s
+[556] Training time: 0.3 s
+[556] train loss: 0.320843, validation loss: 0.312104, epoch_time: 0.56 s
+[557] Training time: 0.4 s
+[557] train loss: 0.339166, validation loss: 0.341247, epoch_time: 0.59 s
+[558] Training time: 0.3 s
+[558] train loss: 0.335234, validation loss: 0.329278, epoch_time: 0.58 s
+[559] Training time: 0.3 s
+[559] train loss: 0.315506, validation loss: 0.311983, epoch_time: 0.53 s
+[560] Training time: 0.4 s
+[560] train loss: 0.329327, validation loss: 0.374052, epoch_time: 0.56 s
+[561] Training time: 0.3 s
+[561] train loss: 0.318847, validation loss: 0.315887, epoch_time: 0.56 s
+[562] Training time: 0.3 s
+[562] train loss: 0.320862, validation loss: 0.320938, epoch_time: 0.56 s
+[563] Training time: 0.3 s
+[563] train loss: 0.337367, validation loss: 0.329536, epoch_time: 0.56 s
+[564] Training time: 0.3 s
+[564] train loss: 0.331866, validation loss: 0.319927, epoch_time: 0.58 s
+[565] Training time: 0.3 s
+[565] train loss: 0.322118, validation loss: 0.314584, epoch_time: 0.51 s
+[566] Training time: 0.3 s
+[566] train loss: 0.314650, validation loss: 0.319336, epoch_time: 0.53 s
+[567] Training time: 0.3 s
+[567] train loss: 0.330664, validation loss: 0.316231, epoch_time: 0.58 s
+[568] Training time: 0.4 s
+[568] train loss: 0.323007, validation loss: 0.330663, epoch_time: 0.64 s
+[569] Training time: 0.3 s
+[569] train loss: 0.341369, validation loss: 0.329652, epoch_time: 0.55 s
+[570] Training time: 0.4 s
+[570] train loss: 0.333165, validation loss: 0.352962, epoch_time: 0.58 s
+[571] Training time: 0.3 s
+[571] train loss: 0.365593, validation loss: 0.326710, epoch_time: 0.57 s
+[572] Training time: 0.4 s
+[572] train loss: 0.324085, validation loss: 0.342064, epoch_time: 0.60 s
+[573] Training time: 0.3 s
+[573] train loss: 0.339826, validation loss: 0.332652, epoch_time: 0.57 s
+[574] Training time: 0.3 s
+[574] train loss: 0.331876, validation loss: 0.330841, epoch_time: 0.57 s
+[575] Training time: 0.3 s
+[575] train loss: 0.324181, validation loss: 0.328069, epoch_time: 0.61 s
+[576] Training time: 0.4 s
+[576] train loss: 0.325594, validation loss: 0.343501, epoch_time: 0.57 s
+[577] Training time: 0.3 s
+[577] train loss: 0.326850, validation loss: 0.331595, epoch_time: 0.60 s
+[578] Training time: 0.3 s
+[578] train loss: 0.326356, validation loss: 0.328201, epoch_time: 0.60 s
+[579] Training time: 0.3 s
+[579] train loss: 0.326669, validation loss: 0.328418, epoch_time: 0.54 s
+[580] Training time: 0.4 s
+[580] train loss: 0.331483, validation loss: 0.326995, epoch_time: 0.57 s
+[581] Training time: 0.3 s
+[581] train loss: 0.330206, validation loss: 0.328710, epoch_time: 0.56 s
+[582] Training time: 0.4 s
+[582] train loss: 0.323934, validation loss: 0.326645, epoch_time: 0.64 s
+[583] Training time: 0.4 s
+[583] train loss: 0.325382, validation loss: 0.328520, epoch_time: 0.60 s
+[584] Training time: 0.3 s
+[584] train loss: 0.336501, validation loss: 0.331749, epoch_time: 0.53 s
+[585] Training time: 0.3 s
+[585] train loss: 0.342770, validation loss: 0.333127, epoch_time: 0.55 s
+[586] Training time: 0.3 s
+[586] train loss: 0.330287, validation loss: 0.346169, epoch_time: 0.56 s
+[587] Training time: 0.3 s
+[587] train loss: 0.362549, validation loss: 0.333046, epoch_time: 0.60 s
+[588] Training time: 0.3 s
+[588] train loss: 0.354498, validation loss: 0.386556, epoch_time: 0.54 s
+[589] Training time: 0.3 s
+[589] train loss: 0.348839, validation loss: 0.336036, epoch_time: 0.52 s
+[590] Training time: 0.3 s
+[590] train loss: 0.338927, validation loss: 0.340482, epoch_time: 0.54 s
+[591] Training time: 0.3 s
+[591] train loss: 0.350564, validation loss: 0.328305, epoch_time: 0.55 s
+[592] Training time: 0.3 s
+[592] train loss: 0.348398, validation loss: 0.337330, epoch_time: 0.58 s
+[593] Training time: 0.4 s
+[593] train loss: 0.348036, validation loss: 0.340185, epoch_time: 0.55 s
+[594] Training time: 0.4 s
+[594] train loss: 0.340478, validation loss: 0.429303, epoch_time: 0.64 s
+[595] Training time: 0.4 s
+[595] train loss: 0.336443, validation loss: 0.335667, epoch_time: 0.59 s
+[596] Training time: 0.4 s
+[596] train loss: 0.338032, validation loss: 0.334751, epoch_time: 0.63 s
+[597] Training time: 0.3 s
+[597] train loss: 0.344921, validation loss: 0.341611, epoch_time: 0.60 s
+[598] Training time: 0.3 s
+[598] train loss: 0.371518, validation loss: 0.335021, epoch_time: 0.56 s
+[599] Training time: 0.3 s
+[599] train loss: 0.368542, validation loss: 0.347038, epoch_time: 0.51 s
+[600] Training time: 0.5 s
+[600] train loss: 0.340678, validation loss: 0.345512, epoch_time: 0.91 s
+[601] Training time: 0.4 s
+[601] train loss: 0.347751, validation loss: 0.341747, epoch_time: 0.68 s
+[602] Training time: 0.4 s
+[602] train loss: 0.335871, validation loss: 0.339624, epoch_time: 0.57 s
+[603] Training time: 0.4 s
+[603] train loss: 0.335677, validation loss: 0.341016, epoch_time: 0.59 s
+[604] Training time: 0.4 s
+[604] train loss: 0.335258, validation loss: 0.332973, epoch_time: 0.64 s
+[605] Training time: 0.4 s
+[605] train loss: 0.341763, validation loss: 0.333233, epoch_time: 0.68 s
+[606] Training time: 0.3 s
+[606] train loss: 0.351994, validation loss: 0.349633, epoch_time: 0.55 s
+[607] Training time: 0.3 s
+[607] train loss: 0.337446, validation loss: 0.337786, epoch_time: 0.51 s
+[608] Training time: 0.3 s
+[608] train loss: 0.335996, validation loss: 0.335590, epoch_time: 0.54 s
+[609] Training time: 0.4 s
+[609] train loss: 0.340949, validation loss: 0.340465, epoch_time: 0.58 s
+[610] Training time: 0.4 s
+[610] train loss: 0.346167, validation loss: 0.376151, epoch_time: 0.55 s
+[611] Training time: 0.3 s
+[611] train loss: 0.364389, validation loss: 0.349671, epoch_time: 0.54 s
+[612] Training time: 0.3 s
+[612] train loss: 0.351570, validation loss: 0.353801, epoch_time: 0.52 s
+[613] Training time: 0.3 s
+[613] train loss: 0.363135, validation loss: 0.359030, epoch_time: 0.55 s
+[614] Training time: 0.3 s
+[614] train loss: 0.368065, validation loss: 0.361458, epoch_time: 0.56 s
+[615] Training time: 0.3 s
+[615] train loss: 0.378135, validation loss: 0.362109, epoch_time: 0.62 s
+[616] Training time: 0.4 s
+[616] train loss: 0.357895, validation loss: 0.357342, epoch_time: 0.53 s
+[617] Training time: 0.3 s
+[617] train loss: 0.362364, validation loss: 0.353767, epoch_time: 0.56 s
+[618] Training time: 0.3 s
+[618] train loss: 0.356653, validation loss: 0.356826, epoch_time: 0.52 s
+[619] Training time: 0.3 s
+[619] train loss: 0.353988, validation loss: 0.361748, epoch_time: 0.57 s
+[620] Training time: 0.3 s
+[620] train loss: 0.356075, validation loss: 0.358688, epoch_time: 0.56 s
+[621] Training time: 0.3 s
+[621] train loss: 0.351563, validation loss: 0.348764, epoch_time: 0.52 s
+[622] Training time: 0.3 s
+[622] train loss: 0.353729, validation loss: 0.351136, epoch_time: 0.61 s
+[623] Training time: 0.4 s
+[623] train loss: 0.353267, validation loss: 0.347858, epoch_time: 0.58 s
+[624] Training time: 0.3 s
+[624] train loss: 0.350850, validation loss: 0.349546, epoch_time: 0.53 s
+[625] Training time: 0.4 s
+[625] train loss: 0.351144, validation loss: 0.348773, epoch_time: 0.65 s
+[626] Training time: 0.4 s
+[626] train loss: 0.353165, validation loss: 0.354130, epoch_time: 0.59 s
+[627] Training time: 0.3 s
+[627] train loss: 0.354321, validation loss: 0.358974, epoch_time: 0.58 s
+[628] Training time: 0.3 s
+[628] train loss: 0.366222, validation loss: 0.355326, epoch_time: 0.58 s
+[629] Training time: 0.4 s
+[629] train loss: 0.355449, validation loss: 0.354056, epoch_time: 0.62 s
+[630] Training time: 0.4 s
+[630] train loss: 0.348241, validation loss: 0.344367, epoch_time: 0.58 s
+[631] Training time: 0.3 s
+[631] train loss: 0.354599, validation loss: 0.348961, epoch_time: 0.55 s
+[632] Training time: 0.3 s
+[632] train loss: 0.349217, validation loss: 0.359840, epoch_time: 0.54 s
+[633] Training time: 0.3 s
+[633] train loss: 0.349003, validation loss: 0.346143, epoch_time: 0.58 s
+[634] Training time: 0.4 s
+[634] train loss: 0.367997, validation loss: 0.345668, epoch_time: 0.65 s
+[635] Training time: 0.3 s
+[635] train loss: 0.374790, validation loss: 0.383330, epoch_time: 0.56 s
+[636] Training time: 0.3 s
+[636] train loss: 0.385416, validation loss: 0.379232, epoch_time: 0.56 s
+[637] Training time: 0.3 s
+[637] train loss: 0.393502, validation loss: 0.364237, epoch_time: 0.57 s
+[638] Training time: 0.3 s
+[638] train loss: 0.378061, validation loss: 0.404446, epoch_time: 0.52 s
+[639] Training time: 0.3 s
+[639] train loss: 0.381780, validation loss: 0.372701, epoch_time: 0.54 s
+[640] Training time: 0.3 s
+[640] train loss: 0.392404, validation loss: 0.359689, epoch_time: 0.49 s
+[641] Training time: 0.4 s
+[641] train loss: 0.393230, validation loss: 0.376526, epoch_time: 0.61 s
+[642] Training time: 0.3 s
+[642] train loss: 0.392069, validation loss: 0.384168, epoch_time: 0.60 s
+[643] Training time: 0.3 s
+[643] train loss: 0.373587, validation loss: 0.413098, epoch_time: 0.60 s
+[644] Training time: 0.3 s
+[644] train loss: 0.454388, validation loss: 0.367190, epoch_time: 0.65 s
+[645] Training time: 0.4 s
+[645] train loss: 0.368424, validation loss: 0.386262, epoch_time: 0.67 s
+[646] Training time: 0.4 s
+[646] train loss: 0.398193, validation loss: 0.349984, epoch_time: 0.69 s
+[647] Training time: 0.4 s
+[647] train loss: 0.352346, validation loss: 0.371228, epoch_time: 0.71 s
+[648] Training time: 0.3 s
+[648] train loss: 0.372255, validation loss: 0.349894, epoch_time: 0.54 s
+[649] Training time: 0.3 s
+[649] train loss: 0.345414, validation loss: 0.357788, epoch_time: 0.60 s
+[650] Training time: 0.3 s
+[650] train loss: 0.387510, validation loss: 0.365735, epoch_time: 0.61 s
+[651] Training time: 0.4 s
+[651] train loss: 0.352990, validation loss: 0.339092, epoch_time: 0.67 s
+[652] Training time: 0.4 s
+[652] train loss: 0.332940, validation loss: 0.383620, epoch_time: 0.55 s
+[653] Training time: 0.3 s
+[653] train loss: 0.349366, validation loss: 0.378324, epoch_time: 0.59 s
+[654] Training time: 0.4 s
+[654] train loss: 0.387142, validation loss: 0.355430, epoch_time: 0.63 s
+[655] Training time: 0.3 s
+[655] train loss: 0.354339, validation loss: 0.356848, epoch_time: 0.58 s
+[656] Training time: 0.3 s
+[656] train loss: 0.354534, validation loss: 0.363728, epoch_time: 0.56 s
+[657] Training time: 0.3 s
+[657] train loss: 0.358010, validation loss: 0.359000, epoch_time: 0.59 s
+[658] Training time: 0.4 s
+[658] train loss: 0.363575, validation loss: 0.401258, epoch_time: 0.59 s
+[659] Training time: 0.3 s
+[659] train loss: 0.406191, validation loss: 0.394997, epoch_time: 0.53 s
+[660] Training time: 0.3 s
+[660] train loss: 0.401683, validation loss: 0.383782, epoch_time: 0.55 s
+[661] Training time: 0.3 s
+[661] train loss: 0.390498, validation loss: 0.382693, epoch_time: 0.58 s
+[662] Training time: 0.3 s
+[662] train loss: 0.397892, validation loss: 0.383557, epoch_time: 0.60 s
+[663] Training time: 0.4 s
+[663] train loss: 0.390737, validation loss: 0.428206, epoch_time: 0.61 s
+[664] Training time: 0.4 s
+[664] train loss: 0.441577, validation loss: 0.381875, epoch_time: 0.59 s
+[665] Training time: 0.3 s
+[665] train loss: 0.408130, validation loss: 0.399206, epoch_time: 0.52 s
+[666] Training time: 0.3 s
+[666] train loss: 0.384067, validation loss: 0.380630, epoch_time: 0.55 s
+[667] Training time: 0.3 s
+[667] train loss: 0.382126, validation loss: 0.392768, epoch_time: 0.50 s
+[668] Training time: 0.3 s
+[668] train loss: 0.378240, validation loss: 0.380156, epoch_time: 0.53 s
+[669] Training time: 0.4 s
+[669] train loss: 0.388324, validation loss: 0.387154, epoch_time: 0.61 s
+[670] Training time: 0.3 s
+[670] train loss: 0.384825, validation loss: 0.386007, epoch_time: 0.54 s
+[671] Training time: 0.3 s
+[671] train loss: 0.392100, validation loss: 0.383580, epoch_time: 0.52 s
+[672] Training time: 0.4 s
+[672] train loss: 0.420227, validation loss: 0.384098, epoch_time: 0.59 s
+[673] Training time: 0.3 s
+[673] train loss: 0.400328, validation loss: 0.522032, epoch_time: 0.53 s
+[674] Training time: 0.3 s
+[674] train loss: 0.536191, validation loss: 0.441923, epoch_time: 0.61 s
+[675] Training time: 0.3 s
+[675] train loss: 0.518701, validation loss: 0.554054, epoch_time: 0.56 s
+[676] Training time: 0.3 s
+[676] train loss: 0.595915, validation loss: 0.493074, epoch_time: 0.54 s
+[677] Training time: 0.4 s
+[677] train loss: 0.432456, validation loss: 0.421521, epoch_time: 0.60 s
+[678] Training time: 0.3 s
+[678] train loss: 0.428064, validation loss: 0.414314, epoch_time: 0.59 s
+[679] Training time: 0.3 s
+[679] train loss: 0.414547, validation loss: 0.393069, epoch_time: 0.54 s
+[680] Training time: 0.3 s
+[680] train loss: 0.389909, validation loss: 0.419967, epoch_time: 0.57 s
+[681] Training time: 0.3 s
+[681] train loss: 0.394734, validation loss: 0.385334, epoch_time: 0.61 s
+[682] Training time: 0.4 s
+[682] train loss: 0.378226, validation loss: 0.370245, epoch_time: 0.56 s
+[683] Training time: 0.4 s
+[683] train loss: 0.354313, validation loss: 0.398272, epoch_time: 0.60 s
+[684] Training time: 0.3 s
+[684] train loss: 0.412703, validation loss: 0.403016, epoch_time: 0.61 s
+[685] Training time: 0.3 s
+[685] train loss: 0.397604, validation loss: 0.380955, epoch_time: 0.57 s
+[686] Training time: 0.3 s
+[686] train loss: 0.414323, validation loss: 0.403222, epoch_time: 0.52 s
+[687] Training time: 0.3 s
+[687] train loss: 0.432625, validation loss: 0.402188, epoch_time: 0.57 s
+[688] Training time: 0.4 s
+[688] train loss: 0.361982, validation loss: 0.488281, epoch_time: 0.59 s
+[689] Training time: 0.3 s
+[689] train loss: 0.524642, validation loss: 0.433674, epoch_time: 0.57 s
+[690] Training time: 0.3 s
+[690] train loss: 0.447062, validation loss: 0.444930, epoch_time: 0.60 s
+[691] Training time: 0.3 s
+[691] train loss: 0.466109, validation loss: 0.445304, epoch_time: 0.59 s
+[692] Training time: 0.3 s
+[692] train loss: 0.415230, validation loss: 0.428135, epoch_time: 0.56 s
+[693] Training time: 0.3 s
+[693] train loss: 0.423246, validation loss: 0.415174, epoch_time: 0.62 s
+[694] Training time: 0.4 s
+[694] train loss: 0.404971, validation loss: 0.416036, epoch_time: 0.60 s
+[695] Training time: 0.4 s
+[695] train loss: 0.417335, validation loss: 0.409778, epoch_time: 0.60 s
+[696] Training time: 0.4 s
+[696] train loss: 0.399746, validation loss: 0.407396, epoch_time: 0.59 s
+[697] Training time: 0.3 s
+[697] train loss: 0.411314, validation loss: 0.405926, epoch_time: 0.58 s
+[698] Training time: 0.3 s
+[698] train loss: 0.402678, validation loss: 0.390958, epoch_time: 0.58 s
+[699] Training time: 0.4 s
+[699] train loss: 0.390993, validation loss: 0.394546, epoch_time: 0.60 s
+[700] Training time: 0.4 s
+[700] train loss: 0.403083, validation loss: 0.395573, epoch_time: 0.78 s
+[701] Training time: 0.4 s
+[701] train loss: 0.407993, validation loss: 0.392332, epoch_time: 0.56 s
+[702] Training time: 0.4 s
+[702] train loss: 0.391298, validation loss: 0.397304, epoch_time: 0.58 s
+[703] Training time: 0.3 s
+[703] train loss: 0.409404, validation loss: 0.386422, epoch_time: 0.58 s
+[704] Training time: 0.4 s
+[704] train loss: 0.387534, validation loss: 0.399168, epoch_time: 0.63 s
+[705] Training time: 0.4 s
+[705] train loss: 0.391846, validation loss: 0.398283, epoch_time: 0.64 s
+[706] Training time: 0.3 s
+[706] train loss: 0.390025, validation loss: 0.385370, epoch_time: 0.60 s
+[707] Training time: 0.4 s
+[707] train loss: 0.389525, validation loss: 0.385510, epoch_time: 0.56 s
+[708] Training time: 0.4 s
+[708] train loss: 0.391731, validation loss: 0.384201, epoch_time: 0.61 s
+[709] Training time: 0.3 s
+[709] train loss: 0.383259, validation loss: 0.380900, epoch_time: 0.56 s
+[710] Training time: 0.4 s
+[710] train loss: 0.384344, validation loss: 0.378731, epoch_time: 0.61 s
+[711] Training time: 0.3 s
+[711] train loss: 0.383923, validation loss: 0.412045, epoch_time: 0.49 s
+[712] Training time: 0.3 s
+[712] train loss: 0.409956, validation loss: 0.372203, epoch_time: 0.59 s
+[713] Training time: 0.3 s
+[713] train loss: 0.380357, validation loss: 0.381385, epoch_time: 0.51 s
+[714] Training time: 0.4 s
+[714] train loss: 0.389661, validation loss: 0.386950, epoch_time: 0.60 s
+[715] Training time: 0.3 s
+[715] train loss: 0.407802, validation loss: 0.369141, epoch_time: 0.51 s
+[716] Training time: 0.4 s
+[716] train loss: 0.394403, validation loss: 0.510147, epoch_time: 0.59 s
+[717] Training time: 0.3 s
+[717] train loss: 0.454569, validation loss: 0.380202, epoch_time: 0.52 s
+[718] Training time: 0.4 s
+[718] train loss: 0.679858, validation loss: 0.602261, epoch_time: 0.62 s
+[719] Training time: 0.4 s
+[719] train loss: 0.455474, validation loss: 0.447607, epoch_time: 0.58 s
+[720] Training time: 0.3 s
+[720] train loss: 0.678150, validation loss: 0.449911, epoch_time: 0.59 s
+[721] Training time: 0.3 s
+[721] train loss: 0.438279, validation loss: 0.431672, epoch_time: 0.55 s
+[722] Training time: 0.3 s
+[722] train loss: 0.435948, validation loss: 0.426072, epoch_time: 0.53 s
+[723] Training time: 0.3 s
+[723] train loss: 0.437718, validation loss: 0.393039, epoch_time: 0.54 s
+[724] Training time: 0.3 s
+[724] train loss: 0.384679, validation loss: 0.395897, epoch_time: 0.54 s
+[725] Training time: 0.3 s
+[725] train loss: 0.407984, validation loss: 0.402690, epoch_time: 0.53 s
+[726] Training time: 0.3 s
+[726] train loss: 0.436163, validation loss: 0.445276, epoch_time: 0.50 s
+[727] Training time: 0.3 s
+[727] train loss: 0.508626, validation loss: 0.395285, epoch_time: 0.55 s
+[728] Training time: 0.4 s
+[728] train loss: 0.397858, validation loss: 0.438737, epoch_time: 0.61 s
+[729] Training time: 0.3 s
+[729] train loss: 0.441995, validation loss: 0.439605, epoch_time: 0.48 s
+[730] Training time: 0.3 s
+[730] train loss: 0.439589, validation loss: 0.437802, epoch_time: 0.55 s
+[731] Training time: 0.3 s
+[731] train loss: 0.451589, validation loss: 0.426587, epoch_time: 0.52 s
+[732] Training time: 0.3 s
+[732] train loss: 0.428576, validation loss: 0.466983, epoch_time: 0.53 s
+[733] Training time: 0.3 s
+[733] train loss: 0.503990, validation loss: 0.449043, epoch_time: 0.54 s
+[734] Training time: 0.3 s
+[734] train loss: 0.471890, validation loss: 0.469718, epoch_time: 0.53 s
+[735] Training time: 0.4 s
+[735] train loss: 0.482551, validation loss: 0.423035, epoch_time: 0.57 s
+[736] Training time: 0.3 s
+[736] train loss: 0.495231, validation loss: 0.510840, epoch_time: 0.58 s
+[737] Training time: 0.3 s
+[737] train loss: 0.474607, validation loss: 0.424035, epoch_time: 0.53 s
+[738] Training time: 0.3 s
+[738] train loss: 0.412915, validation loss: 0.425776, epoch_time: 0.58 s
+[739] Training time: 0.4 s
+[739] train loss: 0.420392, validation loss: 0.406750, epoch_time: 0.63 s
+[740] Training time: 0.3 s
+[740] train loss: 0.401355, validation loss: 0.400814, epoch_time: 0.55 s
+[741] Training time: 0.3 s
+[741] train loss: 0.409705, validation loss: 0.396787, epoch_time: 0.58 s
+[742] Training time: 0.3 s
+[742] train loss: 0.403441, validation loss: 0.382858, epoch_time: 0.55 s
+[743] Training time: 0.3 s
+[743] train loss: 0.389613, validation loss: 0.389762, epoch_time: 0.57 s
+[744] Training time: 0.3 s
+[744] train loss: 0.380145, validation loss: 0.378496, epoch_time: 0.57 s
+[745] Training time: 0.3 s
+[745] train loss: 0.379473, validation loss: 0.362432, epoch_time: 0.61 s
+[746] Training time: 0.3 s
+[746] train loss: 0.378498, validation loss: 0.370143, epoch_time: 0.54 s
+[747] Training time: 0.3 s
+[747] train loss: 0.381365, validation loss: 0.356185, epoch_time: 0.55 s
+[748] Training time: 0.4 s
+[748] train loss: 0.363357, validation loss: 0.350511, epoch_time: 0.60 s
+[749] Training time: 0.4 s
+[749] train loss: 0.367244, validation loss: 0.372542, epoch_time: 0.57 s
+[750] Training time: 0.4 s
+[750] train loss: 0.395050, validation loss: 0.427842, epoch_time: 0.61 s
+[751] Training time: 0.3 s
+[751] train loss: 0.427848, validation loss: 0.409548, epoch_time: 0.66 s
+[752] Training time: 0.3 s
+[752] train loss: 0.381463, validation loss: 0.374272, epoch_time: 0.64 s
+[753] Training time: 0.3 s
+[753] train loss: 0.382747, validation loss: 0.377253, epoch_time: 0.55 s
+[754] Training time: 0.3 s
+[754] train loss: 0.375017, validation loss: 0.346367, epoch_time: 0.54 s
+[755] Training time: 0.3 s
+[755] train loss: 0.342182, validation loss: 0.367005, epoch_time: 0.59 s
+[756] Training time: 0.4 s
+[756] train loss: 0.366060, validation loss: 0.357745, epoch_time: 0.64 s
+[757] Training time: 0.3 s
+[757] train loss: 0.349456, validation loss: 0.358869, epoch_time: 0.53 s
+[758] Training time: 0.3 s
+[758] train loss: 0.340849, validation loss: 0.326755, epoch_time: 0.62 s
+[759] Training time: 0.3 s
+[759] train loss: 0.332978, validation loss: 0.361305, epoch_time: 0.58 s
+[760] Training time: 0.3 s
+[760] train loss: 0.360518, validation loss: 0.348619, epoch_time: 0.58 s
+[761] Training time: 0.4 s
+[761] train loss: 0.344888, validation loss: 0.318246, epoch_time: 0.66 s
+[762] Training time: 0.4 s
+[762] train loss: 0.318499, validation loss: 0.340294, epoch_time: 0.58 s
+[763] Training time: 0.3 s
+[763] train loss: 0.319334, validation loss: 0.315101, epoch_time: 0.58 s
+[764] Training time: 0.3 s
+[764] train loss: 0.313078, validation loss: 0.323810, epoch_time: 0.58 s
+[765] Training time: 0.3 s
+[765] train loss: 0.310620, validation loss: 0.312175, epoch_time: 0.53 s
+[766] Training time: 0.4 s
+[766] train loss: 0.309854, validation loss: 0.305729, epoch_time: 0.59 s
+[767] Training time: 0.4 s
+[767] train loss: 0.310509, validation loss: 0.303635, epoch_time: 0.58 s
+[768] Training time: 0.3 s
+[768] train loss: 0.342863, validation loss: 0.334302, epoch_time: 0.49 s
+[769] Training time: 0.3 s
+[769] train loss: 0.328087, validation loss: 0.323453, epoch_time: 0.57 s
+[770] Training time: 0.3 s
+[770] train loss: 0.317620, validation loss: 0.315543, epoch_time: 0.53 s
+[771] Training time: 0.3 s
+[771] train loss: 0.327563, validation loss: 0.351107, epoch_time: 0.54 s
+[772] Training time: 0.4 s
+[772] train loss: 0.324438, validation loss: 0.331703, epoch_time: 0.61 s
+[773] Training time: 0.4 s
+[773] train loss: 0.321323, validation loss: 0.323625, epoch_time: 0.65 s
+[774] Training time: 0.4 s
+[774] train loss: 0.313483, validation loss: 0.364441, epoch_time: 0.63 s
+[775] Training time: 0.4 s
+[775] train loss: 0.376864, validation loss: 0.304497, epoch_time: 0.60 s
+[776] Training time: 0.3 s
+[776] train loss: 0.371727, validation loss: 0.358198, epoch_time: 0.56 s
+[777] Training time: 0.3 s
+[777] train loss: 0.345526, validation loss: 0.309906, epoch_time: 0.61 s
+[778] Training time: 0.3 s
+[778] train loss: 0.321465, validation loss: 0.354926, epoch_time: 0.51 s
+[779] Training time: 0.3 s
+[779] train loss: 0.344368, validation loss: 0.310688, epoch_time: 0.58 s
+[780] Training time: 0.4 s
+[780] train loss: 0.315234, validation loss: 0.341338, epoch_time: 0.58 s
+[781] Training time: 0.3 s
+[781] train loss: 0.309738, validation loss: 0.316035, epoch_time: 0.52 s
+[782] Training time: 0.3 s
+[782] train loss: 0.299976, validation loss: 0.339945, epoch_time: 0.50 s
+[783] Training time: 0.3 s
+[783] train loss: 0.327766, validation loss: 0.304414, epoch_time: 0.55 s
+[784] Training time: 0.4 s
+[784] train loss: 0.322339, validation loss: 0.320669, epoch_time: 0.57 s
+[785] Training time: 0.3 s
+[785] train loss: 0.316798, validation loss: 0.301283, epoch_time: 0.49 s
+[786] Training time: 0.3 s
+[786] train loss: 0.308764, validation loss: 0.310528, epoch_time: 0.53 s
+[787] Training time: 0.3 s
+[787] train loss: 0.301008, validation loss: 0.303655, epoch_time: 0.58 s
+[788] Training time: 0.3 s
+[788] train loss: 0.299473, validation loss: 0.300622, epoch_time: 0.57 s
+[789] Training time: 0.3 s
+[789] train loss: 0.302017, validation loss: 0.308305, epoch_time: 0.55 s
+[790] Training time: 0.3 s
+[790] train loss: 0.326572, validation loss: 0.290807, epoch_time: 0.53 s
+[791] Training time: 0.3 s
+[791] train loss: 0.337385, validation loss: 0.314045, epoch_time: 0.56 s
+[792] Training time: 0.3 s
+[792] train loss: 0.308730, validation loss: 0.304911, epoch_time: 0.57 s
+[793] Training time: 0.3 s
+[793] train loss: 0.319880, validation loss: 0.324313, epoch_time: 0.52 s
+[794] Training time: 0.4 s
+[794] train loss: 0.299891, validation loss: 0.350076, epoch_time: 0.65 s
+[795] Training time: 0.4 s
+[795] train loss: 0.397727, validation loss: 0.410980, epoch_time: 0.58 s
+[796] Training time: 0.3 s
+[796] train loss: 0.365064, validation loss: 0.330690, epoch_time: 0.56 s
+[797] Training time: 0.3 s
+[797] train loss: 0.301634, validation loss: 0.318495, epoch_time: 0.57 s
+[798] Training time: 0.3 s
+[798] train loss: 0.396066, validation loss: 0.289964, epoch_time: 0.53 s
+[799] Training time: 0.3 s
+[799] train loss: 0.291511, validation loss: 0.315134, epoch_time: 0.52 s
+[800] Training time: 0.3 s
+[800] train loss: 0.303748, validation loss: 0.293509, epoch_time: 0.67 s
+[801] Training time: 0.3 s
+[801] train loss: 0.319134, validation loss: 0.340893, epoch_time: 0.55 s
+[802] Training time: 0.3 s
+[802] train loss: 0.398831, validation loss: 0.355607, epoch_time: 0.56 s
+[803] Training time: 0.4 s
+[803] train loss: 0.290373, validation loss: 0.319798, epoch_time: 0.60 s
+[804] Training time: 0.3 s
+[804] train loss: 0.315869, validation loss: 0.307104, epoch_time: 0.56 s
+[805] Training time: 0.3 s
+[805] train loss: 0.332620, validation loss: 0.305986, epoch_time: 0.55 s
+[806] Training time: 0.3 s
+[806] train loss: 0.294060, validation loss: 0.337818, epoch_time: 0.57 s
+[807] Training time: 0.3 s
+[807] train loss: 0.298137, validation loss: 0.313761, epoch_time: 0.58 s
+[808] Training time: 0.3 s
+[808] train loss: 0.303028, validation loss: 0.284679, epoch_time: 0.60 s
+[809] Training time: 0.3 s
+[809] train loss: 0.311830, validation loss: 0.314628, epoch_time: 0.54 s
+[810] Training time: 0.4 s
+[810] train loss: 0.299284, validation loss: 0.309575, epoch_time: 0.57 s
+[811] Training time: 0.3 s
+[811] train loss: 0.346753, validation loss: 0.319497, epoch_time: 0.58 s
+[812] Training time: 0.4 s
+[812] train loss: 0.315964, validation loss: 0.293815, epoch_time: 0.63 s
+[813] Training time: 0.4 s
+[813] train loss: 0.295226, validation loss: 0.294396, epoch_time: 0.61 s
+[814] Training time: 0.3 s
+[814] train loss: 0.322262, validation loss: 0.334222, epoch_time: 0.52 s
+[815] Training time: 0.3 s
+[815] train loss: 0.320132, validation loss: 0.302585, epoch_time: 0.49 s
+[816] Training time: 0.3 s
+[816] train loss: 0.284793, validation loss: 0.294166, epoch_time: 0.59 s
+[817] Training time: 0.3 s
+[817] train loss: 0.309877, validation loss: 0.308459, epoch_time: 0.57 s
+[818] Training time: 0.3 s
+[818] train loss: 0.309954, validation loss: 0.307844, epoch_time: 0.50 s
+[819] Training time: 0.3 s
+[819] train loss: 0.306509, validation loss: 0.294890, epoch_time: 0.60 s
+[820] Training time: 0.3 s
+[820] train loss: 0.297988, validation loss: 0.289166, epoch_time: 0.58 s
+[821] Training time: 0.3 s
+[821] train loss: 0.302973, validation loss: 0.285674, epoch_time: 0.59 s
+[822] Training time: 0.3 s
+[822] train loss: 0.298019, validation loss: 0.325460, epoch_time: 0.59 s
+[823] Training time: 0.3 s
+[823] train loss: 0.386353, validation loss: 0.321078, epoch_time: 0.57 s
+[824] Training time: 0.4 s
+[824] train loss: 0.329446, validation loss: 0.293017, epoch_time: 0.61 s
+[825] Training time: 0.3 s
+[825] train loss: 0.314511, validation loss: 0.301961, epoch_time: 0.56 s
+[826] Training time: 0.4 s
+[826] train loss: 0.296357, validation loss: 0.309070, epoch_time: 0.55 s
+[827] Training time: 0.3 s
+[827] train loss: 0.283450, validation loss: 0.280811, epoch_time: 0.50 s
+[828] Training time: 0.3 s
+[828] train loss: 0.275406, validation loss: 0.290638, epoch_time: 0.56 s
+[829] Training time: 0.3 s
+[829] train loss: 0.282017, validation loss: 0.282717, epoch_time: 0.51 s
+[830] Training time: 0.3 s
+[830] train loss: 0.280621, validation loss: 0.274918, epoch_time: 0.58 s
+[831] Training time: 0.3 s
+[831] train loss: 0.281431, validation loss: 0.268986, epoch_time: 0.60 s
+[832] Training time: 0.4 s
+[832] train loss: 0.269261, validation loss: 0.276201, epoch_time: 0.57 s
+[833] Training time: 0.3 s
+[833] train loss: 0.284060, validation loss: 0.277138, epoch_time: 0.56 s
+[834] Training time: 0.3 s
+[834] train loss: 0.285744, validation loss: 0.284640, epoch_time: 0.59 s
+[835] Training time: 0.3 s
+[835] train loss: 0.275127, validation loss: 0.297216, epoch_time: 0.56 s
+[836] Training time: 0.3 s
+[836] train loss: 0.306387, validation loss: 0.295147, epoch_time: 0.58 s
+[837] Training time: 0.3 s
+[837] train loss: 0.309266, validation loss: 0.274414, epoch_time: 0.59 s
+[838] Training time: 0.3 s
+[838] train loss: 0.278723, validation loss: 0.273816, epoch_time: 0.62 s
+[839] Training time: 0.3 s
+[839] train loss: 0.296572, validation loss: 0.271542, epoch_time: 0.57 s
+[840] Training time: 0.4 s
+[840] train loss: 0.268759, validation loss: 0.311066, epoch_time: 0.59 s
+[841] Training time: 0.3 s
+[841] train loss: 0.275116, validation loss: 0.267847, epoch_time: 0.55 s
+[842] Training time: 0.3 s
+[842] train loss: 0.264303, validation loss: 0.267499, epoch_time: 0.65 s
+[843] Training time: 0.4 s
+[843] train loss: 0.262617, validation loss: 0.264938, epoch_time: 0.62 s
+[844] Training time: 0.3 s
+[844] train loss: 0.263513, validation loss: 0.257010, epoch_time: 0.56 s
+[845] Training time: 0.2 s
+[845] train loss: 0.264094, validation loss: 0.268741, epoch_time: 0.44 s
+[846] Training time: 0.3 s
+[846] train loss: 0.276860, validation loss: 0.269487, epoch_time: 0.56 s
+[847] Training time: 0.3 s
+[847] train loss: 0.265544, validation loss: 0.266133, epoch_time: 0.57 s
+[848] Training time: 0.3 s
+[848] train loss: 0.269086, validation loss: 0.261078, epoch_time: 0.52 s
+[849] Training time: 0.4 s
+[849] train loss: 0.268454, validation loss: 0.266126, epoch_time: 0.60 s
+[850] Training time: 0.3 s
+[850] train loss: 0.259569, validation loss: 0.264782, epoch_time: 0.59 s
+[851] Training time: 0.3 s
+[851] train loss: 0.271863, validation loss: 0.254814, epoch_time: 0.58 s
+[852] Training time: 0.3 s
+[852] train loss: 0.273224, validation loss: 0.275106, epoch_time: 0.54 s
+[853] Training time: 0.3 s
+[853] train loss: 0.262974, validation loss: 0.263835, epoch_time: 0.53 s
+[854] Training time: 0.4 s
+[854] train loss: 0.262620, validation loss: 0.256721, epoch_time: 0.62 s
+[855] Training time: 0.3 s
+[855] train loss: 0.253969, validation loss: 0.256671, epoch_time: 0.55 s
+[856] Training time: 0.3 s
+[856] train loss: 0.257317, validation loss: 0.256918, epoch_time: 0.58 s
+[857] Training time: 0.3 s
+[857] train loss: 0.272134, validation loss: 0.261579, epoch_time: 0.56 s
+[858] Training time: 0.4 s
+[858] train loss: 0.273633, validation loss: 0.316386, epoch_time: 0.64 s
+[859] Training time: 0.3 s
+[859] train loss: 0.306986, validation loss: 0.282824, epoch_time: 0.54 s
+[860] Training time: 0.3 s
+[860] train loss: 0.267339, validation loss: 0.273702, epoch_time: 0.52 s
+[861] Training time: 0.4 s
+[861] train loss: 0.297426, validation loss: 0.270861, epoch_time: 0.58 s
+[862] Training time: 0.3 s
+[862] train loss: 0.286200, validation loss: 0.270838, epoch_time: 0.57 s
+[863] Training time: 0.3 s
+[863] train loss: 0.274429, validation loss: 0.257464, epoch_time: 0.57 s
+[864] Training time: 0.3 s
+[864] train loss: 0.283429, validation loss: 0.263326, epoch_time: 0.59 s
+[865] Training time: 0.3 s
+[865] train loss: 0.277938, validation loss: 0.265151, epoch_time: 0.54 s
+[866] Training time: 0.4 s
+[866] train loss: 0.286279, validation loss: 0.253986, epoch_time: 0.63 s
+[867] Training time: 0.4 s
+[867] train loss: 0.285882, validation loss: 0.281284, epoch_time: 0.63 s
+[868] Training time: 0.3 s
+[868] train loss: 0.274097, validation loss: 0.289276, epoch_time: 0.54 s
+[869] Training time: 0.3 s
+[869] train loss: 0.299686, validation loss: 0.272813, epoch_time: 0.53 s
+[870] Training time: 0.4 s
+[870] train loss: 0.273005, validation loss: 0.297902, epoch_time: 0.57 s
+[871] Training time: 0.3 s
+[871] train loss: 0.318298, validation loss: 0.312837, epoch_time: 0.54 s
+[872] Training time: 0.3 s
+[872] train loss: 0.303179, validation loss: 0.284218, epoch_time: 0.55 s
+[873] Training time: 0.3 s
+[873] train loss: 0.274792, validation loss: 0.268102, epoch_time: 0.59 s
+[874] Training time: 0.3 s
+[874] train loss: 0.279129, validation loss: 0.261340, epoch_time: 0.58 s
+[875] Training time: 0.3 s
+[875] train loss: 0.267079, validation loss: 0.290925, epoch_time: 0.55 s
+[876] Training time: 0.4 s
+[876] train loss: 0.306813, validation loss: 0.274993, epoch_time: 0.60 s
+[877] Training time: 0.3 s
+[877] train loss: 0.268544, validation loss: 0.284240, epoch_time: 0.49 s
+[878] Training time: 0.3 s
+[878] train loss: 0.285221, validation loss: 0.264416, epoch_time: 0.59 s
+[879] Training time: 0.3 s
+[879] train loss: 0.264865, validation loss: 0.261685, epoch_time: 0.57 s
+[880] Training time: 0.3 s
+[880] train loss: 0.291308, validation loss: 0.268811, epoch_time: 0.57 s
+[881] Training time: 0.3 s
+[881] train loss: 0.265105, validation loss: 0.248228, epoch_time: 0.57 s
+[882] Training time: 0.3 s
+[882] train loss: 0.259854, validation loss: 0.263527, epoch_time: 0.52 s
+[883] Training time: 0.4 s
+[883] train loss: 0.254464, validation loss: 0.251226, epoch_time: 0.66 s
+[884] Training time: 0.4 s
+[884] train loss: 0.249834, validation loss: 0.256264, epoch_time: 0.59 s
+[885] Training time: 0.3 s
+[885] train loss: 0.256035, validation loss: 0.263026, epoch_time: 0.55 s
+[886] Training time: 0.3 s
+[886] train loss: 0.259007, validation loss: 0.248611, epoch_time: 0.58 s
+[887] Training time: 0.4 s
+[887] train loss: 0.268323, validation loss: 0.259264, epoch_time: 0.58 s
+[888] Training time: 0.3 s
+[888] train loss: 0.244902, validation loss: 0.248555, epoch_time: 0.56 s
+[889] Training time: 0.3 s
+[889] train loss: 0.266365, validation loss: 0.243449, epoch_time: 0.59 s
+[890] Training time: 0.4 s
+[890] train loss: 0.273691, validation loss: 0.254819, epoch_time: 0.60 s
+[891] Training time: 0.3 s
+[891] train loss: 0.262304, validation loss: 0.245719, epoch_time: 0.49 s
+[892] Training time: 0.3 s
+[892] train loss: 0.263688, validation loss: 0.263802, epoch_time: 0.53 s
+[893] Training time: 0.3 s
+[893] train loss: 0.257899, validation loss: 0.251178, epoch_time: 0.51 s
+[894] Training time: 0.3 s
+[894] train loss: 0.253245, validation loss: 0.263131, epoch_time: 0.56 s
+[895] Training time: 0.3 s
+[895] train loss: 0.272968, validation loss: 0.263660, epoch_time: 0.60 s
+[896] Training time: 0.3 s
+[896] train loss: 0.260196, validation loss: 0.266754, epoch_time: 0.54 s
+[897] Training time: 0.3 s
+[897] train loss: 0.268354, validation loss: 0.244129, epoch_time: 0.55 s
+[898] Training time: 0.3 s
+[898] train loss: 0.257834, validation loss: 0.242573, epoch_time: 0.58 s
+[899] Training time: 0.4 s
+[899] train loss: 0.249230, validation loss: 0.256967, epoch_time: 0.61 s
+[900] Training time: 0.4 s
+[900] train loss: 0.252590, validation loss: 0.243404, epoch_time: 0.82 s
+[901] Training time: 0.4 s
+[901] train loss: 0.244138, validation loss: 0.242911, epoch_time: 0.69 s
+[902] Training time: 0.4 s
+[902] train loss: 0.248626, validation loss: 0.239209, epoch_time: 0.64 s
+[903] Training time: 0.3 s
+[903] train loss: 0.251031, validation loss: 0.245393, epoch_time: 0.54 s
+[904] Training time: 0.3 s
+[904] train loss: 0.245200, validation loss: 0.292631, epoch_time: 0.57 s
+[905] Training time: 0.3 s
+[905] train loss: 0.322328, validation loss: 0.291606, epoch_time: 0.55 s
+[906] Training time: 0.4 s
+[906] train loss: 0.280212, validation loss: 0.286145, epoch_time: 0.67 s
+[907] Training time: 0.3 s
+[907] train loss: 0.260424, validation loss: 0.275447, epoch_time: 0.61 s
+[908] Training time: 0.3 s
+[908] train loss: 0.264964, validation loss: 0.251006, epoch_time: 0.52 s
+[909] Training time: 0.3 s
+[909] train loss: 0.252283, validation loss: 0.244084, epoch_time: 0.55 s
+[910] Training time: 0.3 s
+[910] train loss: 0.242883, validation loss: 0.237234, epoch_time: 0.58 s
+[911] Training time: 0.4 s
+[911] train loss: 0.235812, validation loss: 0.257854, epoch_time: 0.63 s
+[912] Training time: 0.4 s
+[912] train loss: 0.246969, validation loss: 0.238488, epoch_time: 0.66 s
+[913] Training time: 0.3 s
+[913] train loss: 0.257567, validation loss: 0.252988, epoch_time: 0.61 s
+[914] Training time: 0.3 s
+[914] train loss: 0.253692, validation loss: 0.252581, epoch_time: 0.60 s
+[915] Training time: 0.3 s
+[915] train loss: 0.256401, validation loss: 0.249413, epoch_time: 0.59 s
+[916] Training time: 0.3 s
+[916] train loss: 0.236586, validation loss: 0.235576, epoch_time: 0.56 s
+[917] Training time: 0.4 s
+[917] train loss: 0.242201, validation loss: 0.235954, epoch_time: 0.59 s
+[918] Training time: 0.3 s
+[918] train loss: 0.240464, validation loss: 0.235126, epoch_time: 0.54 s
+[919] Training time: 0.4 s
+[919] train loss: 0.237555, validation loss: 0.240939, epoch_time: 0.58 s
+[920] Training time: 0.4 s
+[920] train loss: 0.248437, validation loss: 0.250099, epoch_time: 0.60 s
+[921] Training time: 0.3 s
+[921] train loss: 0.241771, validation loss: 0.247930, epoch_time: 0.62 s
+[922] Training time: 0.3 s
+[922] train loss: 0.250812, validation loss: 0.240469, epoch_time: 0.55 s
+[923] Training time: 0.3 s
+[923] train loss: 0.239490, validation loss: 0.229829, epoch_time: 0.58 s
+[924] Training time: 0.3 s
+[924] train loss: 0.247212, validation loss: 0.237350, epoch_time: 0.56 s
+[925] Training time: 0.3 s
+[925] train loss: 0.242785, validation loss: 0.230201, epoch_time: 0.53 s
+[926] Training time: 0.3 s
+[926] train loss: 0.237541, validation loss: 0.244196, epoch_time: 0.55 s
+[927] Training time: 0.4 s
+[927] train loss: 0.242565, validation loss: 0.236045, epoch_time: 0.59 s
+[928] Training time: 0.3 s
+[928] train loss: 0.250145, validation loss: 0.238502, epoch_time: 0.53 s
+[929] Training time: 0.3 s
+[929] train loss: 0.259211, validation loss: 0.236722, epoch_time: 0.56 s
+[930] Training time: 0.3 s
+[930] train loss: 0.280081, validation loss: 0.233945, epoch_time: 0.55 s
+[931] Training time: 0.3 s
+[931] train loss: 0.238043, validation loss: 0.257184, epoch_time: 0.52 s
+[932] Training time: 0.4 s
+[932] train loss: 0.247895, validation loss: 0.240877, epoch_time: 0.61 s
+[933] Training time: 0.3 s
+[933] train loss: 0.242756, validation loss: 0.235250, epoch_time: 0.56 s
+[934] Training time: 0.3 s
+[934] train loss: 0.246912, validation loss: 0.282964, epoch_time: 0.59 s
+[935] Training time: 0.3 s
+[935] train loss: 0.286543, validation loss: 0.284200, epoch_time: 0.58 s
+[936] Training time: 0.3 s
+[936] train loss: 0.259419, validation loss: 0.293850, epoch_time: 0.55 s
+[937] Training time: 0.3 s
+[937] train loss: 0.274181, validation loss: 0.261534, epoch_time: 0.47 s
+[938] Training time: 0.3 s
+[938] train loss: 0.346534, validation loss: 0.239708, epoch_time: 0.57 s
+[939] Training time: 0.3 s
+[939] train loss: 0.333652, validation loss: 0.374682, epoch_time: 0.52 s
+[940] Training time: 0.3 s
+[940] train loss: 0.372257, validation loss: 0.386521, epoch_time: 0.48 s
+[941] Training time: 0.3 s
+[941] train loss: 0.340142, validation loss: 0.299757, epoch_time: 0.47 s
+[942] Training time: 0.3 s
+[942] train loss: 0.297476, validation loss: 0.289044, epoch_time: 0.58 s
+[943] Training time: 0.3 s
+[943] train loss: 0.295501, validation loss: 0.292487, epoch_time: 0.53 s
+[944] Training time: 0.3 s
+[944] train loss: 0.290870, validation loss: 0.270538, epoch_time: 0.60 s
+[945] Training time: 0.4 s
+[945] train loss: 0.282644, validation loss: 0.281119, epoch_time: 0.61 s
+[946] Training time: 0.3 s
+[946] train loss: 0.269437, validation loss: 0.273962, epoch_time: 0.48 s
+[947] Training time: 0.3 s
+[947] train loss: 0.278406, validation loss: 0.247964, epoch_time: 0.51 s
+[948] Training time: 0.3 s
+[948] train loss: 0.271603, validation loss: 0.270055, epoch_time: 0.51 s
+[949] Training time: 0.3 s
+[949] train loss: 0.248143, validation loss: 0.236526, epoch_time: 0.51 s
+[950] Training time: 0.4 s
+[950] train loss: 0.231697, validation loss: 0.232206, epoch_time: 0.63 s
+[951] Training time: 0.3 s
+[951] train loss: 0.246412, validation loss: 0.236746, epoch_time: 0.52 s
+[952] Training time: 0.3 s
+[952] train loss: 0.231997, validation loss: 0.236313, epoch_time: 0.53 s
+[953] Training time: 0.3 s
+[953] train loss: 0.243440, validation loss: 0.245951, epoch_time: 0.59 s
+[954] Training time: 0.3 s
+[954] train loss: 0.252074, validation loss: 0.237732, epoch_time: 0.57 s
+[955] Training time: 0.3 s
+[955] train loss: 0.257638, validation loss: 0.237083, epoch_time: 0.55 s
+[956] Training time: 0.3 s
+[956] train loss: 0.234280, validation loss: 0.264519, epoch_time: 0.57 s
+[957] Training time: 0.3 s
+[957] train loss: 0.265636, validation loss: 0.245004, epoch_time: 0.62 s
+[958] Training time: 0.4 s
+[958] train loss: 0.249564, validation loss: 0.231420, epoch_time: 0.61 s
+[959] Training time: 0.3 s
+[959] train loss: 0.247754, validation loss: 0.247415, epoch_time: 0.55 s
+[960] Training time: 0.3 s
+[960] train loss: 0.257976, validation loss: 0.246196, epoch_time: 0.57 s
+[961] Training time: 0.4 s
+[961] train loss: 0.243919, validation loss: 0.254439, epoch_time: 0.63 s
+[962] Training time: 0.3 s
+[962] train loss: 0.236812, validation loss: 0.229381, epoch_time: 0.51 s
+[963] Training time: 0.3 s
+[963] train loss: 0.235516, validation loss: 0.234989, epoch_time: 0.57 s
+[964] Training time: 0.3 s
+[964] train loss: 0.235113, validation loss: 0.220168, epoch_time: 0.53 s
+[965] Training time: 0.4 s
+[965] train loss: 0.224387, validation loss: 0.235130, epoch_time: 0.61 s
+[966] Training time: 0.4 s
+[966] train loss: 0.238852, validation loss: 0.254075, epoch_time: 0.60 s
+[967] Training time: 0.3 s
+[967] train loss: 0.234279, validation loss: 0.229075, epoch_time: 0.50 s
+[968] Training time: 0.4 s
+[968] train loss: 0.224927, validation loss: 0.218644, epoch_time: 0.59 s
+[969] Training time: 0.3 s
+[969] train loss: 0.242873, validation loss: 0.229217, epoch_time: 0.57 s
+[970] Training time: 0.3 s
+[970] train loss: 0.232444, validation loss: 0.225260, epoch_time: 0.57 s
+[971] Training time: 0.4 s
+[971] train loss: 0.232826, validation loss: 0.245235, epoch_time: 0.63 s
+[972] Training time: 0.4 s
+[972] train loss: 0.225073, validation loss: 0.266163, epoch_time: 0.61 s
+[973] Training time: 0.3 s
+[973] train loss: 0.239486, validation loss: 0.218532, epoch_time: 0.54 s
+[974] Training time: 0.3 s
+[974] train loss: 0.228234, validation loss: 0.228827, epoch_time: 0.59 s
+[975] Training time: 0.3 s
+[975] train loss: 0.230691, validation loss: 0.231937, epoch_time: 0.48 s
+[976] Training time: 0.4 s
+[976] train loss: 0.243725, validation loss: 0.220830, epoch_time: 0.63 s
+[977] Training time: 0.3 s
+[977] train loss: 0.225730, validation loss: 0.224104, epoch_time: 0.62 s
+[978] Training time: 0.3 s
+[978] train loss: 0.235470, validation loss: 0.367056, epoch_time: 0.56 s
+[979] Training time: 0.3 s
+[979] train loss: 0.239188, validation loss: 0.229013, epoch_time: 0.53 s
+[980] Training time: 0.4 s
+[980] train loss: 0.225339, validation loss: 0.227149, epoch_time: 0.56 s
+[981] Training time: 0.3 s
+[981] train loss: 0.247907, validation loss: 0.214484, epoch_time: 0.62 s
+[982] Training time: 0.3 s
+[982] train loss: 0.228717, validation loss: 0.221120, epoch_time: 0.53 s
+[983] Training time: 0.3 s
+[983] train loss: 0.270100, validation loss: 0.226632, epoch_time: 0.59 s
+[984] Training time: 0.3 s
+[984] train loss: 0.221405, validation loss: 0.211973, epoch_time: 0.52 s
+[985] Training time: 0.4 s
+[985] train loss: 0.219923, validation loss: 0.227818, epoch_time: 0.63 s
+[986] Training time: 0.3 s
+[986] train loss: 0.224471, validation loss: 0.226981, epoch_time: 0.51 s
+[987] Training time: 0.3 s
+[987] train loss: 0.230770, validation loss: 0.225018, epoch_time: 0.55 s
+[988] Training time: 0.3 s
+[988] train loss: 0.249276, validation loss: 0.292911, epoch_time: 0.55 s
+[989] Training time: 0.3 s
+[989] train loss: 0.247902, validation loss: 0.273200, epoch_time: 0.58 s
+[990] Training time: 0.3 s
+[990] train loss: 0.300915, validation loss: 0.273144, epoch_time: 0.57 s
+[991] Training time: 0.3 s
+[991] train loss: 0.283526, validation loss: 0.260272, epoch_time: 0.58 s
+[992] Training time: 0.3 s
+[992] train loss: 0.258709, validation loss: 0.232786, epoch_time: 0.58 s
+[993] Training time: 0.3 s
+[993] train loss: 0.236541, validation loss: 0.228074, epoch_time: 0.51 s
+[994] Training time: 0.3 s
+[994] train loss: 0.258568, validation loss: 0.228282, epoch_time: 0.50 s
+[995] Training time: 0.3 s
+[995] train loss: 0.242519, validation loss: 0.224435, epoch_time: 0.52 s
+[996] Training time: 0.4 s
+[996] train loss: 0.237709, validation loss: 0.236207, epoch_time: 0.59 s
+[997] Training time: 0.3 s
+[997] train loss: 0.221693, validation loss: 0.223985, epoch_time: 0.58 s
+[998] Training time: 0.3 s
+[998] train loss: 0.234387, validation loss: 0.220334, epoch_time: 0.57 s
+[999] Training time: 0.3 s
+[999] train loss: 0.229826, validation loss: 0.236837, epoch_time: 0.58 s
+[1000] Training time: 0.3 s
+[1000] train loss: 0.263783, validation loss: 0.226692, epoch_time: 0.70 s
+INFO: Finished training in 569.41956782341 seconds
+-------------------------------------------------
+HDF5 Dataset sparse mask statistics
+	minimum number of cells: 1
+	maximum number of cells: 515
+	average number of cells: 255.80739999999997
+	number of mask created:  5000
+-------------------------------------------------
+
+real	9m36.282s
+user	39m33.169s
+sys	3m39.128s
