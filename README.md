@@ -1,3 +1,8 @@
+# Informal Disclaimer
+I do not own WindSeer. I am investigating a few ways to adapt it to wildfire scenarios for instance by fine tuning it on Google Firebench simulations and by addting a thermal map channel to the model's input.
+
+---
+
 # WindSeer
 
 This repository contains the tools to predict the wind using a neural network.
